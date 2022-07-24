@@ -1,0 +1,814 @@
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+:root{
+    --ff_r: 'Raleway', sans-serif;
+    --c1: #8f1d14;
+    --c2: #ebbb74;
+    --c3: #672e2a;
+    --c4: #2d132c;
+    --w1: #eaeaea;
+}
+
+
+/* common css */
+.myContainer{
+    max-width: 1300px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+.mainHeading{
+    text-align: center;
+    color: var(--c1);
+    font-size: 54px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+header .mainNavbar{
+    position: fixed;
+    z-index: 9;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.mainNavbarScroll{
+    top: 0;
+}
+
+.mainNavbarMobileScrollBg{
+    background-color: var(--c1);
+}
+
+header .mainNavbar .navbarLogo{
+    font-size: 30px;
+    font-weight: 500;
+}
+header .mainNavbar nav ul a:hover{
+    color: var(--c2) !important;
+}
+
+
+
+
+
+.topbar{
+    background-color: var(--c1);
+}
+
+.topbar .topBarLinkHolder .leftSide a{
+    color: var(--w1);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.topbar .topBarLinkHolder .leftSide a:hover{
+    color: var(--c2);
+}
+.topbar .topBarLinkHolder .rightSide{
+    display: flex;
+    flex-direction: row;
+}
+.topbar .topBarLinkHolder .rightSide a{
+    display: flex;
+    flex-direction: row;
+    background: var(--w1);
+    margin: 3px;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--c1);
+    transition: 0.3s;
+}
+.topbar .topBarLinkHolder .rightSide a:hover{
+    color: var(--c2);
+    background-color: var(--c1);
+    border: solid 1px var(--w1);
+}
+
+.test{
+    background-color: red;
+}
+
+
+
+
+
+
+
+
+/* slider */
+.slider .sliderImageHolder{
+    position: relative;
+}
+.slider .sliderImageHolder .bottomImage{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+}
+.slider .slideTextHolder{
+    position: absolute;
+    /* background: violet; */
+    top: 50%;
+    left: 0%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    display: inline-block;
+    text-align: center;
+}
+.slider .slideTextHolder h2{
+    color: var(--c2);
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+
+}
+.slider .slideTextHolder h3{
+    font-size: 48px;
+    color: var(--w1);
+    letter-spacing: 12px;
+    line-height: 1.5;
+}
+    
+
+/* .aboutUs */
+.aboutUs .cardImageHolder img{
+    width: 100px;
+    height: 85px;
+    border: solid 2px var(--c1);
+    padding: 20px 10px 20px 10px;
+}
+.aboutUs .cardHeading{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--c1);
+}
+.aboutUs .cardPragraph{
+    color: var(--c1);
+    font-family: var(--ff_r);
+    font-weight: 400;
+}
+
+/* ourServices */
+/* .ourServices .ourServiceHeading h2{
+    text-align: center;
+    color: var(--c1);
+    font-size: 54px;
+    font-weight: 600;
+} */
+
+
+.ourServices .tabButtonsContainer{
+    background-color: var(--c1);
+    padding: 8px 0px;
+}
+.ourServices .tabButtonsContainer .tabList{
+    justify-content: space-between;
+}
+.ourServices .tabButtonsContainer .tabList li a:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+.ourServices .tabButtonsContainer .tabList li a{
+    color: var(--c2);
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    letter-spacing: 1px;
+}
+.ourServices .tabButtonsContainer .tabList li a:hover::after{
+    content: "";
+    display: block;
+    border-bottom: solid 2px var(--c2);
+}
+.ourServices .tabButtonsContainer .tabList li .active:after{
+    content: "";
+    display: block;
+    border-bottom: solid 2px var(--c2);
+}
+.ourServices .tabTextHolder{
+    padding: 40px;
+}
+.ourServices .tabTextHolder h4{
+    color: var(--c1);
+    font-size: 46px;
+    font-weight: 600;
+    padding-right: 230px;
+
+}
+.ourServices .tabTextHolder p{
+
+    color: var(--c1);
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 100px;
+}
+.serviceLeftImageHolder{
+    width: 100%;
+    height: 560px;
+}
+.serviceLeftImageHolder img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ourClient */
+.ourClient .clientLogoContainer{
+    padding: 0px 140px;
+}
+.ourClient .clientLogoContainer .clientLogoHolder{
+    padding: 0px 30px;
+}
+.alignSelfCenter{ align-self: center; }
+.w_130{ width: 130px; }
+
+
+/* request_a_quote */
+.request_a_quote .requestAQuoteContainer{
+    background-image: url(../images/final_bgImage.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 200px;
+}
+.request_a_quote .requestAQuoteContainer .formHolder input{
+    background: none;
+    border: none;
+    background-color: var(--w1);
+    color: var(--c1);
+    font-weight: 600;
+
+}
+.request_a_quote .requestAQuoteContainer .formHolder input::placeholder{
+    color: var(--c1);
+}
+
+.request_a_quote .formHolder .msgInput{
+    padding: 20px 0px 120px 10px
+}
+
+.request_a_quote .requestAQuoteContainer .requestFormHeading{
+    color: var(--w1);
+}
+
+.request_a_quote .formHolder .buttonHolder button{
+    padding: 10px 50px 10px 50px;
+    background-color: var(--c1);
+    border: none;
+    color: var(--w1);
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s;
+    border: solid 1px transparent;
+}
+.request_a_quote .formHolder .buttonHolder button:hover{
+    color: var(--c2);
+    border: solid 1px var(--c2);
+}
+
+/* whyChooseUs */
+.whyChooseUs .accordianBox .accordianBoxHeading{
+    background: var(--c3);
+    border: solid 1px var(--c1);
+}
+.whyChooseUs .accordianBox .accordianBoxButton{
+    display: flex;
+    text-decoration: none;
+}
+.whyChooseUs .accordianBox .accordianBoxButton span{
+    align-self: center;
+    color: var(--w1);
+    padding-left: 5px;
+}
+.whyChooseUs .accordianBox .accordianBoxButton i{
+       color: var(--w1);
+       background: var(--c1);
+        width: 50px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+}
+.whyChooseUs .accordianBox .accordianBoxButton:hover{
+    color: var(--c2);
+}
+
+.whyChooseUs .accordianBox .accordianBoxBody{
+    background-color: var(--w1);
+    padding: 10px 25px;
+    color: var(--c1);
+    font-weight: 600;
+    
+}
+    
+
+/* footer */
+footer{
+    background-color: var(--c4);
+}
+footer .footerHeading .aboutUs{
+    color: var(--w1);
+    background-color: var(--c1);
+    display: inline-block;
+    padding: 5px 80px 5px 5px;
+    font-family: var(--ff_r);
+    font-weight: 500;
+    font-size: 22px;  
+    text-transform: uppercase;
+}
+
+footer .footerHeading .information{
+    color: var(--w1);
+    background-color: var(--c1);
+    display: inline-block;
+    padding: 5px 130px 5px 5px;
+    font-family: var(--ff_r);
+    font-weight: 500;
+    font-size: 22px;
+    text-transform: uppercase;
+
+}
+footer .footerHeading .ourLocation{
+    color: var(--w1);
+    background-color: var(--c1);
+    display: inline-block;
+    padding: 5px 130px 5px 5px;
+    font-family: var(--ff_r);
+    font-weight: 500;
+    font-size: 22px; 
+    text-transform: uppercase;
+    
+}
+
+footer .footerAboutUsHolder .footerLogoHolder a{
+    color: var(--w1);
+    font-weight: 500;
+    font-size: 36px;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+
+}
+footer .footerAboutUsHolder p{
+    color: var(--w1);
+    font-family: var(--ff_r);
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0px 80px 0px 0px;
+}
+
+footer .footerInformationListHolder ul{
+    padding: unset;
+    font-family: var(--ff_r);
+    color: var(--w1);
+    list-style: none;
+}
+footer .footerInformationListHolder ul li::before{
+    font-family: "Font Awesome 5 pro";
+    content: "\f138";
+    display: inline-block;
+    padding: 0px 8px 0px 2px;
+    color: var(--w1);
+    font-weight: 300;
+    font-size: 20px;
+}
+footer .footerInformationListHolder ul li a{
+    color: var(--w1);
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+footer .footerInformationListHolder ul li a:hover{
+    color: var(--c2);
+}
+
+footer .footerOutLocationListHolder ul{
+    padding: unset;
+    font-family: var(--ff_r);
+    color: var(--w1);
+    list-style: none;
+}
+footer .footerOutLocationListHolder ul li a{
+    color: var(--w1);
+    transition: 0.3s;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1.6;
+}
+footer .footerOutLocationListHolder ul li a i{
+    padding: 0px 5px;
+}
+footer .footerOutLocationListHolder ul li a:hover{
+    color: var(--c2);
+}
+
+footer .copyWriteStatement p{
+    color: var(--w1);
+    font-size: 18px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1440px){
+    .largeScreenWidth{
+        max-width: 1300px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+    .serviceLeftImageHolder{
+        width: 100%;
+        height: 570px;
+    }
+}
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .ourServices .tabTextHolder h4 {
+        padding-right: 0px;
+    }
+    footer .footerHeading .ourLocation {
+        padding: 5px 100px 5px 5px;
+    }
+    footer .footerHeading .information {
+        padding: 5px 100px 5px 5px;
+    }
+    .serviceLeftImageHolder {
+        height: 600px;
+    }
+    .ourServices .tabTextHolder {
+        padding: 30px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .ourServices .tabTextHolder {
+        padding: 20px;
+    }
+    .serviceLeftImageHolder {
+        height: 400px;
+    }
+    .ourServices .tabTextHolder h4 {
+        font-size: 30px;
+        padding-right: 0px;
+    }
+    .ourServices .tabTextHolder p {
+        font-size: 18px;
+        padding-right: 0px;
+    }
+    .request_a_quote .requestAQuoteContainer {
+        padding: 20px 30px;
+    }
+
+    .ourClient .clientLogoContainer .clientLogoHolder {
+        padding: 0px 0px;
+    }
+    footer .footerHeading .ourLocation {
+        padding: 5px 60px 5px 5px;
+    }
+    footer .footerHeading .information {
+        padding: 5px 60px 5px 5px;
+    }
+    footer .footerHeading .aboutUs {
+        padding: 5px 60px 5px 5px;
+    }
+    footer .footerAboutUsHolder p {
+        padding: 0px 5px 0px 0px;
+    }
+    footer .footerInformationListHolder ul li a {
+        font-size: 16px;
+    }
+    footer .footerOutLocationListHolder ul li a {
+        font-size: 16px;
+    }
+
+
+}
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .myContainer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .navbar-dark .navbar-toggler {
+        color: var(--c2);
+        border-color: var(--c2);
+    }
+
+    .mainHeading {
+        font-size: 36px;
+    }
+
+    .slider .slideTextHolder h2 {
+        letter-spacing: 1px;
+    }
+    .slider .slideTextHolder h3 {
+        font-size: 36px;
+        letter-spacing: 5px;
+        line-height: 0.9;
+    }
+
+    .ourServices .tabButtonsContainer .tabList {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ourServices .tabTextHolder {
+        padding: 20px;
+    }
+
+    .ourServices .tabTextHolder h4 {
+        font-size: 30px;
+        padding-right: 0px;
+    }
+    .ourServices .tabTextHolder p {
+        font-size: 18px;
+        padding-right: 0px;
+    }
+    .serviceLeftImageHolder {
+        height: auto;
+    }
+
+    .request_a_quote .requestAQuoteContainer {
+        padding: 20px 30px;
+    }
+    .ourClient .clientLogoContainer .clientLogoHolder {
+        padding: 10px 20px;
+    }
+    .ourClient .clientLogoContainer {
+        padding: 0px 60px;
+    }
+
+    footer .footerHeading .ourLocation {
+        padding: 5px 50px 5px 5px;
+    }
+    footer .footerHeading .information {
+        padding: 5px 60px 5px 5px;
+    }
+    footer .footerHeading .aboutUs {
+        padding: 5px 98px 5px 5px;
+    }
+    footer .footerAboutUsHolder p {
+        padding: 0px 5px 0px 0px;
+    }
+    footer .footerInformationListHolder ul li a {
+        font-size: 16px;
+    }
+    footer .footerOutLocationListHolder ul li a {
+        font-size: 16px;
+    }
+    footer .copyWriteStatement p {
+        font-size: 16px;
+        word-spacing: 2px;
+        letter-spacing: 0px;
+    }
+
+
+
+}
+
+
+@media (min-width: 481px) and (max-width: 575px) {
+    .myContainer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .header .topbar .topBarLinkHolder .leftSide .workingTime{ display: none;}
+
+    .navbar-dark .navbar-toggler {
+        color: var(--c2);
+        border-color: var(--c2);
+    }
+    #navbarSupportedContent{
+        background-color: var(--c1);
+        text-align: center;
+    }
+    .mainHeading {
+        font-size: 32px;
+    }
+    header .mainNavbar{
+        background-color: var(--c1);
+    }
+
+    .slider .slideTextHolder h2 {
+        letter-spacing: 1px;
+    }
+    .slider .slideTextHolder h3 {
+        font-size: 36px;
+        letter-spacing: 5px;
+        line-height: 0.9;
+    }
+
+    .ourServices .tabButtonsContainer .tabList {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ourServices .tabTextHolder {
+        padding: 20px;
+    }
+
+    .ourServices .tabTextHolder h4 {
+        font-size: 30px;
+        padding-right: 0px;
+    }
+    .ourServices .tabTextHolder p {
+        font-size: 18px;
+        padding-right: 0px;
+    }
+    .serviceLeftImageHolder {
+        height: auto;
+    }
+    .request_a_quote .requestAQuoteContainer {
+        padding: 20px 30px;
+    }
+    footer .mobileView{
+        display: none;
+    }
+
+    .ourClient .clientLogoContainer .clientLogoHolder {
+        padding: 10px 20px;
+    }
+    .ourClient .clientLogoContainer {
+        padding: 0px 60px;
+    }
+
+    footer .footerHeading .ourLocation {
+        padding: 5px 50px 5px 5px;
+    }
+    footer .footerHeading .information {
+        padding: 5px 60px 5px 5px;
+    }
+    footer .footerHeading .aboutUs {
+        padding: 5px 98px 5px 5px;
+    }
+    footer .footerAboutUsHolder p {
+        padding: 0px 5px 0px 0px;
+    }
+    footer .footerInformationListHolder ul li a {
+        font-size: 16px;
+    }
+    footer .footerOutLocationListHolder ul li a {
+        font-size: 16px;
+    }
+    footer .copyWriteStatement p {
+        font-size: 16px;
+        word-spacing: 2px;
+        letter-spacing: 0px;
+    }
+    .aboutUs .cardHeading {
+        font-size: 20px;
+    }
+
+
+}
+
+
+@media (max-width: 480px) {
+    .myContainer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .topbar .leftSide .workingTime{ display: none;}
+    .navbar-dark .navbar-toggler {
+        color: var(--c2);
+        border-color: var(--c2);
+    }
+    #navbarSupportedContent{
+        background-color: var(--c1);
+        text-align: center;
+    }
+    .mainHeading {
+        font-size: 24px;
+    }
+  
+
+    .slider .slideTextHolder h2 {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    .slider .slideTextHolder h3 {
+        font-size: 24px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+    }
+
+    .slider .slideTextHolder {
+        top: 60%;
+    }
+
+    .ourServices .tabButtonsContainer .tabList {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ourServices .tabTextHolder {
+        padding: 20px;
+    }
+    .ourServices .tabButtonsContainer .tabList li a {
+        font-size: 16px;
+    }
+    .ourServices .tabTextHolder h4 {
+        font-size: 24px;
+        padding-right: 0px;
+        /* padding-bottom: unset !important;
+        margin: unset;
+        padding-bottom: 20px !important; */
+    }
+    .ourServices .tabTextHolder p {
+        font-size: 18px;
+        padding-right: 0px;
+    }
+
+    .serviceLeftImageHolder {
+        height: auto;
+    }
+
+    .request_a_quote .requestAQuoteContainer {
+        padding: 20px 0px;
+    }
+    footer .mobileView{
+        display: none;
+    }
+
+    .ourClient .clientLogoContainer .clientLogoHolder {
+        padding: 10px 70px;
+    }
+    .ourClient .clientLogoContainer {
+        padding: 0px 0px;
+    }
+
+    .whyChooseUs .accordianBox .accordianBoxBody {
+        background-color: var(--w1);
+        padding: 10px 10px;
+        color: var(--c1);
+        font-weight: 600;
+    }
+
+    footer .footerHeading .ourLocation {
+        padding: 5px 50px 5px 5px;
+    }
+    footer .footerHeading .information {
+        padding: 5px 60px 5px 5px;
+    }
+    footer .footerHeading .aboutUs {
+        padding: 5px 98px 5px 5px;
+    }
+    footer .footerAboutUsHolder p {
+        padding: 0px 5px 0px 0px;
+    }
+    footer .footerInformationListHolder ul li a {
+        font-size: 16px;
+    }
+    footer .footerOutLocationListHolder ul li a {
+        font-size: 16px;
+    }
+    footer .copyWriteStatement p {
+        font-size: 16px;
+        word-spacing: 2px;
+        letter-spacing: 0px;
+    }
+    footer .footerAboutUsHolder .footerLogoHolder a {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+    footer .footerOutLocationListHolder ul li a i {
+        padding: 0px 3px;
+    }
+    .whyChooseUs .accordianBox .accordianBoxButton {
+        font-size: 16px;
+    }
+    .aboutUs .cardHeading {
+        font-size: 20px;
+    }
+
+
+
+}

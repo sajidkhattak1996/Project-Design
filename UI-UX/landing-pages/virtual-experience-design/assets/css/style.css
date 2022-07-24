@@ -1,0 +1,1566 @@
+@font-face {
+    font-family: migra_italic_extralight;
+    src: url(../fonts/Migra_Free_for_Personal_Use/MigraItalic-ExtralightItalic.ttf);
+}
+
+    :root{
+        --c1: #EBA83A;
+        --c2: #BB371A;
+        --c3: #030303;
+        --c4: #D5DBB3;
+
+        --ff_m: migra_italic_extralight;
+    }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--c4);
+    /* height: 900px; */
+    position: relative;
+}
+
+
+
+.myContainer{
+    width: 1366px;
+    margin: 0 auto;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    position: relative;
+}
+
+.mainHeading{
+    font-size: 105px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.head1{
+    font-family: var(--ff_m);
+    font-size: 138px;
+    color: var(--c2);
+    line-height: 0;
+    letter-spacing: 2px;
+}
+.head2{
+    display: block;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+
+
+.navbarParent{
+    background: var(--c1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 40px 40px 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+
+.logoAndBurgerIcon .menuIcon button{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    /* padding: 5px; */
+    transition: 0.4s;
+}
+
+.logoAndBurgerIcon .menuIcon button .menuLine1{
+    display: inline-block;
+    background-color: var(--c2);
+    height: 1px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+.logoAndBurgerIcon .menuIcon button .menuLine2{
+    display: inline-block;
+    background-color: var(--c2);
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+    transition: 0.4s;
+}
+.logoAndBurgerIcon .menuIcon button .menutext{
+    font-size: 10px;
+    padding-top: 6px;
+    color: var(--c2);
+    font-weight: 600;
+    transition: 0.4s;
+}
+.logoAndBurgerIcon .menuIcon button:hover .menutext{
+    color: var(--c4);
+}
+.logoAndBurgerIcon .menuIcon button:hover .menuLine1{
+    background-color: var(--c4);
+}
+.logoAndBurgerIcon .menuIcon button:hover .menuLine2{
+    background-color: var(--c4);
+}
+.logoAndBurgerIcon .menuIcon button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.mainMenu{
+    writing-mode: vertical-lr;
+    display: inline-flexbox;
+    padding: unset;
+    
+}
+.mainMenu li{
+    margin-bottom: 30px;
+}
+
+.mainMenu li .listAnchor{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--c2);
+}
+.textRotate{
+    transform: rotate(180deg);
+}
+.textRotate::before{
+    content: '';
+    display: block;
+    height: 0%;
+    width: 0.51px;
+    background: var(--c2);
+    margin: auto;
+    transition: 0.5s;
+}
+.mainMenu li .listAnchor:hover .textRotate::before{
+    height: 100%;
+}
+
+
+
+
+
+
+/* right side text display contianer */
+/* logog container */
+.logoAndBurgerIcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 15;
+}
+
+
+
+.topLogoDisplay .logoHolder img{
+    width: 200px;
+    height: 60px;
+}
+.topLogoDisplay .logoHolder a{
+    display: inline-block;
+}
+
+.smallerScreenSoundButton{
+    display: none;
+}
+.soundButton{
+    border: solid 1px var(--c2);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.soundButton:hover{
+    background-color: var(--c2);
+}
+.soundButton:hover i{
+    color: var(--c4);
+}
+.soundButton i{
+    color: var(--c2);
+}
+
+.soundMobile{
+    visibility: hidden;
+}
+
+.rightDisplayMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    transition: 0.5s;
+}
+
+/* .artGalleyAlignment{
+    justify-content: center !important;
+} */
+
+.height100VH{
+    height: 100vh;
+}
+.rightDisplayMain .rightTextHolder{
+    padding: 0 40px;
+}
+.rightDisplayMain .pragraphHolder{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 130px;
+}
+/* give padding for show div */
+.rightDisplayMain .paddingRight{
+    padding-right: 125px;
+}
+/* tab gallery art */
+.rightDisplayMain .artGalleryPragraphHolder{
+    justify-content: center;
+}
+
+/* createConnectionPragraphHolder */
+
+.rightDisplayMain .createConnectionTabs{
+    padding-right: 125px;
+}
+
+.rightDisplayMain .createConnectionPragraphHolder{
+    height: 220px;
+}
+.rightDisplayMain .pragraphHolder .pragraph{
+    max-width: 330px;
+    /* background-color: red; */
+}
+
+/* tab gallery art */
+.rightDisplayMain .artGalleryPragraphHolder .artGalleryPragraph{
+    text-align: center;
+}
+
+.rightDisplayMain .createConnectionTabs .createConncetionTabsText{
+   display: flex; 
+   flex-direction: column;
+}
+
+
+.buttonHolder{
+    /* background-color: brown; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.buttonAlignForCreateConncection{
+    align-self: baseline;
+}
+.buttonHolder .explore{
+    background: none;
+    border: solid 1px var(--c2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 90px;
+    border-radius: 100px/45px;
+    transition: 0.8s;
+    color: var(--c2);
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.buttonHolder .explore:hover{
+    background-color: var(--c1);
+    color: var(--c4);
+    border: solid 1px var(--c1);
+}
+
+
+/* tabs control */
+.rightDisplayMain .rightTextHolder .tracesMainDiv{
+    padding: 0px 130px;
+}
+
+.rightDisplayMain .rightTextHolder .showTabs{
+    padding: 40px 30px 0px 0px;
+}
+.maxWidth_430{
+    max-width: 430px;
+}
+
+
+
+
+
+
+
+
+
+/* opening navbar on click */
+.myContainer1{
+    width: 1300px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background: red; */
+}
+
+.openingNavbarParent{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 0;
+    background-color: #a6aa90;
+    opacity: 0;
+    transition: 1s;
+    padding: 30px;
+    /* display: none; */
+    transform: translate(0);
+}
+.navBarOpened{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    opacity: 1 ;
+    z-index: 30 ;
+    background-color: var(--c4) ;
+    transform: translate(1) ;
+
+}
+.myStyleForClick{
+    align-self: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    
+}
+.topLogoBarHolder{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    /* background: red; */
+    width: 100%;
+}
+
+.openingNavbarParent .logoHolder a img{
+    width: 200px;
+    height: 60px;
+}
+
+.openingNavbarParent .mainContainerOfText{
+    padding-top: 20px;
+
+}
+
+.openingNavbarParent .languageHolder{
+    width: 45px;
+}
+
+.openingNavbarParent .closeBtnHolder button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.openingNavbarParent .closeBtnHolder button i{
+    font-size: 45px;
+    transition: 0.5s;
+}
+.openingNavbarParent .closeBtnHolder button span{
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: 0.5s;
+}
+.openingNavbarParent .closeBtnHolder button:hover i{
+    color: var(--c2);
+}
+.openingNavbarParent .closeBtnHolder button:hover span{
+    color: var(--c2);
+}
+.openingNavbarParent .closeBtnHolder button:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.paddingL{
+    padding-left: 80px;
+}
+
+
+.textContentHolder1 .largeButtonHolder{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.textContentHolder1 .largeButtonHolder a{
+    text-decoration: none;
+    color: var(--c2);
+    border: solid 1px var(--c2);
+    display: flex;
+    width: 220px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0px 0px; */
+    text-align: center;
+    border-radius: 145px/60px;
+    font-size: 25px;
+    transition: 0.9s;
+    cursor: pointer;
+    margin-left: 100px;
+}
+.textContentHolder1 .largeButtonHolder a:hover{
+    background-color: var(--c2);
+    color: var(--c4);
+}
+
+
+.listHolder ul{
+    list-style: none;
+    padding: unset;
+    /* background: red; */
+    text-align: center;
+}
+.listHolder .listTop{
+    text-transform: uppercase;
+    color: var(--c1);
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.listHolder ul li a{
+    color: var(--c2);
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s;
+    /* background-color: violet; */
+    display: inline-block;
+}
+.listHolder ul li a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background-color: var(--c2);
+    display: block;
+    transition: 0.5s;
+}
+.listHolder ul li a:hover:after{
+    width: 100%;
+}
+
+.bottomLinksHolder{
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    align-items: baseline;
+    justify-content: center;
+}
+.bottomLinksHolder .bottomList1{
+    list-style: none;
+    padding: unset;
+    display: flex;
+    flex-direction: row;
+    /* background-color: violet; */
+    padding-right: 30px;
+}
+.bottomLinksHolder .bottomList1 li{
+    padding-right: 30px;
+}
+.bottomLinksHolder .bottomList1 li a{
+    text-decoration: none;
+    color: var(--c2);
+    transition: 0.3s;
+}
+.bottomLinksHolder .bottomList1 li a:hover{
+    color: var(--c1);
+}
+
+.bottomLinksHolder .socialLinks{
+    display: flex;
+    flex-direction: row;
+}
+.bottomLinksHolder .socialLinks a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    width: 35px;
+    height: 35px;
+    /* background: red; */
+    margin: 0px 2px;
+    justify-content: center;
+    align-items: center;
+}
+.bottomLinksHolder .socialLinks a i{
+    color: var(--c2);
+    font-size: 20px;
+    transition: 0.4s;
+}
+.bottomLinksHolder .socialLinks a:hover i{
+    color: var(--c1);
+}
+
+
+
+.topLogoAndText{
+  
+position: absolute;
+width: 100%;
+top: 20px;
+right: 0;
+left: 0;
+padding-left: 250px;
+padding-right: 20px;
+}
+ .topLogoAndText .HolderDiv{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+ }
+ .displayPageLogo a svg{
+    width: 180px;
+ }
+.displayPageLanguage{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+ .displayPageLanguage a{
+     text-decoration: none;
+     color: var(--c3);
+     transition: 0.3s;
+ }
+ .displayPageLanguage a:hover{
+     color: var(--c2);
+ }
+
+ #closeButtonLeft{
+    transition: 0.8s;
+    display: none;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (min-width: 1600px) {
+    .pUnsetForLarge{
+        padding-left: unset;
+    }
+    .textContentHolder1 .largeButtonHolder a {
+        margin-left: unset;
+    }
+    .textContentHolder1{
+        max-width: 680px;
+    }
+
+    .mainContainerOfText .lefSideColumn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .topLogoBarHolder{
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        right: 40px;
+        /* background: red; */
+        width: 100%;
+        z-index: 99;
+    }
+
+
+
+ }
+
+ @media (min-width: 992px) and (max-width: 1199px) {
+    .head1 {
+        font-size: 90px;
+    }
+    .paddingL {
+        padding-left: 20px;
+    }
+    .mainHeading {
+        font-size: 58px;
+    }
+
+    .openingNavbarParent .mainContainerOfText {
+        padding-top: 50px;
+    }
+    .listHolder ul li a {
+        font-size: 40px;
+    }
+    /* .artGalleyAlignment{
+        justify-content: end !important;
+    } */
+
+ }
+
+ @media (min-width: 768px) and (max-width: 991px) {
+    .rightDisplayMain .rightTextHolder .tracesMainDiv {
+        padding: 0px 0px;
+    }
+
+    .paddingL {
+        padding-left: 0px;
+    }
+
+    .head1 {
+        font-size: 60px;
+        letter-spacing: 1px;
+    }
+    .mainHeading {
+        font-size: 46px;
+    }
+
+    .rightDisplayMain .rightTextHolder {
+        padding: 50px 0px 0px 0px;
+    }
+
+   .rightDisplayMain .artGalleryTabs {
+        margin-left: 120px;
+   }
+
+    .buttonHolder {
+        /* justify-content: start !important; */
+        display: inline-flex;
+    }
+    .artGalleyButtonHolder{
+        display: flex;
+    }
+
+    .rightDisplayMain .paddingRight {
+        padding-right: unset;
+    }
+    .rightDisplayMain .rightTextHolder .showTabs {
+        padding: 40px 0px 0px 0px;
+    }
+    .somePadding{
+        padding-left: 80px;
+    }
+
+    .mainMenu li {
+        margin-bottom: 10px;
+    }
+    .logoAndBurgerIcon {
+        padding: 30px 30px 0px 35px;
+    }
+    .navbarParent {
+        padding: 90px 30px 30px 30px;
+    }
+    .rightDisplayMain .createConnectionTabs {
+        padding-right: 20px;
+    }
+
+    .topLogoDisplay{
+        padding-left: 130px;
+    }
+
+    .textContentHolder1 .largeButtonHolder a {
+        margin-left: unset;
+    }
+    .listHolder .listTop {
+        padding-bottom: 0px;
+    }
+    .listHolder ul li a {
+        font-size: 30px;
+    }
+    .navbarParent {
+        background: var(--c1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 120px 40px 40px 40px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+    }
+
+ }
+
+ @media (min-width: 576px) and (max-width: 767px) {
+    .rightDisplayMain .rightTextHolder .tracesMainDiv {
+        padding: 0px 0px;
+    }
+
+    .paddingL {
+        padding-left: 0px;
+    }
+
+    .head1 {
+        font-size: 50px;
+        letter-spacing: 1px;
+    }
+    .mainHeading {
+        font-size: 44px;
+    }
+
+    .rightDisplayMain .rightTextHolder {
+        padding: 50px 0px 0px 0px;
+    }
+
+   .rightDisplayMain .artGalleryTabs {
+        margin-left: 120px;
+   }
+
+    .buttonHolder {
+        /* justify-content: start !important; */
+        display: inline-flex;
+    }
+    .artGalleyButtonHolder{
+        display: flex;
+    }
+
+    .rightDisplayMain .paddingRight {
+        padding-right: unset;
+    }
+    .rightDisplayMain .rightTextHolder .showTabs {
+        padding: 40px 0px 0px 0px;
+    }
+    .somePadding{
+        padding-left: 80px;
+    }
+
+    .mainMenu li {
+        margin-bottom: 10px;
+    }
+    .logoAndBurgerIcon {
+        padding: 30px 45px 0px 35px;
+    }
+    .navbarParent {
+        padding: 90px 30px 30px 30px;
+    }
+    .rightDisplayMain .createConnectionTabs {
+        padding-right: unset;
+    }
+
+    .topLogoDisplay{
+        padding-left: 0px;
+    }
+    .soundButtonHolder{
+        display: none;
+    }
+
+    .smallerScreenSoundButton{
+        display: none;
+
+    }
+    .smallerScreenSoundButton{
+        border: solid 1px var(--c2);
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+        align-self: center;
+        margin-right: 10px;
+    }
+    
+    
+    .smallerScreenSoundButton:hover{
+        background-color: var(--c2);
+    }
+    .smallerScreenSoundButton:hover i{
+        color: var(--c4);
+    }
+    .smallerScreenSoundButton i{
+        color: var(--c2);
+    }
+    .logoAndBurgerIcon .menuIcon{
+        display: flex;
+        flex-direction: row; 
+    }
+
+
+    .logoAndBurgerIcon :nth-child(1) { order: 3; }
+    .logoAndBurgerIcon :nth-child(2) { order: 1; }
+    .logoAndBurgerIcon :nth-child(3) { order: 2; }
+
+    .logoAndBurgerIcon .menuIcon button .menuLine1 {
+        order: 1;
+    }
+    .logoAndBurgerIcon .menuIcon button .menuLine2 {
+        order: 2;
+    }
+    .logoAndBurgerIcon .menuIcon button .menutext {
+        order: 3;
+    }
+    .logoAndBurgerIcon .menuIcon button {
+        align-self: center;
+    }
+
+    .rightDisplayMain {
+        justify-content: center !important;
+    }
+    .mainHeading{
+        text-align: center;
+    }
+    .pragraph{
+        text-align: center;
+    }
+    .buttonHolder {
+        display: flex;
+    }
+
+    .rightDisplayMain .pragraphHolder {
+        justify-content: center;
+    }
+    .somePadding {
+        padding-left: unset;
+    } 
+    .rightDisplayMain .artGalleryTabs {
+        margin-left: unset;
+    }
+    .buttonAlignForCreateConncection{
+        align-self: center;
+    } 
+    .languageHolder{
+        display: none;
+    }  
+    .closeBtnHolder{ order: 2; }
+    .logoHolder{ order: 1; }
+    .textContentHolder1 .largeButtonHolder {
+        justify-content: center;
+    }
+    .textContentHolder1 .largeButtonHolder a {
+        margin-left: unset;
+    }
+    .textContentHolder1{
+        margin-top: 100px;
+    }
+ 
+    .listHolder .listTop {
+        padding-bottom: 0px;
+    }
+    .listHolder ul li a {
+        font-size: 28px;
+    }
+    .openingNavbarParent .closeBtnHolder button i {
+        font-size: 30px;
+    }
+    .openingNavbarParent .closeBtnHolder button span {
+        font-size: 10px;
+    }
+    .openingNavbarParent .logoHolder a img {
+        width: 120px;
+        height: 40px;
+    }
+    .listHolder{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: baseline;
+        padding-top: 30px;
+    }
+    .bottomLinksHolder {
+        justify-content: start;
+    }
+    
+    .openingNavbarParent {
+        overflow-y: scroll;
+    } 
+
+    .topLogoBarHolder {
+        width: 94%;
+    }
+    .openingNavbarParent.navBarOpened{
+        display: none;
+    }
+
+    .navbarParent {
+        background: var(--c1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 40px 40px 40px;
+        position: fixed;
+        right: 0px;
+        left: unset;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        animation: myOpening;
+        animation-duration: 1s;
+        display: none;
+    }
+    @keyframes myOpening {
+        from{
+            right: -200px;
+        }
+        to{
+            right: 0;
+        }
+        
+    }
+    .onMobileOpen{
+        display: block;
+    }
+    .mobileSoundButtonMainDiv{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #closeButtonLeft{
+        transition: 0.8s;
+        display: none;
+        opacity: 0;
+    }
+    .closeOpened{
+        display: block !important;
+        animation: mycloseOpen;
+        animation-duration: 8s;
+        opacity: 1 !important;
+        margin-right: 15px;
+    }
+    @keyframes mycloseOpen {
+        from{
+            display: none;
+            opacity: 0;
+        }
+        to{
+            display: block;
+            opacity: 1;
+        }
+    }
+
+
+
+ }
+
+ @media (min-width: 481px) and (max-width: 575px) {
+    .rightDisplayMain .rightTextHolder .tracesMainDiv {
+        padding: 0px 0px;
+    }
+
+    .paddingL {
+        padding-left: 0px;
+    }
+
+    .head1 {
+        font-size: 50px;
+        letter-spacing: 1px;
+    }
+    .mainHeading {
+        font-size: 44px;
+    }
+
+    .rightDisplayMain .rightTextHolder {
+        padding: 50px 0px 0px 0px;
+    }
+
+   .rightDisplayMain .artGalleryTabs {
+        margin-left: 120px;
+   }
+
+    .buttonHolder {
+        /* justify-content: start !important; */
+        display: inline-flex;
+    }
+    .artGalleyButtonHolder{
+        display: flex;
+    }
+
+    .rightDisplayMain .paddingRight {
+        padding-right: unset;
+    }
+    .rightDisplayMain .rightTextHolder .showTabs {
+        padding: 40px 0px 0px 0px;
+    }
+    .somePadding{
+        padding-left: 80px;
+    }
+
+    .mainMenu li {
+        margin-bottom: 10px;
+    }
+    .logoAndBurgerIcon {
+        padding: 30px 30px 0px 35px;
+    }
+    .navbarParent {
+        padding: 90px 30px 30px 30px;
+    }
+    .rightDisplayMain .createConnectionTabs {
+        padding-right: unset;
+    }
+
+    .topLogoDisplay{
+        padding-left: 0px;
+    }
+    .soundButtonHolder{
+        display: none;
+    }
+
+    .smallerScreenSoundButton{
+        display: none;
+    }
+    .smallerScreenSoundButton{
+        border: solid 1px var(--c2);
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+        align-self: center;
+        margin-right: 10px;
+    }
+    
+    
+    .smallerScreenSoundButton:hover{
+        background-color: var(--c2);
+    }
+    .smallerScreenSoundButton:hover i{
+        color: var(--c4);
+    }
+    .smallerScreenSoundButton i{
+        color: var(--c2);
+    }
+    .logoAndBurgerIcon .menuIcon{
+        display: flex;
+        flex-direction: row; 
+    }
+
+
+    .logoAndBurgerIcon :nth-child(1) { order: 3; }
+    .logoAndBurgerIcon :nth-child(2) { order: 1; }
+    .logoAndBurgerIcon :nth-child(3) { order: 2; }
+
+    .logoAndBurgerIcon .menuIcon button .menuLine1 {
+        order: 1;
+    }
+    .logoAndBurgerIcon .menuIcon button .menuLine2 {
+        order: 2;
+    }
+    .logoAndBurgerIcon .menuIcon button .menutext {
+        order: 3;
+    }
+    .logoAndBurgerIcon .menuIcon button {
+        align-self: center;
+    }
+
+    .rightDisplayMain {
+        justify-content: center !important;
+    }
+    .mainHeading{
+        text-align: center;
+    }
+    .pragraph{
+        text-align: center;
+    }
+    .buttonHolder {
+        display: flex;
+    }
+
+    .rightDisplayMain .pragraphHolder {
+        justify-content: center;
+    }
+    .somePadding {
+        padding-left: unset;
+    } 
+    .rightDisplayMain .artGalleryTabs {
+        margin-left: unset;
+    }
+    .buttonAlignForCreateConncection{
+        align-self: center;
+    } 
+    .languageHolder{
+        display: none;
+    }  
+    .closeBtnHolder{ order: 2; }
+    .logoHolder{ order: 1; }
+    .textContentHolder1 .largeButtonHolder {
+        justify-content: center;
+    }
+    .textContentHolder1 .largeButtonHolder a {
+        margin-left: unset;
+    }
+    .textContentHolder1{
+        margin-top: 150px;
+    }
+ 
+    .listHolder .listTop {
+        padding-bottom: 0px;
+    }
+    .listHolder ul li a {
+        font-size: 28px;
+    }
+    .openingNavbarParent .closeBtnHolder button i {
+        font-size: 30px;
+    }
+    .openingNavbarParent .closeBtnHolder button span {
+        font-size: 10px;
+    }
+    .openingNavbarParent .logoHolder a img {
+        width: 120px;
+        height: 40px;
+    }
+    .listHolder{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: baseline;
+        padding-top: 30px;
+    }
+    .bottomLinksHolder {
+        justify-content: space-between;
+    }
+    .openingNavbarParent {
+        overflow-y: scroll;
+    }
+    .topLogoBarHolder {
+        width: 94%;
+    }
+    .openingNavbarParent.navBarOpened{
+        display: none;
+    }
+
+    .navbarParent {
+        background: var(--c1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 40px 40px 40px;
+        position: fixed;
+        right: 0px;
+        left: unset;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        animation: myOpening;
+        animation-duration: 1s;
+        display: none;
+    }
+    @keyframes myOpening {
+        from{
+            right: -200px;
+        }
+        to{
+            right: 0;
+        }
+        
+    }
+    .onMobileOpen{
+        display: block;
+    }
+    .mobileSoundButtonMainDiv{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #closeButtonLeft{
+        transition: 0.8s;
+        display: none;
+        opacity: 0;
+    }
+    .closeOpened{
+        display: block !important;
+        animation: mycloseOpen;
+        animation-duration: 8s;
+        opacity: 1 !important;
+        margin-right: 15px;
+    }
+    @keyframes mycloseOpen {
+        from{
+            display: none;
+            opacity: 0;
+        }
+        to{
+            display: block;
+            opacity: 1;
+        }
+    }
+
+ }
+
+ @media (max-width: 480px) {
+    .rightDisplayMain .rightTextHolder .tracesMainDiv {
+        padding: 0px 0px;
+    }
+    .topLogoBarHolder {
+        width: 94%;
+    }
+
+
+    .paddingL {
+        padding-left: 0px;
+    }
+
+    .head1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+    .mainHeading {
+        font-size: 32px;
+    }
+
+    .rightDisplayMain .rightTextHolder {
+        padding: 50px 0px 0px 0px;
+    }
+
+   .rightDisplayMain .artGalleryTabs {
+        margin-left: 120px;
+   }
+
+    .buttonHolder {
+        /* justify-content: start !important; */
+        display: inline-flex;
+    }
+    .artGalleyButtonHolder{
+        display: flex;
+    }
+
+    .rightDisplayMain .paddingRight {
+        padding-right: unset;
+    }
+    .rightDisplayMain .rightTextHolder .showTabs {
+        padding: 20px 20px 0px 20px;
+    }
+    .somePadding{
+        padding-left: 80px;
+    }
+
+    .mainMenu li {
+        margin-bottom: 25px;
+    }
+    .logoAndBurgerIcon {
+        padding: 20px 20px 0px 20px;
+    }
+    .navbarParent {
+        padding: 90px 30px 30px 30px;
+    }
+    .rightDisplayMain .createConnectionTabs {
+        padding-right: unset;
+    }
+
+    .topLogoDisplay{
+        padding-left: 0px;
+    }
+    .soundButtonHolder{
+        display: none;
+    }
+
+    .smallerScreenSoundButton{
+        display: none;
+    }
+    .smallerScreenSoundButton{
+        border: solid 1px var(--c2);
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.5s;
+        align-self: center;
+        margin-right: 10px;
+    }
+    
+    
+    .smallerScreenSoundButton:hover{
+        background-color: var(--c2);
+    }
+    .smallerScreenSoundButton:hover i{
+        color: var(--c4);
+    }
+    .smallerScreenSoundButton i{
+        color: var(--c2);
+    }
+    .logoAndBurgerIcon .menuIcon{
+        display: flex;
+        flex-direction: row; 
+    }
+
+
+    .logoAndBurgerIcon :nth-child(1) { order: 3; }
+    .logoAndBurgerIcon :nth-child(2) { order: 1; }
+    .logoAndBurgerIcon :nth-child(3) { order: 2; }
+
+    .logoAndBurgerIcon .menuIcon button .menuLine1 {
+        order: 1;
+    }
+    .logoAndBurgerIcon .menuIcon button .menuLine2 {
+        order: 2;
+    }
+    .logoAndBurgerIcon .menuIcon button .menutext {
+        order: 3;
+    }
+    .logoAndBurgerIcon .menuIcon button {
+        align-self: center;
+    }
+
+  
+    .rightDisplayMain {
+        justify-content: center !important;
+    }
+    .mainHeading{
+        text-align: center;
+    }
+    .pragraph{
+        text-align: center;
+    }
+    .buttonHolder {
+        display: flex;
+    }
+
+    .rightDisplayMain .pragraphHolder {
+        justify-content: center;
+    }
+    .somePadding {
+        padding-left: unset;
+    } 
+    .rightDisplayMain .artGalleryTabs {
+        margin-left: unset;
+    }
+    .buttonAlignForCreateConncection{
+        align-self: center;
+    } 
+    .languageHolder{
+        display: none;
+    }  
+    .closeBtnHolder{ order: 2; }
+    .logoHolder{ order: 1; }
+    .textContentHolder1 .largeButtonHolder {
+        justify-content: center;
+    }
+    .textContentHolder1 .largeButtonHolder a {
+        margin-left: unset;
+    }
+ 
+    .textContentHolder1{
+        margin-top: 80px;
+    }
+
+    .listHolder .listTop {
+        padding-bottom: 0px;
+    }
+    .listHolder ul li a {
+        font-size: 24px;
+    }
+    .openingNavbarParent .closeBtnHolder button i {
+        font-size: 30px;
+    }
+    .openingNavbarParent .closeBtnHolder button span {
+        font-size: 10px;
+    }
+    .openingNavbarParent .logoHolder a img {
+        width: 120px;
+        height: 40px;
+    }
+    .listHolder{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: baseline;
+        padding-top: 30px;
+    }
+    .bottomLinksHolder {
+        justify-content: space-between;
+    }
+    
+    .openingNavbarParent {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 10px;
+    } 
+    .topLogoDisplay .logoHolder img {
+        width: 120px;
+        height: 40px;
+    }
+
+    .buttonHolder .explore {
+        width: 160px;
+        height: 70px;
+        font-size: 16px;
+    }
+    .textContentHolder1 .largeButtonHolder a {
+        width: 150px;
+        height: 60px;
+        font-size: 16px;
+        margin-left: unset;
+    }
+    .bottomLinksHolder .bottomList1 li {
+        padding-right: 5px;
+    }
+    .bottomLinksHolder .socialLinks a {
+        width: 20px;
+        height: 20px;
+        margin: 0px 3px;
+    }
+    .bottomLinksHolder .socialLinks a i {
+        font-size: 16px;
+    }
+
+
+    .openingNavbarParent.navBarOpened{
+        display: none;
+    }
+
+    .navbarParent {
+        background: var(--c1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 100px 40px 40px 40px;
+        position: fixed;
+        right: 0px;
+        left: unset;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        animation: myOpening;
+        animation-duration: 1s;
+        display: none;
+    }
+    @keyframes myOpening {
+        from{
+            right: -200px;
+        }
+        to{
+            right: 0;
+        }
+        
+    }
+    .onMobileOpen{
+        display: block;
+    }
+    .mobileSoundButtonMainDiv{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    .topLogoBarHolder {
+        width: 94%;
+    }
+    .openingNavbarParent.navBarOpened{
+        display: none;
+    }
+
+    .navbarParent {
+        background: var(--c1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 40px 0px 40px;
+        position: fixed;
+        right: 0px;
+        left: unset;
+        top: 0;
+        bottom: 0;
+        z-index: 10;
+        animation: myOpening;
+        animation-duration: 1s;
+        display: none;
+    }
+    @keyframes myOpening {
+        from{
+            right: -200px;
+        }
+        to{
+            right: 0;
+        }
+        
+    }
+    .onMobileOpen{
+        display: block;
+    }
+    .mobileSoundButtonMainDiv{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    #closeButtonLeft{
+        transition: 0.8s;
+        display: none;
+        opacity: 0;
+    }
+    .closeOpened{
+        display: block !important;
+        animation: mycloseOpen;
+        animation-duration: 8s;
+        opacity: 1 !important;
+        margin-right: 15px;
+    }
+    @keyframes mycloseOpen {
+        from{
+            display: none;
+            opacity: 0;
+        }
+        to{
+            display: block;
+            opacity: 1;
+        }
+    }
+
+ }

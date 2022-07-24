@@ -1,0 +1,295 @@
+/*colors & fonts */
+:root{
+    --p: rgba(247,168,133,1);
+    --s1: rgb(43,48,71);
+    --s2: rgb(12,14,20);
+    --s3: rgba(224, 141, 102, 1);
+    --s4: rgb(204,204,204);
+    --s5: rgba(253,225,212,1);
+/*    --s6: #111111;*/
+/*    --s7: #cccccc;*/
+    
+    
+    --k: 'Karla', sans-serif;
+
+
+}
+
+body{
+
+    background-size: contain;
+    background-repeat:no-repeat;
+   background-image: linear-gradient(rgba(43, 48, 71, 0.4), rgba(43, 48, 71, 0.4)), url(../images/body_bg.jpg);
+} 
+
+    
+}
+
+.girl_top_img_holder{
+    text-align: center
+}
+.girl_top_img_holder img{
+    width: 100%;
+    max-width: 150px;
+}
+ 
+.girl_image_holder{
+/*    text-align: center;*/
+}
+
+.second_side_box{
+    background: var(--p);
+}
+.text_holder_box{}
+.text_holder_box h1{
+    font-family: var(--k);
+    font-size: 56px;
+    font-weight: bold;
+    color: #fff;
+}
+.text_holder_box p{
+    font-family: var(--k);
+    font-size: 20px;
+    color: #fff;
+}
+ 
+.signature_holder{
+    text-align: left;
+}
+.signature_holder img{
+    width: 80%;
+    max-width: 200px;
+}
+.subscribe_button{
+    background: var(--s1);
+    border-color: var(--s1);
+    color: #fff;
+    font-family: var(--k);
+    font-size: 14px;
+    font-weight: bold;
+    outline: 0;
+}
+.subscribe_button:hover{
+    background-color: var(--s2);
+}
+.section_two{
+    background: #fff;
+}
+.section2_image_holder img{
+    width: 100%
+}
+.guid_box h6,h1,p,ul,button{
+    font-family: var(--k);
+}
+.guid_box h6{
+    font-size: 20px;
+    color: var(--s3);
+}
+.guid_box h1{
+    font-size: 40px;
+    color: var(--s2);
+}
+.guid_box p{
+    font-size: 18px;
+    color: var(--s1);
+}
+.guid_box ul{
+    font-size: 18px;
+    color: var(--s2);
+    list-style-type: none;
+    padding: unset;
+}
+.guid_box ul li::before{
+    font-family: "Font Awesome 5 Pro";
+    content: "\f004";
+    padding-right: 10px;
+    color: var(--s3);
+
+}
+
+.guid_box button{
+    background: var(--s1);
+    color: #fff;
+    font-weight: bold;
+}
+.guid_box button:hover{
+     background: var(--s2);   
+}
+.top_text h6{
+    font-size: 20px;
+    font-family: var(--k);
+    font-weight: bold;
+    color: var(--s3);
+}
+.top_text h1{
+    font-size: 40px;
+    font-family: var(--k);
+    font-weight: bold;
+}
+.line_{
+    height: 1px;
+    background: var(--s3);
+    display: block;
+}
+.card_holder img{
+    width: 100%;
+    max-width: 150px;
+}
+.card_holder h5,p{
+    font-family: var(--k);
+}
+.card_holder h5{
+    font-size: 24px;
+    color: var(--s2);
+    font-weight: bold;
+}
+.card_holder p{
+    font-size: 18px;
+    color: var(--s1);
+}
+
+.subscribe_and_newsletter{
+    background: var(--p);
+}
+.subscribe_and_newsletter h1{
+    font-family: var(--k);
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+.subscribe_and_newsletter button{
+    font-family: var(--k);
+    font-size: 20px;
+    background: var(--s1);
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+    font-weight: bold;
+    min-height: 48px;
+    min-width: 96px;
+    padding: 14px 110px;
+    border:none;
+}
+.subscribe_and_newsletter button:hover{
+    background: var(--s2);
+}
+.contact_info .contact p,a{
+    font-family: var(--k);
+    font-size: 16px;
+    color: var(--s2);
+}
+.contact_info .contact a{
+    font-weight: 900;
+    color: var(--s3);
+    text-decoration: underline;
+}
+.contact_info .contact a:hover{
+    text-decoration: none
+}
+.bottom_logo_holder img{
+    width: 100%;
+    max-width: 100px;
+}
+.social_icons a{
+    width: 48px;
+    height: 48px;
+}
+.social_icons a:hover{
+    background: var(--s4);
+    color: var(--s2);
+}
+.social_icons a i{
+    font-size: 1.5rem
+}
+footer{
+    background: var(--s5);
+}
+
+.modal_img_holder img{
+    width: 100%;
+    max-width: 150px;
+}
+.modal_text_heading h1{
+    font-family: var(--k);
+    font-size: 33px;
+    font-weight: bold;
+    color: #fff;
+}
+.modal_inputs button{
+    background: var(--s1);
+    border: none;
+    outline: 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.modal_inputs button:hover{
+    background: var(--s2);
+}
+.bg_to_modal{    
+    background-image: linear-gradient(rgba(224, 141, 102, 0.79), rgba(224, 141, 102, 0.79)), url(../images/modal_background_image.jpg);
+    
+        background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
+.modal_close_button{
+    padding: unset !important;
+    border-radius: 50%;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+/*    background: #dde2eb;*/
+    
+}
+.modal_close_button:hover{
+    background: #dde2eb; 
+}
+
+
+@media (min-width: 993px) and (max-width: 1199px) 
+{
+    .guid_box ul{  font-size: 16px;  }
+}
+
+/*for  tablets*/
+@media (min-width: 769px) and (max-width: 992px) {
+    .text_holder_box h1{ font-size: 40px;  }
+.text_holder_box p{      font-size: 18px;  }
+  .guid_box ul{  font-size: 16px;  }
+    
+    
+} 
+
+/* For large Mobile & small tablet*/
+/*@media (min-width: 481px) and (max-width: 768px) {}*/
+
+/*mobile*/
+@media (min-width: 320px) and (max-width: 480px) {
+ .girl_top_img_holder img{
+    width: 100%;
+    max-width: 120px;
+}
+    
+.text_holder_box h1{  font-size: 36px;  }
+.text_holder_box p{   font-size: 18px;  }
+
+.guid_box h6{    font-size: 18px;  }
+.guid_box h1{    font-size: 30px;  }
+.guid_box p{     font-size: 18px;  }
+.guid_box ul{    font-size: 15px;  }
+    
+.top_text h6{    font-size: 18px;  }
+.top_text h1{    font-size: 30px;  }
+
+.card_holder h5{ font-size: 21px;  }
+.card_holder p{  font-size: 16px;  }
+      
+.subscribe_and_newsletter h1{ font-size: 30px; }
+.subscribe_and_newsletter button{ padding: 14px 80px;}
+.modal_text_heading h1{ font-size: 24px;  }
+    
+  
+}

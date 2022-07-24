@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual experience</title>
+
+
+         <!-- styles sheet ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+         
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+         <!-- Bootstrap style sheet -------->
+         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+         <link rel="stylesheet" href="assets/plugins/bootstrap/bootstrap.min.css">
+
+   
+         
+         <link rel="stylesheet" href="assets/css/style.css">
+         <!-- style sheet ended =====================================================================================-->
+
+
+</head>
+<body>
+
+    <!-- Left Side NavBar Fixed Container ----------------------------------->
+    <nav class=" navbarParent " id="mobileLeftSideOpening">
+        <div class="mainListDiv">
+            <ul class="nav   mainMenu" id="myTab" role="tablist">
+                <li class="" role="presentation">
+                  <a class="listAnchor active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" onclick="centerShow('home-tab')">
+                    <div class="textRotate">
+                        Managers
+                    </div>  
+                    </a>
+                </li>
+                <li class="" role="presentation">
+                  <a class="listAnchor" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" onclick="centerShow('profile-tab')">
+                      <div class="textRotate">
+                        Event
+                      </div>
+                    </a>
+                </li>
+                <li class="" role="presentation">
+                  <a class="listAnchor" id="artGallery-tab" data-toggle="tab" href="#artGallery" role="tab" aria-controls="artGallery" aria-selected="false" onclick="centerShow('artGallery-tab')">
+                    <div class="textRotate">
+                        Training
+                    </div>
+                  </a>
+                </li>
+
+                <li class="mb-0" role="presentation">
+                    <a class="listAnchor" id="createConnection-tab" data-toggle="tab" href="#createConnection" role="tab" aria-controls="createConnection" aria-selected="false" onclick="centerShow('createConnection-tab')">
+                        <div class="textRotate">
+                            Strategy
+                        </div>
+                    </a>
+                  </li>
+
+            </ul>
+        </div>
+
+        <div class="mobileSoundButtonMainDiv">
+            <div class="soundButton">
+              <i class="fal fa-wave-sine"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Left Side NavBar Fixed Container Ended ----------------------------->
+
+
+    <!-- Logo and MenuBurger Icon Fixed Container --------------------------->
+    <div class="logoAndBurgerIcon" id="mobileLogoHolderPaddingSet">
+        <div class="menuIcon">
+            <button id="navBarOpenBtn" role="button">
+                <span class="menuLine1"></span>
+                <span class="menuLine2"></span>
+                <span class="menutext">MENU</span>
+            </button>
+
+            <button class="close leftCloseMobile" role="button" id="closeButtonLeft">
+                <i class="fal fa-times"></i>
+            </button>
+
+            <!-- <a class=" smallerScreenSoundButton">
+                <i class="fal fa-wave-sine"></i>
+            </a> -->
+        </div>
+        <div class="topLogoDisplay">
+            <div class="logoHolder">
+                <a href="#">
+                    <img src="assets/images/svgexport-1.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="soundButtonHolder ">
+            <button class="soundButton soundMobile">
+                <i class="fal fa-wave-sine"></i>
+            </button>
+         </div>
+    </div>
+    <!-- Logo and MenuBurger Icon Fixed Container --------------------------->
+
+
+    <!-- main opener NavBar Fixed Container  ----------------------------------------->
+    <div class="openingNavbarParent" id="opnerNavBarDiv">
+
+        <div class="topContentHolder d-flex justify-content-between topLogoBarHolder">
+            <div class="closeBtnHolder">
+                <button class="close" role="button" id="closeButton">
+                    <i class="fal fa-times"></i>
+                    <span>Close</span>
+                </button>
+            </div>
+
+            <div class="logoHolder">
+                <a href="#">
+                    <img src="assets/images/svgexport-1.svg" alt="">
+                </a>
+            </div>
+
+            <div class="languageHolder">
+                <!-- <a href="">FR</a> -->
+            </div>
+        </div>
+
+
+        <div class="container-fluid myStyleForClick">
+            
+            <!-- <div class="topContentHolder d-flex justify-content-between">
+                <div class="closeBtnHolder">
+                    <button class="close" role="button" id="closeButton">
+                        <i class="fal fa-times"></i>
+                        <span>Close</span>
+                    </button>
+                </div>
+    
+                <div class="logoHolder">
+                    <a href="#">
+                        <img src="assets/images/svgexport-1.svg" alt="">
+                    </a>
+                </div>
+    
+                <div class="languageHolder">
+                   
+                </div>
+            </div> -->
+
+            <div class="mainContainerOfText">
+                <div class="row">
+                    <div class="col-md-6 col-12 lefSideColumn">
+                        <div class="textContentHolder1">
+                            <h1 class="mainHeading">
+                                <span class="head1">Experience</span> <br>
+                                <span class="head2 paddingL pUnsetForLarge">Canada in Dubai</span>
+                            </h1>
+                            <div class="largeButtonHolder">
+                                <a href="#">
+                                    Discover our
+                                    pavilion
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 col-12 rightSideColumn">
+                        <div class="rightSideTextHolder">
+                            <div class="listHolder">
+                                <h6 class="listTop">Discover Canada</h6>
+                                <ul>
+            
+                                    <li><a href="#">Invest  </a></li>
+                                    <li><a href="#">Do business  </a></li>
+                                    <li><a href="#">Live  </a></li>
+                                    <li><a href="#">Study  </a></li>
+                                    <li><a href="#">Visite  </a></li>
+                                </ul>
+                            </div>
+            
+                            <div class="bottomLinksHolder">
+                                <ul class="bottomList1">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Media</a></li>
+                                </ul>
+                                <div class="socialLinks">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main opener NavBar Fixed Container Ended  =================================-->
+
+
+    <!-- Right Text Displayer -->
+    <div class="container-fluid height100VH  paddingLeft">
+        <div class="rightDisplayMain " id="tabsUpperDiv">
+            <div class="rightTextHolder ">
+                <div class="tab-content" id="myTabContent">
+                    <!-- tab1 ========================-->
+                    <div class="tab-pane fade show active tracesMainDiv" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h1 class="mainHeading">
+                            <span class="head1 paddingL">Event</span>
+                            <span class="head2">Managers</span>
+                        </h1>
+                        <div class="pragraphHolder">
+                            <p class="pragraph">
+                                Create momentous virtual experiences for engaging and connecting with communities.
+                            </p>
+                        </div>
+                        <div class="buttonHolder">
+                            <button class="explore">
+                                Explore
+                            </button>
+                        </div>
+                    </div>
+                    <!-- tab2 ========================-->
+                    <div class="tab-pane fade show showTabs" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h1 class="mainHeading">
+                            <span class="head1 paddingL">Event</span>
+                            <span class="head2">Production</span>
+                        </h1>
+                        <div class="pragraphHolder paddingRight">
+                            <p class="pragraph maxWidth_430">
+                                We collaborate with you to create a memorable online event. We have expertise in arranging online conferences, workshops, galas, meetings and team building events.
+                            </p>
+                        </div>
+                        <div class="buttonHolder somePadding">
+                            <button class="explore">
+                                Launch
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- tab3 ========================-->
+                    <div class="tab-pane fade artGalleryTabs" id="artGallery" role="tabpanel" aria-labelledby="artGallery-tab">
+                        <h1 class="mainHeading text-center">
+                            <span class="head1 ">Virtual</span>
+                            <span class="head2">Training</span>
+                        </h1>
+                        <div class="pragraphHolder artGalleryPragraphHolder">
+                            <p class="pragraph widthMax artGalleryPragraph">
+                                We provide contemporary virtual management solutions. We increase engagement, connection and accessibility of your community members with well-planned solutions.
+                            </p>
+                        </div>
+                        <div class="buttonHolder artGalleyButtonHolder">
+                            <button class="explore">
+                                Visit
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- tab4 ========================-->
+                    <div class="tab-pane fade createConnectionTabs" id="createConnection" role="tabpanel" aria-labelledby="createConnection-tab">
+                        <h1 class="mainHeading text-center ">
+                            <span class="head1 paddingL">Digital</span>
+                            <span class="head2">Strategy</span>
+                        </h1>
+                        <div class="pragraphHolder createConnectionPragraphHolder">
+                            <div class="maxWidth_430 createConncetionTabsText">
+                                <p class="pragraph ">
+                                    We offer professional consultancy for strategizing networking, fostering collaboration, and executing solutions for virtual events.
+                                </p>
+
+                                <div class="buttonHolder buttonAlignForCreateConncection">
+                                    <button class="explore">
+                                        Start
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Right Text Displayer ended -->
+
+
+
+
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <script src="assets/plugins/popper/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+
+    <script src="assets/js/myscript.js"></script>
+</body>
+</html>

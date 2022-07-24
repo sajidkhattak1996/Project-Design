@@ -1,0 +1,791 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+:root{
+    --po: font-family: 'Poppins', sans-serif;
+    --ro: font-family: 'Roboto', sans-serif;
+    --c1: #0d13d7;
+    --c2: #1453ff;
+    --c3: #677294;
+    --c4: #333697;
+    --d4: #6b6969;
+    --d3: #222d39;
+    --w1: #f3f3f3;
+    --w2: #efeffe;
+    --w3: #ebebf8;
+
+    /* paragraph size */
+    --ps: 16px;
+    --pfw: 400;    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+}
+
+/* paragraph margin removed */
+.pmr{ margin: unset; }
+
+
+/* spacing controled */
+.my_pt{ padding-top: 30px;}
+.my_box_p{padding: 30px;}
+.top_p_h{padding-top: 30px;}
+
+.service_section_spacing ,
+.whyUs_section_spacing,
+.portfilio_section_spacing
+{
+     padding-top: 60px; 
+ }
+.project_section_spacing,
+.clientfeedback_section_spacing
+{
+    padding-top: 100px;
+}
+
+
+/* spacing ended */
+
+/* header start =================================================================*/
+header{
+    padding: 20px 0px 0px 0px;
+    background-image: url('../images/header_sliderPath_final.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 710px;
+}
+
+header .contactButton{
+    background: white;
+    color: black;
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: unset;
+    padding: 0px 20px 2px 20px;
+    font-family: var(--po);
+    font-weight: 500;
+    font-size: 18px;
+    transition: ease-in-out 0.5s;
+}
+header .contactButton:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: solid 1px rgb(0, 0, 0);
+}
+header .navBarList{
+    font-family: var(--po);
+    font-weight: 500;
+    font-size: 18px;
+}
+header .navBarList li a{
+    color: white !important;
+    line-height: 15px;
+    transition: 0.122s;
+    font-size: 14px;
+}
+header .MobileSetLogo img{ width: 80%; }
+header .navBarList .active{ border-bottom: solid 2px var(--c1);}
+header .navBarList li a:hover{ border-bottom: solid 2px var(--c1);}
+
+header .headerContentHolder h1{
+    font-weight: 500;
+    font-size: 30px;
+}
+header .headerContentHolder p{
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: var(--w1);
+}
+header .headerContentHolder .buttonsHolder a{ font-weight: 500; }
+header .headerContentHolder .buttonsHolder .downloadNowButton{
+    border-radius: 10px;
+    outline: 0;
+}
+header .headerContentHolder .buttonsHolder .exploreMoreButton{ color: white;}
+header .headerContentHolder .buttonsHolder .exploreMoreButton:hover{ color: rgb(0, 0, 0); }
+header .headerContentHolder .buttonsHolder .exploreMoreButton:hover i{
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    transition:ease-in-out 0.5s;  
+}
+/* header ended ========================================================================================*/
+
+/* service section start ===============================================================================*/
+
+.servicesSection .serviceHeading h1{
+    font-family: var(--po);
+    font-weight: 500;
+    font-size: 36px;
+     
+}
+.servicesSection .serviceHeading p{
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: var(--d4);
+}
+.servicesSection .serviceCardHolder h5{
+    font-weight: 500;
+    font-size: 24px;
+}
+.servicesSection .serviceCardHolder p{
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: var(--d4);
+}
+.serviceCardHolder{
+    box-shadow: rgb(0 0 0 / 10%) 6px 8px 40px;
+    border-radius: 12px;
+}
+/* service section end ==================================================================================*/
+
+/* about us section start  ===============================================================================*/
+.whyUs .whyUsHeading{
+    padding: 0px 200px;
+}
+.whyUs .whyUsHeading h1{
+    font-family: var(--po);
+    font-weight: 500;
+    font-size: 36px;
+}
+.whyUs .whyUsHeading p{
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: var(--d4);
+}
+.whyUs .whyUsContentHolder{
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.whyUs .whyUsContentHolder h1{
+    font-family: var(--po);
+    font-weight: 600;
+    font-size: 36px;
+    color: var(--d3);
+}
+.whyUs .whyUsContentHolder p{
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: var(--d4);
+}
+.whyUs .whyUsContentHolder .getMoreButton{
+    color: #707070;
+    border-radius: 12px;
+}
+.whyUs .whyUsContentHolder .getMoreButton:hover{
+    color: white;
+}
+.whyUs .sideBgImageHolder{
+    position: absolute;
+    top: 0;
+    left: -350px;
+    transform: translate(0, -5%);
+}
+.whyUs .leftMobileImage{
+    background-image: url(../images/mobileimage\ here.png);
+    background-repeat: no-repeat;
+    min-height: 500px;
+    background-size: contain;
+    position: relative;
+    z-index: 2;
+}
+/* about us section ended  ===============================================================================*/
+
+/* project  section start  ===============================================================================*/
+.completeProjucts .projectHeading h1{
+    font-family: var(--po);
+    font-size: 36px;
+    font-weight: 500;
+}
+.completeProjucts .projectHeading p{
+    font-family: var(--po);
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: var(--d4);
+}
+.projectContentHolder .projectIcon i{
+    font-size: 60px;
+    color: var(--c2);
+}
+.projectContentHolder .projectText h6{
+    font-family: var(--po);
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--c2);
+}
+.projectContentHolder .projectText p{
+    font-family: var(--po);
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--c2);
+}
+.projectContentHolder .projectText h6 i{
+    font-weight: 400;
+    font-size: 17px;
+}
+/* project  section ended  ===============================================================================*/
+
+/* portfolio  section start ===============================================================================*/
+.ourPortfolio h1{
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+}
+.ourPortfolio p{
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: var(--d4);
+    text-align: center;
+    padding: 0px 200px;
+}
+.ourPortfolio{
+    overflow-x: hidden;
+}
+.ourPortfolio .rightSideBgImageHolder{
+    position: absolute;
+    height: 400px;
+    width: auto;
+    top: 48%;
+    right: -104px;
+    transform: translate(0, -50%);
+}
+.ourPortfolio .rightSideBgImageHolder img{
+    height: 100%;
+    object-fit: cover;
+}
+/* portfolio  section ended ===============================================================================*/
+
+/* client feedback section start ==========================================================================*/
+.clientFeedBack .feedBackTextHolder h1{
+    font-weight: 500;
+    font-size: 36px;
+}
+.clientFeedBack .feedBackTextHolder p{
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: var(--d4);
+}
+.clientFeedBack .clientFeedBackButton a{
+    background: var(--w1);
+    color: var(--d4);
+    font-family: var(--po);
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.clientFeedBack .clientFeedBackButton a:hover{
+    background: var(--d4);
+    color: var(--w1);
+}
+.clientFeedBack .clientFeedBackButton{
+    position: relative;
+    text-align: right;
+    padding-top: 40px;
+}
+.feedBackReviewHolder .fbg{ background: var(--w2);}
+.feedBackReviewHolder .reviewStar i{ color: rgb(247, 247, 0);}
+.feedBackReviewHolder .reviewContentHolder{ padding: 50px 0px 0px 80px;}
+.feedBackReviewHolder .reviewText p{
+    font-family: var(--po);
+    font: 400;
+    font-size: 16px;
+    color: var(--d3);
+    padding-right: 30%;
+}
+.feedBackReviewHolder .reviewName h6{
+    font: 400;
+    font-size: 16px;
+    color: black
+}
+.feedBackReviewHolder .revieEmail p{
+    font-family: var(--po);
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: var(--d3);
+}
+/* client feedback section ended ===============================================================================*/
+
+/* Contact us section start  ====================================================================================*/
+.contactUs{
+    position: relative;
+    top: 85px;
+}
+.contactUs .contactusOutLineContainer{ background: var(--c4); }
+.contactUs .contactInput{
+    background: white;
+    padding: 15px 15px 15px 20px;
+    height: 60px;
+    position: relative;
+    border-radius: 40px;
+}
+.contactUs .contactInput .contactinput{
+    position: absolute;
+    left: 20px;
+    background: none;
+    outline: 0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--po);
+    background: white;
+    padding: 8px 15px 8px 0px;
+    top: 10px;
+    width: 80%;
+}
+.contactUs .contactInput button{
+    position: absolute;
+    right: 8px;
+    padding: 8px 40px;
+    top: 10px;
+    background: var(--c4);
+    border: black;
+    border-radius: 40px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--po);
+}
+.contactUs .contactusOutLineContainer h1{
+    font-family: var(--po);
+    font-weight: 500;
+    font-size: 28px;
+    color: white;
+}
+.contactUs .contactusOutLineContainer p{
+    font-family: var(--po);
+    font-weight: var(--pfw);
+    font-size: var(--ps);
+    color: white;
+}
+.contactUs .contactusOutLineContainer{
+    padding: 30px 50px;
+    border-radius: 12px;   
+}
+.contactUs .contactInputMobile{ display: none !important; }
+.contactUs .contactInputMobile input,button{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--po);
+}
+/* Contact us section ended ====================================================================================*/
+
+
+/* Footer section start      ====================================================================================*/
+footer{
+    background: var(--w3);
+    padding-top: 115px;
+}
+footer .fLinks ul{
+    list-style: none;
+    padding: unset;
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: var(--po);
+    font-size: 16px;
+}
+footer .fLinks ul li a{
+    text-decoration: none;
+    border-bottom: solid 2px transparent;
+    line-height: 30px;
+    color: var(--d4);
+    transition: 0.5s;
+}
+footer .fLinks ul li a:hover{
+    text-decoration: none;
+    border-bottom: solid 2px var(--d3);
+    line-height: 30px;
+    color: var(--d3);
+}
+footer .fLinks strong{
+    font-family: var(--po);
+    font-weight: 700;
+    font-size: 18px;
+}
+footer .fsocialHolder a{
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    color: var(--d4);
+    border: solid 1px var(--d4);
+    text-decoration: none;
+    outline: 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+footer .fsocialHolder a:hover{
+    background: var(--d4);
+    color: var(--w1);
+    border: solid 1px var(--w1);
+}
+footer .fLinks .fContactLink{ margin-top: 10px; }
+footer .fLinks .fContactLink a,p{
+    font-weight: 600;
+    font-family: var(--po);
+    font-size: 16px;
+    border-bottom: solid 2px transparent;
+    line-height: 30px;
+    color: var(--d4);
+    transition: 0.5s;
+    text-decoration: none;
+}
+footer .fLinks .fContactLink a:hover{
+    border-bottom: solid 2px var(--d3);
+    line-height: 30px;
+    color: var(--d3);
+}
+footer .copyright p,footer .copyright p a,footer .termAndCondition a{
+    font-family: var(--po);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--c3);
+    text-decoration: none;
+}
+footer .termAndCondition a,footer .copyright p a{
+    border-bottom: solid 2px transparent;
+    line-height: 30px;
+    transition: 0.5s;
+}
+footer .copyright p a:hover{  border-bottom: solid 2px var(--c3); }
+footer .termAndCondition a:hover{ border-bottom: solid 2px var(--c3); }
+/* Footer section ended     ====================================================================================*/
+
+
+
+
+
+
+
+
+
+
+/* media quiries started ==================***********************_____________________========================***/
+@media (min-width: 768px) and (max-width: 991px) {
+
+.service_section_spacing ,
+.whyUs_section_spacing,
+.portfilio_section_spacing
+{
+     padding-top: unset; 
+ }
+.project_section_spacing,
+.clientfeedback_section_spacing
+{
+    padding-top: unset;
+}
+
+.my_pt{ padding-top: 40px;}
+    .top_p_h{     padding-top: 10px;}
+    .my_box_p{   padding: 15px;  }
+    .servicesSection .serviceHeading br{ display: none; }
+    .whyUs .sideBgImageHolder{ display: none; }
+    header{ height: 720px}
+
+
+    /*========= fonts size control ===========*/
+    header .headerContentHolder h1{font-size: 28px;}
+    .servicesSection .serviceHeading h1{font-size: 28px;}
+    .whyUs .whyUsHeading h1{font-size: 28px;}
+    .whyUs .whyUsContentHolder h1{ font-size: 28px;}
+    .completeProjucts .projectHeading h1{font-size: 28px;}
+    .ourPortfolio h1{ font-size: 28px; }
+    .clientFeedBack .feedBackTextHolder h1{ font-size: 28px; }
+
+    .ourPortfolio p{  padding: 0px 100px; }
+    .ourPortfolio .rightSideBgImageHolder{  display: none; }
+
+    .feedBackReviewHolder .reviewContentHolder{   padding: 5px 10px 5px 10px; }
+    
+    .feedBackReviewHolder .reviewText p{  padding-right: 0%; }
+    .whyUs .whyUsContentHolder p{ line-height: 1.6;  }
+    .whyUs .whyUsHeading{  padding: 0px 60px; }
+    .contactUs{top: unset; padding: 30px 0px;}
+    footer{ padding-top: 30px; }
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+ .service_section_spacing ,
+.whyUs_section_spacing,
+.portfilio_section_spacing
+{
+     padding-top: unset; 
+ }
+.project_section_spacing,
+.clientfeedback_section_spacing
+{
+    padding-top: unset;
+}
+.my_pt{ padding-top: 40px;}
+    .md_pt{   padding-top: 30px;  }
+    .my_box_p{  padding: 15px }
+    .top_p_h{  padding-top: 10px; }
+
+    .MobileNavbar_bg{
+        background: #8d8fdb;
+        padding-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .servicesSection{  padding-top: 30px; }
+    .servicesSection .serviceHeading br{ display: none; }
+    .whyUs .sideBgImageHolder{ display: none; }
+    .whyUs .leftMobileImageHolder{   display: none;  }
+    header{background-size: contain; height: auto;}
+
+
+    header .headerContentHolder h1{font-size: 24px;}
+    .servicesSection .serviceHeading h1{font-size: 24px;}
+    .whyUs .whyUsHeading h1{font-size: 24px;}
+    .completeProjucts .projectHeading h1{font-size: 24px;}
+    .ourPortfolio h1{ font-size: 24px; }
+    .clientFeedBack .feedBackTextHolder h1{ font-size: 24px; }
+    .whyUs .whyUsContentHolder h1{ font-size: 24px;}
+
+
+    header .headerContentHolder{
+        background: rgba(141,143,219,0.95);
+        border-radius: 12px;
+    }
+    header .headerContentHolder p{   color: white;  }
+    .whyUs .whyUsHeading{  padding: 0px 0px; }
+
+    .ourPortfolio p{  padding: 0px 50px;  }
+    .ourPortfolio .rightSideBgImageHolder{  display: none; }
+     .clientFeedBack .clientFeedBackButton{
+        text-align: center;
+        padding-top: unset;
+    }
+ 
+    .feedBackReviewHolder .reviewContentHolder{   padding: 5px 0px 0px 5px;}
+    .feedBackReviewHolder .reviewText p{  padding-right: 0%; }
+
+    .contactUs{top: 25px;padding-bottom: 52px;}
+
+    footer{ padding-top: 30px; }
+
+    footer .fsocialHolder a {
+        width: 32px;
+        height: 32px;
+        line-height: 33px;
+        font-size: 18px;
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 575px) {
+.service_section_spacing ,
+.whyUs_section_spacing,
+.portfilio_section_spacing
+{
+     padding-top: unset; 
+ }
+.project_section_spacing,
+.clientfeedback_section_spacing
+{
+    padding-top: unset;
+}
+
+
+    .MobileNavbar_bg{
+        background: #8d8fdb;
+        padding-bottom: 10px;
+        border-radius: 15px;
+    }
+    .my_pt{   padding-top: 30px;  }
+    .md_pt{   padding-top: 30px;  }
+    .my_box_p{  padding: 15px }
+    .m_remove_sm{ margin: unset; }
+
+    .servicesSection .serviceHeading br{ display: none; }
+    header{background-size: contain; height: auto;}
+    header .headerContentHolder h1{font-size: 24px; color: white;}
+    .servicesSection .serviceHeading h1{font-size: 24px;}
+    .whyUs .whyUsHeading h1{font-size: 24px;}
+    .completeProjucts .projectHeading h1{font-size: 24px;}
+    .ourPortfolio h1{ font-size: 24px; }
+    .clientFeedBack .feedBackTextHolder h1{ font-size: 24px; }
+    .whyUs .whyUsContentHolder h1{ font-size: 24px;}
+
+    .whyUs .sideBgImageHolder{ display: none; }
+    .whyUs .leftMobileImageHolder{  display: none;  }
+
+
+    header .headerContentHolder{
+        background: rgba(141,143,219,0.95);
+        border-radius: 12px;
+    }
+    header .headerContentHolder p{   color: white; }
+
+    .whyUs .whyUsHeading {   padding: 0px 5%; }
+
+    .ourPortfolio p{  padding: 0px 20px; }
+    .ourPortfolio .rightSideBgImageHolder{  display: none; }
+    .clientFeedBack .clientFeedBackButton{
+        text-align: center;
+        padding-top: unset;
+    }
+
+    .feedBackReviewHolder .reviewContentHolder{    padding: 5px 0px 0px 5px; }
+    .feedBackReviewHolder .reviewText p{   padding-right: 0%; }
+
+    .contactUs{top: 25px;padding-bottom: 52px;}
+    
+    footer{ padding-top: 30px; }
+
+  }
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+ .service_section_spacing ,
+.whyUs_section_spacing,
+.portfilio_section_spacing
+{
+     padding-top: unset; 
+ }
+.project_section_spacing,
+.clientfeedback_section_spacing
+{
+    padding-top: unset;
+}
+
+.imageMobileHeight{
+    max-height: 300px;
+}
+.imageCardMobileHeight{ max-height: 120px; }
+
+    .servicesSection .serviceHeading br{ display: none; }
+    .m_remove_sm{ margin: unset; }
+    .my_pt{ padding-top: 25px;  }
+    .md_pt{  padding-top: 25px; }
+
+    .MobileNavbar_bg{
+        background: #8d8fdb;
+        padding-bottom: 5px;
+        border-radius: 12px;
+    }
+    header{background-size: contain;height: auto;}
+    header .headerContentHolder h1{font-size: 22px;font-weight: bold; color: white;}
+    .servicesSection .serviceHeading h1{font-size: 22px;font-weight: bold;}
+    .whyUs .whyUsHeading h1{font-size: 22px;font-weight: bold;}
+    .completeProjucts .projectHeading h1{font-size: 22px;font-weight: bold;}
+    .ourPortfolio h1{ font-size: 22px;font-weight: bold; }
+    .clientFeedBack .feedBackTextHolder h1{ font-size: 22px;font-weight: bold; }
+    .whyUs .whyUsContentHolder h1{ font-size: 22px;}
+
+    header .headerContentHolder{
+        background: rgba(141,143,219,0.95);
+        border-radius: 12px;
+        border: solid 1px white;
+    }
+    header .headerContentHolder p{   color: white; }
+
+
+    .completeProjucts .projectHeading .pdh1 br{  display: none;}
+    .whyUs .sideBgImageHolder{ display: none; }
+    .whyUs .leftMobileImageHolder{  display: none; }
+
+    .whyUs .whyUsHeading {  padding: 0px 3%; }
+
+    .ourPortfolio p{  padding: 0px 10px; }
+    .ourPortfolio .rightSideBgImageHolder{ display: none; }
+    .clientFeedBack .clientFeedBackButton{
+        text-align: center;
+        padding-top: unset;
+    }
+
+  
+    .contactUs .contactInputMobile{ display: block !important; }
+    .contactUs .contactInput{  display: none ; }
+
+    .feedBackReviewHolder .reviewContentHolder{ padding: 5px 0px 0px 5px;}
+    .feedBackReviewHolder .reviewText p{  padding-right: 0%; }
+
+    .contactUs{top: 25px;padding-bottom: 52px;}
+
+    footer{ padding-top: 30px; }
+    header .MobileSetLogo{width: 50%;}
+    header .MobileSetLogo img{   width: 100%; }
+
+}
+@media (max-width: 319px) {
+
+.service_section_spacing ,
+.whyUs_section_spacing,
+.portfilio_section_spacing
+{
+     padding-top: unset; 
+ }
+.project_section_spacing,
+.clientfeedback_section_spacing
+{
+    padding-top: unset;
+}
+.imageMobileHeight{
+    max-height: 300px;
+}
+.imageCardMobileHeight{ max-height: 120px; }
+
+    header{background-size: contain;height: auto;}
+    header .headerContentHolder h1{font-size: 20px;font-weight: bold; color: white;}
+    .servicesSection .serviceHeading h1{font-size: 20px;font-weight: bold;}
+    .whyUs .whyUsHeading h1{font-size: 20px;font-weight: bold;}
+    .completeProjucts .projectHeading h1{font-size: 20px;font-weight: bold;}
+    .ourPortfolio h1{ font-size: 20px;font-weight: bold; }
+    .clientFeedBack .feedBackTextHolder h1{ font-size: 20px;font-weight: bold; }
+    .m_remove_sm{ margin: unset; }
+
+    .completeProjucts .projectHeading .pdh1 br{   display: none;  }
+    .MobileNavbar_bg{
+        background: #8d8fdb;
+        padding-bottom: 2px;
+        border-radius: 10px;
+    }
+
+    .servicesSection .serviceHeading br{ display: none; }
+    .my_pt{ padding-top: 25px;}
+    .md_pt{  padding-top: 25px;  }
+    .whyUs .sideBgImageHolder{ display: none; }
+    .whyUs .leftMobileImageHolder{   display: none; }
+
+    .whyUs .whyUsHeading {  padding: 0px 1%; }
+ 
+    .ourPortfolio p{  padding: 0px 5px; }
+    .ourPortfolio .rightSideBgImageHolder{  display: none;}
+    .clientFeedBack .clientFeedBackButton{
+        text-align: center;
+         padding-top: unset;
+    }
+
+    .contactUs .contactInputMobile{ display: block !important; }
+    .contactUs .contactInput{  display: none ; }
+
+    .feedBackReviewHolder .reviewContentHolder{ padding: 5px 0px 0px 5px;}
+    
+    .feedBackReviewHolder .reviewText p{  padding-right: 0%; }
+
+    .contactUs{top: 25px;padding-bottom: 52px;}
+    footer{ padding-top: 30px; }
+
+    header .MobileSetLogo{width: 50%;}
+header .MobileSetLogo img{   width: 100%; }
+
+header .headerContentHolder{
+    background: rgba(141,143,219,0.95);
+    border-radius: 12px;
+}
+header .headerContentHolder p{
+    color: white;
+}
+
+
+}

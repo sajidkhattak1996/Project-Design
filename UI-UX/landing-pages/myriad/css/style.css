@@ -1,0 +1,995 @@
+
+:root{
+    /* colors */
+    --p1: #455880;
+    --p2: #1e266d;
+    --p3: #39407f;
+    --blue1: #0855FE; 
+
+
+
+    /* list font size */
+    --tl: 13px;
+
+    /* borders */
+    --b1: 1px solid #0855FE26;
+
+    /* bedgecolors */
+    --bedge_bg: #3ad3781f;
+    --bedge_color: #3ad378;
+    
+
+    /* inputs colors */
+    --in_bg: #0855FE12;
+    --in_br: 1px solid #e7e7e7;
+    --list_check: #12d864
+}
+
+.bl{ border-left: var(--b1);  }
+.br{ border-right: var(--b1);  }
+.bb{ border-bottom: var(--b1);  }
+.bt{ border-top: var(--b1);  }
+.b{  border: var(--b1) }
+
+
+.btnOutLine_0:focus{ outline: none !important;box-shadow: none !important }
+
+
+
+body{
+    font-family: 'Neue Haas Unica';
+    font-weight: 400;
+    color: var(--p1);
+    font-size: 15px;
+}
+
+/* common css started */
+.myContainer{
+    max-width: 1260px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+    h1,h2,h3,h4,h5,h6,.myContainer h1, .myContainer h2, .myContainer h3, .myContainer h4, .myContainer h5, .myContainer h6{
+        font-weight: 500;
+    }
+.paddint_top{
+    padding-top: 150px;
+}
+
+.py_80{ padding-top: 80px;padding-bottom: 80px; }
+.pdb_80{padding-bottom: 80px;}
+
+.f_size{font-size: 34px;}
+.f_size_l{
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 600;
+}
+.font_size2{font-size: 42px;}
+
+.font_size3{font-size: 18px;}
+.font_size4{font-size: 17px;}
+.font_size5{font-size: 16px;}
+
+.fw_400{font-weight: 400;}
+.fw_500{font-weight: 500;}
+.fw_600{font-weight: 600 !important;}
+
+
+/* header started */
+header{
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 33;
+}
+header ul{
+    list-style: none;
+    padding: 0px;
+}
+/* topbar============ */
+header .topbar .leftMenuHolder ul li a{
+    font-weight: 500;
+    font-size: var(--tl);
+    line-height: 20px;
+    color: var(--p1);
+    transition: 0.5s ease-in-out;
+}
+header .topbar .leftMenuHolder ul li a:hover{
+    color: var(--blue1);
+}
+
+header .topbar .rightSocialMenuHolder ul li a{
+    font-weight: 500;
+    font-size: var(--tl);
+    line-height: 33px;
+    color: var(--p1);
+    transition: 0.5s ease-in-out;
+    padding: 0px 12px;
+}
+header .topbar .rightSocialMenuHolder ul li a:hover{ color:var(--blue1); }
+
+    
+
+
+#navbarSupportedContent ul li a{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--p3);
+}
+.menuBar{
+    position: sticky;
+}
+.menuBar .logo{
+    font-weight: 600;
+    color: var(--p3);
+    font-size: 22px;
+    letter-spacing: 2.4px;
+}
+.menuBar .navbarSearch::after{
+    display: none;
+}
+
+.subMenu{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    padding: 50px 0px;
+    top: 70px;
+    transition: 0.3s ease-in-out;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    z-index: 6;
+}
+
+.subMenu .magaMenu .lTop{
+    color: var(--blue1) !important;
+    font-size: 16px;
+    line-height: 35px;
+}
+.subMenu .magaMenu ul li{
+    line-height: 35px;
+}
+.subMenu .magaMenu ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.subMenu .magaMenu ul li a::after{
+    display:block;
+    content: '';
+    border-bottom: solid 2px var(--blue1);  
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
+
+}
+.subMenu .magaMenu ul li a:hover:after{
+    transform: scaleX(1);
+}
+.subMenu .magaMenu ul li a:hover{
+    color: var(--blue1) !important;
+}
+
+.subMenu .magaMenu .service_bedge{
+    background: var(--bedge_bg);
+    color: var(--bedge_color);
+    padding: 0px 6px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 50px;
+}
+
+/* ended============= */
+/* header ended */
+
+
+
+
+/* slider section */
+.sliderSection{
+ background-image: url(../images/sway-landing-bg-1.webp);   
+ background-repeat: no-repeat;
+ height: 750px;
+ width: 100%;
+ background-size: cover;
+position: relative;
+top: 125px;
+}
+.sliderSection .adjusment_contaner{
+    padding: 80px 0px;
+}
+
+.sliderSection .adjusment_contaner .sliderRightContentHolder{
+    padding: 50px 70px 20px 70px;
+    box-shadow: 0 20px 70px #0855FE33;
+    border-radius: 10px;
+    background: white;
+}
+
+.sliderSection .adjusment_contaner .sliderLeftContentHolder{
+    padding: 100px 0px;
+}
+.sliderSection .adjusment_contaner .sliderLeftContentHolder .topSuperHeading{
+    background: #d3defc;
+    border-radius: 50px;
+    font-size: 15px;
+
+}
+
+.sliderSection .adjusment_contaner .sliderLeftContentHolder a{
+    font-size: 16px;
+}
+.sliderSection .adjusment_contaner .sliderLeftContentHolder p{
+    font-weight: 500;
+    line-height: 1.5;
+}
+.sliderSection .adjusment_contaner .sliderLeftContentHolder a i{font-size: 12px;}
+
+.sliderSection .adjusment_contaner .sliderLeftContentHolder .topSuperHeading .span_1{
+    padding: 5px 20px;
+    color: white;
+    background: var(--blue1);
+    border-radius: 50px;
+}
+.sliderSection .adjusment_contaner .sliderLeftContentHolder .topSuperHeading .span_2{
+    color: var(--blue1);
+    background: #d3defc;
+    padding: 5px 20px 5px 25px;
+    border-radius: 50px 50px 50px 50px;
+
+}
+
+
+.sliderSection .sliderRightContentHolder h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--p1);
+}
+
+.sliderSection .sliderRightContentHolder h5{
+    font-weight: 600;
+    color: var(--p1);
+}
+
+.sliderSection .sliderRightContentHolder input{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--p1);
+    background: var(--in_bg);
+    border: var(--in_br);
+}
+.sliderSection .sliderRightContentHolder select{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--p1);
+    background: var(--in_bg);
+    border: var(--in_br);
+}
+
+
+/* slider section ened */
+
+
+
+/* client section  */
+.clientSection .client_slider_owl img{
+    object-fit: none;
+}
+
+.clientSection .client_slider_owl .owl-nav .owl-next, .clientSection .client_slider_owl .owl-nav .owl-prev{
+    font-size: 16px;
+    box-sizing: border-box;
+    /* position: absolute; */
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: var(--in_bg);
+    color: var(--blue1);
+    transition: 0.3s ease-in-out;
+  
+}
+.clientSection .client_slider_owl .owl-nav .owl-next:hover, .clientSection .client_slider_owl .owl-nav .owl-prev:hover{
+    background: var(--blue1);
+    color: white;
+}
+
+
+/* ended */
+
+
+/* more customer sections */
+.moreCustomerSection .customerHeading{
+    text-align: center;
+}
+
+.moreCustomerSection .moreCustomerRightTextHolder h6{
+    line-height: 1.5;
+}
+.moreCustomerSection .moreCustomerRightTextHolder ul{
+    list-style: none;
+    padding-left: unset;
+}
+.moreCustomerSection .moreCustomerRightTextHolder ul li{
+    line-height: 30px;
+}
+
+.moreCustomerSection .moreCustomerRightTextHolder ul li::before{
+    content: '\f058';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    color: var(--bedge_color);
+    padding-right: 10px;
+}
+
+
+/* ended */
+
+
+/* Program sections  */
+.programSection{
+    background-image: url(../images/sway-landing-bg-1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.channelSection .channelBorder{
+    border-bottom: 1px solid #e7e7e7;
+}
+.programSection .programHeadingHolder h6{
+    color: var(--blue1);
+}
+
+
+.programSection .cardHolder{
+    padding: 45px 60px 50px 60px;
+    border: 1pxsolid #e7e7e7;
+    
+}
+.programSection .cardHolder:hover{
+    box-shadow: rgba(0,0,0, 0.20) 0px 8px 30px;
+}
+
+/* ended */
+
+
+
+
+
+/* channel section start */
+.channerlLinkHolder{
+    justify-content: space-evenly;
+}
+.channelSection .channerlLinkHolder a{
+    font-size: 16px;
+    color: var(--p2);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.channelSection .channerlLinkHolder a::after {
+    content: ' ';
+    display: block;
+    border-bottom: solid 2px var(--blue1);
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 25px;
+    transform: scaleX(0);
+    transition: 0.3s ease-in-out;
+}
+.channelSection .channerlLinkHolder a:hover:after {
+    transform: scaleX(1);
+}
+.channelSection .channerlLinkHolder a:hover{
+    color: var(--blue1);
+}
+/* ended channel section*/
+
+
+
+
+/* Channel_your_conversation start */
+.channel .channelLeftTextHolder .channel_title{
+    color: var(--blue1);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.channel .channelLeftTextHolder h6{
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+/* Channel_your_conversation ended */
+
+
+/* more_work_done */
+.more_work .moreCustomerRightTextHolder .moreWorkTile{
+    color: var(--blue1);
+    font-weight: 500;
+}
+.more_work .moreCustomerRightTextHolder ul li::before{
+
+    color: var(--blue1);
+}
+/* ended */
+
+
+
+
+
+/* collaboration start  */
+.collaboration .collaborationBgImage{
+    background-image: url(../images/sway-landing-bg-3.png);
+    background-repeat: no-repeat;
+    height: 700px;
+    
+}
+.collaboration .collaborationContentHolder{
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 150px;
+    transform: translate(0%, 50%);
+}
+
+.collaboration .collaborationContentHolder h6{
+    padding: 0px 200px;
+}
+.collaboration .collaborationContentHolder .get_a_quote{
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.collaboration .collaborationContentHolder .get_a_quote input{
+    background: var(--in_bg);
+    border: var(--in_br);
+}
+
+/* collaboration ended  */
+
+
+
+/* faqsTypeSection */
+.faqsTypeSection{
+    background-image: url(../images/sway-landing-bg-2.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+    background-size: cover;
+}
+.faqsTypeSection .faqTextHolder{
+        max-width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding: 40px 0px;
+}
+.faqsTypeSection .faqTextHolder h2{
+    line-height: 1.3;
+}
+.faqsTypeSection .faqTextHolder h6{
+    padding: 0px 80px;
+}
+
+.faqsTypeSection .faqsCards{
+    border: var(--in_br);
+}
+.cardBG{
+    background: #ffffffd9;
+}
+.cbb{background: rgb(243 241 241 / 71%);}
+.faqs_btn{
+    font-weight: 500;
+}
+.faqs_btn:hover{
+    color: var(--blue1); 
+}
+
+
+/* faqsTypeSection ended */
+
+
+
+/* footer sections start */
+footer ul{
+    list-style: none;
+    padding-left: unset;
+}
+footer .footerTopMenu ul{
+    font-size: 16px;
+    font-weight: 500;
+}
+footer .footerTopMenu ul li a{
+    color: var(--p1);
+    text-decoration: none;
+}
+footer .footerTopMenu .navLinks ul li a::after{
+    content: ' ';
+    display: block;
+    border-bottom: solid 2px var(--blue1);  
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
+    padding-top: 5px;
+}
+footer .footerTopMenu .navLinks ul li a:hover:after{
+    transform: scaleX(1);
+}
+
+footer .footerTopMenu .socialLinks ul li a:hover{
+    color: var(--blue1);
+}
+
+footer .footerTextHolder h5{
+    font-size: 18px;
+    font: 500;
+}
+footer .footerTextHolder p{
+    font: 500 !important;
+    padding-right: 285px;
+}
+footer span{
+    font-size: 18px;
+    font-weight: 600;
+}
+footer .footerslideLinks{
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+footer .footerslideLinks li{
+    line-height: 1.8 ;
+}
+
+footer .footerslideLinks li a{
+    text-decoration: none;
+    color: var(--p2);
+}
+
+footer .footerslideLinks li a::after{
+    content: ' ';
+    display: block;
+    border-bottom: solid 2px var(--blue1);  
+    transform: scaleX(0);  
+    transition: transform 150ms ease-in-out;
+    padding-top: 5px;
+    width: 50%;
+}
+footer .footerslideLinks li a:hover:after{
+    transform: scaleX(1);
+}
+
+footer .termAndCondition a{
+    color: var(--p2);
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+footer .termAndCondition a:hover{
+    color: var(--blue1)
+}
+/* footer ended */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .subMenu { padding: 20px 0px;  }
+    footer .footerTextHolder p{
+        padding-right: 30px;
+    }
+    .myContainer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .sliderSection{
+        top: 90px;
+        height: auto;
+        }
+        .dropdown-toggle::after {
+            margin-right: .555em;
+            float: right;
+        }
+ 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .dropdown-toggle::after {
+        margin-right: .555em;
+        float: right;
+    }
+
+    #navbarSupportedContent{
+        height: 80vh;
+        overflow-y: scroll;
+    }
+    .myContainer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .sliderSection{
+       top: 90px;
+       height: auto;
+       }
+
+    .subMenu { padding: 20px 0px;  }
+    .sliderSection .adjusment_contaner{
+        padding: 30px 0px;
+    }
+
+    .sliderSection .adjusment_contaner .sliderLeftContentHolder{
+        padding: 0px 0px;
+    }
+ 
+    .sliderSection .adjusment_contaner .sliderRightContentHolder{
+        padding: 30px;
+    }
+    .collaboration .collaborationContentHolder h6{
+        padding: 0px 110px;
+    }
+    .collaboration .collaborationBgImage{
+        background-size: contain;
+        height: 420px;
+    }
+    .collaboration .collaborationContentHolder{
+        top: 40px;
+       
+    }
+
+    footer .footerTextHolder p{
+        padding-right: 10px;
+    }
+
+
+    .f_size_l{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .channelSection{ padding: 20px 0px 0px 0px; }
+    .md_padding_unset{padding: unset ;}
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    .dropdown-toggle::after {
+        margin-right: .555em;
+        float: right;
+    }
+    
+    #navbarSupportedContent{
+        height: 80vh;
+        overflow-y: scroll;
+    }
+    .myContainer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .subMenu { padding: 10px 0px;  }
+
+    .sliderSection{
+        top: 90px;
+        height: auto;
+        }
+    .sliderSection .adjusment_contaner{
+        padding: 30px 0px;
+    }
+    .sliderSection .adjusment_contaner .sliderLeftContentHolder{
+        padding: 0px 0px;
+    }
+
+    .sliderSection .adjusment_contaner .sliderRightContentHolder{
+        padding: 30px;
+    }
+    .sliderSection{
+        height: auto
+       }
+       .py_80{ padding-top: 40px;padding-bottom: 40px; }
+
+       .programSection .cardHolder{
+        padding: 20px;
+    }
+
+    .collaboration .collaborationBgImage{
+        background-size: contain;
+        height: 380px;
+    }
+    .collaboration .collaborationContentHolder{
+        top: 0px;
+        padding: 0px 30px;
+        background: rgba(255,255,255, 0.9);
+        transform: translate(0%, 40%);
+       
+    }
+    .collaboration .collaborationContentHolder h6{
+        padding: unset
+    }
+
+    footer .footerTextHolder p{
+        padding-right: 10px;
+    }
+    .f_size_l{
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .font_size2{font-size: 36px;}
+    .f_size{font-size: 32px;}
+    
+    .padding_md{
+        padding-bottom: 20px;
+    }
+    .channelSection{ padding: 20px 0px 0px 0px; }
+
+    header .topbar .b_0{ border: none !important; }
+    header .topbar .p_unset{ padding: unset; }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 575px) {
+
+    .dropdown-toggle::after {
+        margin-right: .555em;
+        float: right;
+    }
+    .myContainer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    #navbarSupportedContent{
+        height: 80vh;
+        overflow-y: scroll;
+    }
+
+    .sliderSection{
+        top: 90px;
+        height: auto;
+        }
+
+    .subMenu { padding: 10px 0px;  }
+    .sliderSection .adjusment_contaner .sliderLeftContentHolder .topSuperHeading{
+        background: none;
+    }
+    
+    .sliderSection .adjusment_contaner{
+        padding: 30px 0px;
+    }
+    .sliderSection .adjusment_contaner .sliderLeftContentHolder{
+        padding: 0px 0px;
+    }
+
+    .sliderSection .adjusment_contaner .sliderRightContentHolder{
+        padding: 30px;
+    }
+
+
+     .collaboration .collaborationBgImage{
+        background-size: contain;
+        height: 260px;
+    }
+    .collaboration .collaborationContentHolder{
+        top: 0px;
+        padding: 0px 20px;
+        background: rgba(255,255,255, 0.9);
+        transform: translate(0%, 0%);
+    }
+    .collaboration .collaborationContentHolder h6{
+        padding: unset
+    }
+    .faqsTypeSection .faqTextHolder {
+        padding: 20px 0px;
+    }
+
+    footer .footerTextHolder p{
+        padding-right: 10px;
+    }
+    footer .footerslideLinks li{
+        line-height: 1.3 ;
+    }
+
+    .f_size_l{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .font_size2{font-size: 28px;}
+    .f_size{font-size: 28px;}
+
+    .font_size3{font-size: 15px;}
+    .font_size4{font-size: 15px;}
+    .font_size5{font-size: 15px;}
+
+    .py_80{ padding-top: 40px;padding-bottom: 40px; }
+    .pdb_80{padding-bottom: 40px;}
+    .p_unset{ padding: unset; }
+
+    header .topbar .b_0{ border: none !important; }
+    header .topbar .p_unset{ padding: unset; }
+    .programSection .cardHolder { padding: 15px; }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .dropdown-toggle::after {
+        margin-right: .555em;
+        float: right;
+    }
+
+    #navbarSupportedContent{
+        height: 80vh;
+        overflow-y: scroll;
+    }
+
+    .myContainer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .subMenu { padding: 10px 0px;  }
+
+    .sliderSection{
+        top: 90px;
+        height: auto;
+        }
+    .sliderSection .adjusment_contaner .sliderLeftContentHolder .topSuperHeading{
+        background: none;
+    }
+
+    .sliderSection .adjusment_contaner{
+        padding: 30px 0px;
+    }
+    .sliderSection .adjusment_contaner .sliderLeftContentHolder{
+        padding: 0px 0px;
+    }
+
+    .sliderSection .adjusment_contaner .sliderRightContentHolder{
+        padding: 30px;
+    }
+
+
+       .faqsTypeSection {
+        padding-bottom: 40px;
+    }
+
+       .faqsTypeSection .faqTextHolder {
+        padding: 20px 0px;
+    }
+
+  .collaboration .collaborationBgImage{
+        background-size: contain;
+        height: auto;
+    }
+    .collaboration .collaborationContentHolder{
+        top: 0px;
+        padding: 0px 20px;
+        background: rgba(255,255,255, 0.9);
+        transform: translate(0%, 0%);
+    }
+    .collaboration .collaborationContentHolder h6{
+        padding: unset
+    }
+
+    footer .footerTextHolder p{
+        padding-right: 10px;
+    }
+    footer .footerslideLinks li{
+        line-height: 1.3 ;
+    }
+
+    .f_size_l{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .font_size2{font-size: 24px;}
+    .f_size{font-size: 24px;}
+    .font_size3{font-size: 15px;}
+    .font_size4{font-size: 15px;}
+    .font_size5{font-size: 15px;}
+    .pdb_80{padding-bottom: 40px;}
+    .p_unset{ padding: unset; }
+    /* .moreCustomerSection{
+        padding: 30px 0px;
+    } */
+    .py_80{ padding-top: 40px;padding-bottom: 40px; }
+    header .topbar .b_0{ border: none !important; }
+    header .topbar .p_unset{ padding: unset; }
+    .programSection .cardHolder { padding: 10px; }
+
+}
+
+
+@media (max-width: 319px) {
+
+    .dropdown-toggle::after {
+        margin-right: .555em;
+        float: right;
+    }
+  
+    #navbarSupportedContent{
+        height: 80vh;
+        overflow-y: scroll;
+    }
+    .myContainer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .subMenu { padding: 5px 0px;  }
+
+    .sliderSection{
+        top: 90px;
+        height: auto;
+        }
+    .sliderSection .adjusment_contaner .sliderLeftContentHolder .topSuperHeading{
+        background: none;
+    }
+
+    .sliderSection .adjusment_contaner{
+        padding: 10px 0px;
+    }
+    .sliderSection .adjusment_contaner .sliderLeftContentHolder{
+        padding: 0px 0px;
+    }
+
+    .sliderSection .adjusment_contaner .sliderRightContentHolder{
+        padding: 10px;
+    }
+
+
+  .collaboration .collaborationBgImage{
+        background-size: contain;
+        height: auto;
+    }
+    .collaboration .collaborationContentHolder{
+        top: 0px;
+        padding: 0px 10px;
+        background: rgba(255,255,255, 0.9);
+        transform: translate(0%, 0%);
+    }
+    .collaboration .collaborationContentHolder h6{
+        padding: unset
+    }
+    .faqsTypeSection .faqTextHolder {
+        padding: 20px 0px;
+    }
+
+    footer .footerTextHolder p{
+        padding-right: 10px;
+    }
+    footer .footerslideLinks li{
+        line-height: 1.3 ;
+    }
+
+    .f_size_l{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .font_size2{font-size: 20px;}
+    .f_size{font-size: 20px;}
+    .font_size3{font-size: 15px;}
+    .font_size4{font-size: 15px;}
+    .font_size5{font-size: 15px;}
+
+    .pdb_80{padding-bottom: 40px;}
+    .p_unset{ padding: unset; }
+
+    header .topbar .b_0{ border: none !important; }
+    header .topbar .p_unset{ padding: unset; }
+
+
+    }
