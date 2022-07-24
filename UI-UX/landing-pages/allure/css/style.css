@@ -1,0 +1,2531 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+:root {
+    --c1: #630000;
+    --c2: #D8B6A4;
+    --c3: #EEEBDD;
+    --c4: #000000;
+
+    --ro: 'Roboto', sans-serif;
+}
+
+.ff_ssp {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* colors classes  ++++++++++++++++++++++++++++++++++++++++++*/
+/* background colors*/
+.bg_c1 {
+    background-color: var(--c1);
+}
+
+.bg_c2 {
+    background-color: var(--c2);
+}
+
+.bg_c3 {
+    background-color: var(--c3);
+}
+
+.bg_c4 {
+    background-color: var(--c4);
+}
+
+/* text colors */
+.tc_c1 {
+    color: var(--c1);
+}
+
+.tc_c2 {
+    color: var(--c2);
+}
+
+.tc_c3 {
+    color: var(--c3);
+}
+
+.tc_c4 {
+    color: var(--c4);
+}
+
+/* colors classes ended   =======================================*/
+
+/* buttons & link classes  ++++++++++++++++++++++++++++++++++++++++++++++*/
+.btn_c1 {
+    background-color: var(--c1);
+}
+
+.btn_c1:hover {
+    background-color: var(--c4);
+}
+
+.btn_c2 {
+    background: var(--c4);
+}
+
+.btn_c2:hover {
+    background: var(--c2);
+}
+
+.btn_c3 {
+    background-color: white;
+    color: var(--c4);
+}
+
+.btn_c3:hover {
+    background-color: var(--c1);
+    color: white;
+}
+
+.link_c2 {
+    color: var(--c4);
+    transition: 0.3s;
+}
+
+.link_c2:hover {
+    color: var(--c2);
+}
+
+.mybtn1 {
+    background: var(--c1);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none !important;
+    transition: 0.3s;
+}
+
+.mybtn1:hover {
+    background: var(--c4);
+    color: white;
+}
+.outLine_0{ outline: none; }
+.outLine_0:focus{ outline: none;box-shadow: none; }
+
+/* buttons & link classes ended   ++++++++++++++++++++++++++++++++++++++*/
+
+
+
+/* common classes */
+.br_50 {
+    border-radius: 50%;
+}
+
+.subTitle {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--c1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainTitle {
+    font-size: 52px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pragraph {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    word-spacing: 1.8px;
+}
+
+.subTitle2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--c1);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 7px;
+    margin-bottom: 6px;
+}
+
+.mainTitle2 {
+    font-size: 44px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+}
+
+.bottomLine {
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.bottomLine::before {
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: var(--c1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* MY CONTAINERS CLASSES +++++++++++++++++++++++++++++++++++++++++*/
+.myContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* MY CONTAINERS CLASSES ENDED  ==================================*/
+
+/* common classes ended======================== */
+
+
+/* header style */
+header ul {
+    list-style: none;
+    padding: unset;
+    margin: unset;
+}
+
+header .topBar .topLinks .contact::before {
+    content: ' ';
+    display: inline;
+    border-left: solid 1px var(--c2);
+    padding-right: 15px;
+}
+
+header .topBar .topLinks .language::before {
+    content: ' ';
+    display: inline;
+    border-left: solid 1px var(--c2);
+    padding-right: 15px;
+}
+
+header .topBar .topLinks ul li a {
+    color: var(--c4);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header .topBar .topLinks ul li a:hover {
+    color: var(--c2);
+}
+
+header .topBar .topLinks ul li select {
+    color: var(--c4);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header .topBar .topLinks ul li select:hover {
+    color: var(--c2);
+}
+
+header .topBar .topLinks ul li select:focus {
+    border: none;
+    outline: none;
+}
+
+header .topBar .topIcons button {
+    font-size: 22px;
+}
+
+header .topBar .topIcons button i {
+    font-weight: 300;
+}
+
+
+
+/* Main navbar converted to bootsrap navbar */
+.mobileLogo{ display: none; }
+
+.mainNavBar .mainMenuList .mainListItem {
+    position: relative;
+}
+
+.mainNavBar .mainMenuList .mainListItem .mainATAG {
+    position: relative;
+    padding: 8px 13px;
+    color: var(--c4);
+    transition: 0.3s;
+}
+
+.mainNavBar .mainMenuList .mainListItem .mainATAG:hover {
+    color: var(--c2);
+}
+
+/* badge style here */
+.mainNavBar .mainMenuList .mainListItem .mainATAG span {
+    background: deeppink;
+    border-radius: 2px;
+    font-size: 9px;
+    font-weight: 600;
+    padding: 2px 4px;
+    position: absolute;
+    top: 0px;
+    letter-spacing: .5px;
+    color: #fff;
+    line-height: 8px;
+    right: -10px;
+    z-index: 0;
+}
+
+.mainNavBar .mainMenuList .mainListItem .mainATAG span::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    border: 0 solid transparent;
+    border-right-width: 6px;
+    border-top: 5px solid deeppink;
+}
+
+.mainNavBar .mainMenuList .mainListItem .aboutAtag span {
+    background: deepskyblue;
+}
+
+.mainNavBar .mainMenuList .mainListItem .aboutAtag span::before {
+    border-top: 5px solid deepskyblue;
+}
+
+.mainNavBar .mainMenuList .mainListItem .faqsAtag span {
+    background: var(--c1);
+}
+
+.mainNavBar .mainMenuList .mainListItem .faqsAtag span::before {
+    border-top: 5px solid var(--c1);
+}
+.cosmeticArrowButton,
+.makeUpArrowButton,
+.FrangrancesArrowButton,
+.categoryArrowButton,
+.categoryFragrancesArrowButton,
+.categoryMakeUpArrowButton,
+.includePagesArrowButton
+{
+    display: none;
+}
+/* ended */
+
+/* dropdown arrow */
+.mainMenuList .mainListItem .dropDownArrow::after {
+    content: none;
+    display: none;
+}
+
+.mainNavBar .mainMenuList .mainListItem .mainATAG .title {
+    font-size: 17px;
+}
+
+/* Sub manu sytle strted  */
+header .mainNavBar .cosmeticSubMenu {
+    position: absolute;
+    width: 630px;
+    left: 0px;
+    background: white;
+    padding: 15px;
+    border: solid 1px var(--c3);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    z-index: 5;
+}
+
+/* hover effect of the sub menu control */
+#cosmeticOnHover:hover .cosmeticSubMenu {
+    /* background: rosybrown; */
+    display: block;
+    opacity: 1;
+    visibility: visible
+}
+
+/* ended */
+.submenulist li {
+    min-width: 200px;
+    /* background: white; */
+}
+
+.submenulist .titleAnchorTag {
+    padding: unset;
+    text-decoration: none;
+}
+
+.submenulist .titleAnchorTag::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #ddd;
+    width: 50%;
+}
+
+.submenulist li .titleAnchorTag .innerTitle {
+    /* position: relative; */
+    /* margin: 0; */
+    letter-spacing: .5px;
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--c4);
+}
+
+.submenulist .subLinks {
+    padding-top: 10px;
+}
+
+.submenulist .subLinks .category li a {
+    padding-bottom: 8px;
+    font-size: 16px;
+    display: block;
+    color: var(--c4);
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.submenulist .subLinks .category li a:hover {
+    color: var(--c2);
+    font-weight: 600;
+}
+
+.innerCardOuter .cardHolder {
+    width: 190px;
+}
+
+/* .innerCardOuter .cardHolder .cardInformation{} */
+.innerCardOuter .cardHolder .cardInformation a {
+    font-size: 16px;
+    display: block;
+    color: var(--c4);
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.innerCardOuter .cardHolder .cardInformation a:hover {
+    color: var(--c2);
+}
+
+.cardInformation .span1 {
+    text-decoration: line-through;
+}
+
+.cardInformation .priceText {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.mainNavBar .categoryDropDown {
+    position: absolute;
+    width: 430px;
+    left: 0px;
+    background: white;
+    padding: 15px;
+    border: solid 1px var(--c3);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.mainNavBar .includePages {
+    position: absolute;
+    width: 200px;
+    left: 0px;
+    background: white;
+    padding: 15px;
+    border: solid 1px var(--c3);
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+#includePages:hover .includePages {
+    /* background: rosybrown; */
+    display: block;
+    opacity: 1;
+    visibility: visible
+}
+
+#category:hover .categoryDropDown {
+    /* background: rosybrown; */
+    display: block;
+    opacity: 1;
+    visibility: visible
+}
+
+/* submenu style ended  */
+/* primary menu ended =========*/
+
+
+
+/* slider sections started */
+/* convert it into bullots */
+.slider .indicatorSlider li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--c1);
+}
+
+
+/* slider arrow */
+.slider .prevSliderIcons,
+.slider .nexSliderIcons {
+    width: 6%;
+    transition: 0.3s;
+}
+
+.slider .prevSliderIcons i,
+.slider .nexSliderIcons i {
+    background: transparent;
+    font-size: 25px;
+    padding: 7px 7px 2px 2px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.slider .nexSliderIcons i {
+    padding: 7px 0px 2px 4px;
+}
+
+.slider .prevSliderIcons:hover #iconleft {
+    background: var(--c1);
+    opacity: 1;
+}
+
+.slider .nexSliderIcons:hover #iconRight {
+    background: var(--c1);
+    opacity: 1;
+}
+
+/* slder images contents */
+.slider .sliderImageParent {
+    position: relative
+}
+
+.slider .slideImage1Content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translate(7%, -50%);
+    width: 85%;
+}
+
+ .tesingbg1 img {
+    min-height: 700px;
+}
+
+.tesingbg1 {
+    /* background-image: linear-gradient(0deg, rgb(144 143 138 / 55%) 0%, rgb(144 143 138 / 55%) 100%), url(../images/sliders_images/cosmetic1.png);
+    background-size: contain;
+    background-repeat: no-repeat; */
+    background-color: var(--c3);
+} 
+
+/* .tesingbg2 img {
+    
+} */
+
+/* .tesingbg2 {
+    background-image: linear-gradient(0deg, rgb(144 143 138 / 55%) 0%, rgb(144 143 138 / 55%) 100%), url(../images/sliders_images/cosmetic2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+/* slider section ended */
+
+
+/* about section started  */
+.about .textHolder .bottomLine2::after {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: var(--c1);
+}
+
+.about .textHolder .categoryList .listHolder ul {
+    width: 230px;
+    list-style: none;
+    padding: unset;
+}
+
+.about .textHolder .categoryList .listHolder ul li {
+    font-size: 15px;
+    letter-spacing: .6px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #666;
+    line-height: 22px;
+}
+
+.about .textHolder .categoryList .listHolder ul li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--c1);
+    display: inline-block;
+    margin-right: 12px;
+}
+
+/* about section ended */
+
+
+
+/* our Services section started */
+
+.outServices .serviceCards a {
+    text-decoration: none;
+}
+
+.outServices .serviceCards .cardBody h5 {
+    color: var(--c4);
+    font-weight: 500;
+    transition: 1s ease-in-out;
+}
+
+.outServices .serviceCards .cardBody p {
+    color: #777777;
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+
+.outServices .serviceCards .cardAtag:hover .cardBody h5 {
+    letter-spacing: .8px;
+    color: var(--c2);
+}
+
+/* services section ended  */
+
+
+/* fabulous products section started  */
+.productCard {
+    background: #f7f7f7;
+    cursor: pointer;
+}
+
+/* .productCard:hover .wishList{
+    top: 10px;
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+} */
+
+
+
+
+
+.productCard .pCardImageHolder {
+    position: relative;
+}
+
+.productCard .pCardImageHolder .reviewStart {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.productCard .pCardImageHolder .reviewStart i {
+    color: gold;
+    font-size: 14px;
+}
+
+
+.productCard .pCardImageHolder .badge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.productCard .pCardImageHolder .badge span {
+    background: gold;
+    position: absolute;
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.productCard .pCardImageHolder .badge2 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.productCard .pCardImageHolder .badge2 span {
+    background: var(--c2);
+    text-align: center;
+    padding: 7px;
+    width: auto;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    line-height: 8px;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+
+
+.productCard .pCardImageHolder .cartOnProduct {
+    position: absolute;
+    bottom: 20px;
+    right: 12px;
+}
+
+.productCard .pCardImageHolder .cartOnProduct button {
+    box-shadow: 0 0 4px 2px rgb(0 0 0 / 10%);
+    border: 0;
+    color: white;
+    display: block;
+    width: 54px;
+    height: 54px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 20px;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+}
+
+.productCard .pCardImageHolder .wishList {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    /* top: 0px; */
+    /* right: 0px; */
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    transition: 0.3s ease-in-out;
+}
+
+.productCard .pCardImageHolder .wishList button {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 4px 2px rgb(0 0 0 / 10%);
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+
+
+
+.productCard .pCardBody {
+    padding-top: unset;
+}
+
+.productCard .pCardBody .cardTitile {
+    font-size: 20px;
+    font-weight: 400;
+    margin: unset;
+    padding: unset;
+}
+
+.productCard .pCardBody .productPrice {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.productCard .pCardBody .productPrice .comparePrice {
+    text-decoration: line-through;
+}
+
+/* fabulous products section ended  */
+
+
+
+/* DealOfTheDay section started */
+.DealOfTheDay {
+    background: var(--c3);
+    color: var(--c4);
+}
+
+.DealOfTheDay .timerBox {
+    padding: 20px 0px 20px 50px;
+}
+
+.DealOfTheDay .timerBox .mydealbtn {
+    background-color: var(--c2);
+}
+
+.DealOfTheDay .timerBox .mydealbtn:hover {
+    color: var(--c1);
+}
+
+.DealOfTheDay .dealImageHolder {
+    position: relative;
+}
+
+.DealOfTheDay .dealImageHolder img {
+    position: absolute;
+}
+
+/* DealOfTheDay section ended */
+
+
+/* trending section started  */
+
+.trending .owl-nav {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.trending .owl-nav .owl-next {
+    float: right;
+}
+
+.trending .owl-nav .owl-prev {
+    float: left;
+}
+
+.trending .owl-nav button i {
+    font-size: 24px;
+}
+
+.trending .owl-nav button:focus {
+    outline: none;
+}
+
+
+/* pruduct right side  */
+.trending .productTitle a {
+    font-family: var(--ro);
+    color: var(--c1);
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 26px;
+    line-height: 1.1;
+    letter-spacing: .5px;
+    text-decoration: none;
+}
+
+.trending .productTitle a:hover {
+    color: var(--c2);
+}
+
+.trending .productreview .stars i {
+    font-size: 12px;
+    color: gold;
+}
+
+.trending .productreview .writeReviewBtn i {
+    font-size: 14px;
+}
+
+.trending .productPrice .price1 {
+    text-decoration: line-through;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.trending .productPrice .regularPrice {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.trending .wishList i {
+    font-size: 14px;
+    color: var(--c2);
+}
+
+.trending .productInformations p {
+    margin-bottom: 0.5rem;
+}
+
+.trending .quantityValue .variant_quantity {
+    padding: 5px;
+    color: #ff3d12;
+    font-weight: 700;
+}
+
+.trending .quantityValue {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.trending .progressBar {
+    height: 12px;
+    width: 70%;
+    /* position: relative; */
+    border-radius: 10px;
+    background: #e1e1e1;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 20%);
+}
+
+.trending .progressBar span {
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(left, #ff3d12 0, #edd728 100%);
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.trending .productSizes legend {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.trending .productSizes .square {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: white;
+    text-align: center;
+    font-weight: 600;
+    border: solid 1px var(--c2);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.trending .productSizes .square:hover {
+    border: solid 1px var(--c4);
+}
+
+.trending .productSizes .active {
+    color: white;
+    background: rgb(0, 0, 0);
+    border: solid 1px black;
+}
+
+.trending .productSizes input {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+}
+
+
+
+.trending .productColor legend {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.trending .productColor input {
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+}
+
+.trending .productColor .square {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.trending .productColor .box1 {
+    background-color: rgb(201, 4, 119);
+}
+
+.trending .productColor .box2 {
+    background-color: rgb(231, 247, 7);
+}
+
+.trending .productColor .box3 {
+    background-color: rgb(35, 211, 0);
+}
+
+
+
+.trending .quantityIncraseBoxHolder .buttonBox {
+    position: relative;
+    display: inline-block;
+    left: -60px;
+    top: 15px;
+}
+
+.trending .quantityIncraseBoxHolder .buttonBox button {
+    color: var(--c2);
+}
+
+.trending .quantityIncraseBoxHolder .buttonBox .buttonMinus {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 50px;
+    /* background: red; */
+    top: 0;
+    padding: 10px;
+    border-radius: 30px 0px 0px 30px;
+    border: solid 1px var(--c2);
+}
+
+.trending .quantityIncraseBoxHolder .buttonBox .quantityNo {
+    position: absolute;
+    width: 50px;
+    left: 50px;
+    /* background: antiquewhite; */
+    border: none;
+    border-top: solid 1px var(--c2);
+    border-bottom: solid 1px var(--c2);
+    height: 46px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.trending .quantityIncraseBoxHolder .buttonBox .buttonPlus {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 50px;
+    /* background: red; */
+    top: 0;
+    padding: 10px;
+    border-radius: 0px 30px 30px 0px;
+    border: solid 1px var(--c2);
+    left: 100px;
+}
+
+.trending .buttons {
+    padding-top: 60px;
+}
+
+.trending .buttons a {
+    padding: 12px 80px;
+}
+
+.trending .buttons .b2 {
+    background-color: var(--c4);
+}
+
+.trending .buttons .b2:hover {
+    background-color: var(--c1);
+}
+
+.trending .serviceTypeBox {
+    border-radius: 12px;
+}
+
+/* ended trending */
+
+
+
+/* tabs Section started  */
+.tabsSection .tabList .anchorTag:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.tabsSection .tab1Information p {
+    margin: 0 0 20px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #787878;
+    letter-spacing: .5px;
+    line-height: 24px;
+}
+
+.tabsSection .tab1Information h4 {
+    color: #232323;
+    font-weight: 700;
+    letter-spacing: .2px;
+    margin-bottom: 14px;
+    font-size: 15px;
+}
+
+.tabsSection .tab1Information ul {
+    margin-bottom: 18px;
+    padding-left: 26px;
+}
+
+.tabsSection .tab1Information ol {
+    margin-bottom: 18px;
+    padding-left: 26px;
+}
+
+.tabsSection .tab1Information blockquote {
+    text-align: left;
+    line-height: 26px;
+    color: #787878;
+    letter-spacing: .5px;
+    font-weight: 400;
+    font-size: 14px;
+    border-left: 3px solid #e5e5e5;
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+.tabsSection .reviwStar i {
+    color: gold;
+    font-size: 14px;
+}
+
+.tabsSection .tab2Reviews .sheader h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #232323;
+    margin-bottom: 7px;
+}
+
+.tabsSection .tab2Reviews .sheader .namedate {
+    font-style: normal;
+    font-size: 15px;
+    color: #787878;
+    font-weight: 400;
+}
+
+.tabsSection .tab2Reviews .reportLink a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #777;
+    float: left;
+    font-weight: 600;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s;
+    text-decoration: none;
+}
+
+.tabsSection .tab2Reviews .reportLink a:hover {
+    color: var(--c2);
+}
+
+.tabsSection .formHolder {
+    padding: 10px 70px;
+}
+
+.tabsSection .formHolder .inputBox1 {
+    position: relative;
+}
+
+.tabsSection .formHolder .inputBox1 .box1Input {
+    border: solid 1px var(--c1);
+    padding: 6px 30px 6px 15px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.tabsSection .formHolder .textAreaHolder .textArea {
+    border: solid 1px var(--c1);
+    border-radius: 30px;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border: solid 1px var(--c1);
+}
+
+.tabsSection .formHolder .sendButtonHolder button {
+    border: none;
+}
+
+/* .tabsSection .formHolder .inputBox1 .label1{
+    position: absolute;
+    left: 17px;
+    top: 11px;
+    font-size: 20px;
+    font-weight: 300;
+    background: #ff3d12;
+}
+.tabsSection .formHolder .inputBox1 .box1Input:focus .label1{
+    top: 31px;
+
+} */
+
+
+
+
+
+/* .field {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.field__input{
+    border-radius: 30px;
+}
+.field__label {
+    font-size: 14px;
+    left: 1.5rem;
+    top: 1.2rem;
+    margin-bottom: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: top .1s ease,font-size .1s ease;
+    color: #666;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    line-height: 1.5;
+} */
+/* tabs Section ended */
+
+
+
+/* feature card sections */
+.awesomeFeatures .featureCard {
+    border-radius: 12px;
+    padding: 20px 10px 10px 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.awesomeFeatures .featureCard:hover .cardTopImage img {
+    transform: rotateY(720deg);
+    transition: 0.8s;
+}
+
+.awesomeFeatures .featureCard:hover .featureCardBody h5 {
+    letter-spacing: 1.2px;
+}
+
+
+.awesomeFeatures .featureCard .featureCardBody h5 {
+    font-weight: 600;
+    transition: 1s;
+}
+
+/* feature card sections ended */
+
+
+
+
+/* testomonialSection started */
+.testomonialSection {
+    background-image: url(../images/testimonialbackground.png);
+    background-repeat: no-repeat;
+
+}
+
+.testomonial .owlSlides {
+    background-color: white;
+    padding: 60px 30px;
+}
+
+.testomonialSection .testomonialTextHolder .testomonialReview i {
+    color: rgb(175, 175, 175);
+}
+
+.testomonialSection .testomonialTextHolder .testomonialReview .starColor {
+    color: gold;
+}
+
+.testomonialTextHolder .testomonialUserImage img {
+    height: 80px;
+    width: 80px;
+
+}
+
+.testomonialTextHolder .testomonialUserImage h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 24px;
+    line-height: 22px;
+    font-weight: 600;
+}
+
+.testomonialTextHolder .testomonialUserImage h6 {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--c2);
+}
+
+.testomonialSection .owl-nav {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.testomonialSection .owl-nav button {
+    margin: 5px;
+    border-radius: 50%;
+    background: var(--c1) !important;
+    width: 34px;
+    height: 34px;
+    color: white !important;
+    font-size: 16px !important;
+}
+
+.testomonialSection .owl-nav button:hover {
+    background-color: black !important;
+}
+
+.testomonialSection .owl-nav button:focus {
+    outline: none;
+}
+
+/* testomonialSection ended */
+
+
+
+/* testomonialLogoSection started */
+
+.testomonialLogoSection .sliderMainBox {
+    background: var(--c1);
+    padding: 40px 15px;
+    border-radius: 12px;
+
+}
+
+.testomonialLogoSection .sliderMainBox .owlImageBox {
+    margin: 0 auto;
+}
+
+.testomonialLogoSection .sliderMainBox .owlImageBox img {
+    width: 120px;
+    height: 120px;
+}
+
+.testomonialLogoSection .sliderMainBox .owlImageBox :hover .owlRotatingImage {
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+
+/* testomonialLogoSection ended */
+
+
+/* footer started */
+footer .iconButtons {
+    background-color: var(--c1);
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+footer .iconButtons:hover {
+    background-color: black;
+}
+
+footer .fBox1 {
+    cursor: pointer;
+}
+
+footer .fBox1:hover .iconButtons {
+    background-color: black;
+}
+
+footer p {
+    padding: unset;
+    margin: unset;
+}
+
+footer h6 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: unset;
+
+}
+
+footer ul {
+    list-style: none;
+    padding: unset;
+}
+
+footer ul li {
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+footer .fLinks {
+    color: #666666;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .fLinks:hover {
+    color: var(--c2);
+}
+
+
+footer .newsIcons i {
+    font-size: 65px;
+}
+
+footer .socialIcons a {
+    padding: 0;
+    border-radius: 50%;
+    height: 34px;
+    text-align: center;
+    width: 34px;
+    margin: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .4s ease 0s;
+    -webkit-transition: all .4s ease 0s;
+    -moz-transition: all .4s ease 0s;
+    -o-transition: all .4s ease 0s;
+    color: white;
+}
+
+footer .socialIcons .fb {
+    background: #3b5999;
+}
+
+footer .socialIcons .insta {
+    background: #cc2366;
+}
+
+footer .socialIcons .vv {
+    background: #1a1a1a;
+}
+
+footer .inputfooter {
+    /* background: red; */
+    border: solid 1px var(--c1);
+    padding: 5px;
+    position: relative;
+    border-radius: 30px;
+    height: 45px;
+    width: 100%;
+}
+
+footer .inputfooter input {
+    position: absolute;
+    left: 10px;
+    width: 80%;
+    background: none;
+    border: none;
+}
+
+footer .inputfooter button {
+    position: absolute;
+    right: 0px;
+    background: var(--c1);
+    border: none;
+    width: 45px;
+    height: 43px;
+    top: 0px;
+    border-radius: 30px;
+    font-size: 22px;
+    color: white;
+}
+
+footer .inputfooter button:hover {
+    background: var(--c4);
+}
+
+footer .footerBelowLine {
+    background: var(--c1);
+}
+
+footer .footerPragraph {
+    align-self: center;
+}
+
+footer .footer-right {
+    align-self: center;
+}
+
+/* footer ended */
+
+.rightArrow {
+    position: fixed;
+    /* background: red; */
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.rightArrow .arrowFotTop {
+    background: var(--c4);
+    width: 40px;
+    height: 40px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    box-shadow: rgb(255 255 255 / 80%) 1px 3px 30px;
+}
+
+.rightArrow .arrowFotTop:hover {
+    background-color: var(--c1);
+}
+
+.rightArrow .arrowFotTop i {
+    align-self: center;
+}
+
+/* right arrow to top scrool */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quaries started +++++++++++++++++++++++++++++++++++++++++++++++++ */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .myContainer {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+
+    .about .aboutImageHolder {
+        position: relative;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+    }
+
+    .trending .buttons a {
+        padding: 10px 30px;
+    }
+
+    .awesomeFeatures .featureImageHolder {
+        position: relative;
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -50%);
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .myContainer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+.mobileLogo{ margin: 0 auto;display: block; }
+
+    .subTitle {
+        font-size: 28px;
+    }
+
+    .mainTitle {
+        font-size: 36px;
+    }
+
+    .pragraph {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        word-spacing: 0.5px;
+    }
+    .tesingbg1 img {
+        min-height: 300px;
+    }
+
+    .about .textHolder .bottomLine2::after {
+        margin: 0 auto;
+    }
+
+    .about .textHolder .categoryList .listHolder ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about .textHolder .categoryList .listHolder ul li {
+        padding-left: 15px;
+    }
+
+    .DealOfTheDay .timerBox {
+        padding: 20px 0px 20px 10px;
+    }
+
+    .DealOfTheDay .timerBox .forMD {
+        font-size: 36px;
+    }
+
+    .trending .buttons a {
+        padding: 10px 30px;
+    }
+
+    footer .inputfooter {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    footer ul li {
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .dn {
+        display: none;
+    }
+
+    header .topBar {
+        background-color: var(--c1);
+    }
+
+    header .topBar .wishlist a,
+    header .topBar .contact a {
+        color: white !important;
+    }
+
+    .collapsing {
+        position: relative;
+        left: 0;
+        height: initial;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+
+    .mainNavBar .navbar-collapse {
+        position: fixed;
+        left: -300px;
+        width: 300px;
+        z-index: 433;
+        top: 0px;
+        bottom: 0px;
+        transition: left 0.5s ease;
+        background: #fff;
+        overflow: auto;
+
+    }
+
+    .mainNavBar .navbar-collapse.show {
+        transition: left 0.5s ease;
+        left: 0;
+        position: fixed;
+
+    }
+
+    .mainNavBar #top_menu_closer {
+    cursor: pointer;
+    padding: 15px 15px 10px;
+    text-align: right;
+    }    
+    .mainNavBar #top_menu_closer svg{
+        width: 18px;
+        height: 18px;
+        color: #232323;
+    }
+
+    .mainNavBar .nav-link span {
+        display: none;
+    }
+    .d_none_below_lg{display: none;}
+
+    header .mainNavBar .cosmeticSubMenu {
+        position: relative;
+        width: 100%;
+        opacity: 1 !important;
+        visibility: visible;
+        display: none;
+        padding: 5px 0px 5px 15px;
+    }
+    .submenulist li .titleAnchorTag .innerTitle {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .mainNavBar .categoryDropDown {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        padding: 5px 0px 5px 15px;
+    }
+
+    #category:hover .categoryDropDown {
+        display: none;
+        opacity: 1 !important;
+        visibility: visible
+    }
+
+    .mainNavBar .includePages {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+    }
+    #includePages:hover .includePages {
+        display: none;
+        opacity: 1;
+        visibility: visible
+    }
+
+    #cosmeticOnHover:hover .cosmeticSubMenu {
+        display: none;
+        opacity: 0;
+    }
+    .cosmeticArrowButton,
+    .makeUpArrowButton,
+    .FrangrancesArrowButton,
+    .categoryArrowButton,
+    .categoryFragrancesArrowButton,
+    .categoryMakeUpArrowButton,
+    .includePagesArrowButton
+    {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: block;
+    }
+    .makeUpContent,
+    .FrangrancesContent,
+    .categoryFragrancesContent,
+    .categoryMakeUpContent,
+    .includePagesContent
+    {
+        display: none;
+    }
+    .frangrancesLi{
+        position: relative;
+    }
+    .categoryMakeUpLi{
+        position: relative;
+    }
+
+    .submenulist .titleAnchorTag::after {
+        content: normal;
+    }
+
+
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .myContainer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .mobileLogo{ margin: 0 auto;display: block; }
+    .subTitle2 {
+        font-size: 16px;
+        letter-spacing: 5px;
+        margin-bottom: 6px;
+    }
+
+    .mainTitle2 {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+    .subTitle {
+        font-size: 24px;
+    }
+
+    .mainTitle {
+        font-size: 28px;
+    }
+
+    .pragraph {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        word-spacing: 0.5px;
+    }
+
+    .slider .slideImage1Content .description {
+        display: none;
+    }
+    .tesingbg1 img {
+        min-height: 550px;
+    }
+    .about .textHolder .bottomLine2::after {
+        margin: 0 auto;
+    }
+
+    .about .textHolder .categoryList .listHolder ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about .textHolder .categoryList .listHolder ul li {
+        padding-left: 15px;
+    }
+
+    .productCard .pCardImageHolder .cartOnProduct button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .DealOfTheDay .timerBox {
+        padding: 20px 0px 20px 10px;
+    }
+
+    .DealOfTheDay .dealImageHolder {
+        position: static;
+    }
+
+    .DealOfTheDay .dealImageHolder img {
+        position: static;
+    }
+
+    .tabsSection .formHolder {
+        padding: 10px 0px;
+    }
+
+    footer .inputfooter {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    footer ul li {
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .dn {
+        display: none;
+    }
+
+    header .topBar {
+        background-color: var(--c1);
+    }
+
+    header .topBar .wishlist a,
+    header .topBar .contact a {
+        color: white !important;
+    }
+
+    .collapsing {
+        position: relative;
+        left: 0;
+        height: initial;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+
+    .mainNavBar .navbar-collapse {
+        position: fixed;
+        left: -300px;
+        width: 300px;
+        z-index: 433;
+        top: 0px;
+        bottom: 0px;
+        transition: left 0.5s ease;
+        background: #fff;
+        overflow: auto;
+
+    }
+
+    .mainNavBar .navbar-collapse.show {
+        transition: left 0.5s ease;
+        left: 0;
+        position: fixed;
+
+    }
+
+    .mainNavBar #top_menu_closer {
+    cursor: pointer;
+    padding: 15px 15px 10px;
+    text-align: right;
+    }    
+    .mainNavBar #top_menu_closer svg{
+        width: 18px;
+        height: 18px;
+        color: #232323;
+    }
+
+    .mainNavBar .nav-link span {
+        display: none;
+    }
+    .d_none_below_lg{display: none;}
+
+    header .mainNavBar .cosmeticSubMenu {
+        position: relative;
+        width: 100%;
+        opacity: 1 !important;
+        visibility: visible;
+        display: none;
+        padding: 5px 0px 5px 15px;
+    }
+    .submenulist li .titleAnchorTag .innerTitle {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .mainNavBar .categoryDropDown {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        padding: 5px 0px 5px 15px;
+    }
+
+    #category:hover .categoryDropDown {
+        display: none;
+        opacity: 1 !important;
+        visibility: visible
+    }
+
+    .mainNavBar .includePages {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+    }
+    #includePages:hover .includePages {
+        display: none;
+        opacity: 1;
+        visibility: visible
+    }
+
+    #cosmeticOnHover:hover .cosmeticSubMenu {
+        display: none;
+        opacity: 0;
+    }
+    .cosmeticArrowButton,
+    .makeUpArrowButton,
+    .FrangrancesArrowButton,
+    .categoryArrowButton,
+    .categoryFragrancesArrowButton,
+    .categoryMakeUpArrowButton,
+    .includePagesArrowButton
+    {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: block;
+    }
+    .makeUpContent,
+    .FrangrancesContent,
+    .categoryFragrancesContent,
+    .categoryMakeUpContent,
+    .includePagesContent
+    {
+        display: none;
+    }
+    .frangrancesLi{
+        position: relative;
+    }
+    .categoryMakeUpLi{
+        position: relative;
+    }
+
+    .submenulist .titleAnchorTag::after {
+        content: normal;
+    }
+
+
+}
+
+@media (min-width: 481px) and (max-width: 575px) {
+    .myContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .mobileLogo{ margin: 0 auto;display: block; }
+    .subTitle2 {
+        font-size: 16px;
+        letter-spacing: 3px;
+        margin-bottom: 6px;
+    }
+
+    .mainTitle2 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .mybtn1 {
+        padding: 8px 20px;
+    }
+
+
+
+    .subTitle {
+        font-size: 24px;
+    }
+
+    .mainTitle {
+        font-size: 28px;
+    }
+
+    .pragraph {
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        word-spacing: 0.5px;
+    }
+
+
+    .slider .slideImage1Content .description {
+        display: none;
+    }
+
+    .slider .slideImage1Content .slideMobile {
+        display: flex;
+        justify-content: end;
+    }
+
+    .slider .prevSliderIcons i,
+    .slider .nexSliderIcons i {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+
+    }
+    .tesingbg1 img {
+        min-height: 450px;
+    max-height: 550px;
+    }
+    .slider .slideImage1Content {
+        position: absolute;
+        z-index: 2;
+        top: 0%;
+        left: 0;
+        transform: translate(46%, -200%);
+        width: 85%;
+    }
+    .about .textHolder .bottomLine2::after {
+        margin: 0 auto;
+    }
+
+    .about .textHolder .categoryList .listHolder ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        padding: unset;
+        margin: unset;
+    }
+
+    .about .textHolder .categoryList .listHolder ul li {
+        padding-left: 15px;
+        text-align: left;
+    }
+
+    .productCard .pCardImageHolder .cartOnProduct button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .DealOfTheDay .timerBox {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .DealOfTheDay .dealImageHolder {
+        position: static;
+    }
+
+    .DealOfTheDay .dealImageHolder img {
+        position: static;
+    }
+
+    .tabsSection .tabHandleForMobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tabsSection .tabHandleForMobile .mobileTabsUl {
+        flex-direction: column;
+        align-items: center;
+        display: inline-block;
+    }
+
+    .tabsSection .tabHandleForMobile .mobileTabsUl .anchorTag {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .tabsSection .formHolder {
+        padding: 10px 0px;
+    }
+
+    footer .inputfooter {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    footer ul li {
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .dn {
+        display: none;
+    }
+
+    header .topBar {
+        background-color: var(--c1);
+    }
+
+    header .topBar .wishlist a,
+    header .topBar .contact a {
+        color: white !important;
+    }
+
+    .collapsing {
+        position: relative;
+        left: 0;
+        height: initial;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+
+    .mainNavBar .navbar-collapse {
+        position: fixed;
+        left: -300px;
+        width: 300px;
+        z-index: 433;
+        top: 0px;
+        bottom: 0px;
+        transition: left 0.5s ease;
+        background: #fff;
+        overflow: auto;
+
+    }
+
+    .mainNavBar .navbar-collapse.show {
+        transition: left 0.5s ease;
+        left: 0;
+        position: fixed;
+
+    }
+
+    .mainNavBar #top_menu_closer {
+    cursor: pointer;
+    padding: 15px 15px 10px;
+    text-align: right;
+    }    
+    .mainNavBar #top_menu_closer svg{
+        width: 18px;
+        height: 18px;
+        color: #232323;
+    }
+
+    .d_none_below_lg{display: none;}
+
+    header .mainNavBar .cosmeticSubMenu {
+        position: relative;
+        width: 100%;
+        opacity: 1 !important;
+        visibility: visible;
+        display: none;
+        padding: 5px 0px 5px 15px;
+    }
+    .submenulist li .titleAnchorTag .innerTitle {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .mainNavBar .categoryDropDown {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        padding: 5px 0px 5px 15px;
+    }
+
+    #category:hover .categoryDropDown {
+        display: none;
+        opacity: 1 !important;
+        visibility: visible
+    }
+
+    .mainNavBar .includePages {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+    }
+    #includePages:hover .includePages {
+        display: none;
+        opacity: 1;
+        visibility: visible
+    }
+
+    #cosmeticOnHover:hover .cosmeticSubMenu {
+        display: none;
+        opacity: 0;
+    }
+    .cosmeticArrowButton,
+    .makeUpArrowButton,
+    .FrangrancesArrowButton,
+    .categoryArrowButton,
+    .categoryFragrancesArrowButton,
+    .categoryMakeUpArrowButton,
+    .includePagesArrowButton
+    {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: block;
+    }
+    .makeUpContent,
+    .FrangrancesContent,
+    .categoryFragrancesContent,
+    .categoryMakeUpContent,
+    .includePagesContent
+    {
+        display: none;
+    }
+    .frangrancesLi{
+        position: relative;
+    }
+    .categoryMakeUpLi{
+        position: relative;
+    }
+
+    .submenulist .titleAnchorTag::after {
+        content: normal;
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    .myContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .mobileLogo{ margin: 0 auto;display: block; }
+    .subTitle2 {
+        font-size: 16px;
+        letter-spacing: 5px;
+        margin-bottom: 6px;
+    }
+
+    .mainTitle2 {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+
+    .mybtn1 {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+    .subTitle {
+        font-size: 16px;
+    }
+
+    .mainTitle {
+        font-size: 18px;
+    }
+
+    .pragraph {
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        word-spacing: 0.5px;
+    }
+
+
+    .slider .slideImage1Content .description {
+        display: none;
+    }
+
+    .slider .slideImage1Content .slideMobile {
+        display: flex;
+        justify-content: end;
+    }
+
+    .slider .prevSliderIcons i,
+    .slider .nexSliderIcons i {
+        font-size: 10px;
+        width: 15px;
+        height: 15px;
+        padding: 2px 0px 0px 1px;
+    }
+    .tesingbg1 img {
+        min-height: 450px;
+        max-height: 550px;
+    }
+    .slider .slideImage1Content { 
+            position: absolute;
+            z-index: 2;
+            top: 0%;
+            left: 0;
+            transform: translate(46%, -200%);
+            width: 85%;    
+    }
+
+    .about .textHolder .bottomLine2::after {
+        margin: 0 auto;
+    }
+
+    .about .textHolder .categoryList .listHolder ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        padding: unset;
+        margin: unset;
+    }
+
+    .about .textHolder .categoryList .listHolder ul li {
+        padding-left: 15px;
+        text-align: left;
+    }
+
+    .productCard .pCardImageHolder .cartOnProduct button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .DealOfTheDay .timerBox {
+        padding: 10px 0px 10px 0px;
+    }
+
+    .DealOfTheDay .dealImageHolder {
+        position: static;
+    }
+
+    .DealOfTheDay .dealImageHolder img {
+        position: static;
+    }
+
+    .tabsSection .tabHandleForMobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tabsSection .tabHandleForMobile .mobileTabsUl {
+        flex-direction: column;
+        align-items: center;
+        display: inline-block;
+    }
+
+    .tabsSection .tabHandleForMobile .mobileTabsUl .anchorTag {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .tabsSection .leftSideOfReview {
+        flex-wrap: wrap;
+    }
+
+    .tabsSection .formHolder {
+        padding: 10px 0px;
+    }
+
+    footer ul li {
+        line-height: 20px;
+        margin-bottom: 5px;
+    }
+
+    .dn {
+        display: none;
+    }
+
+    header .topBar {
+        background-color: var(--c1);
+    }
+
+    header .topBar .wishlist a,
+    header .topBar .contact a {
+        color: white !important;
+    }
+
+    .collapsing {
+        position: relative;
+        left: 0;
+        height: initial;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+
+    .mainNavBar .navbar-collapse {
+        position: fixed;
+        left: -300px;
+        width: 300px;
+        z-index: 433;
+        top: 0px;
+        bottom: 0px;
+        transition: left 0.5s ease;
+        background: #fff;
+        overflow: auto;
+
+    }
+
+    .mainNavBar .navbar-collapse.show {
+        transition: left 0.5s ease;
+        left: 0;
+        position: fixed;
+
+    }
+
+    .mainNavBar #top_menu_closer {
+    cursor: pointer;
+    padding: 15px 15px 10px;
+    text-align: right;
+    }    
+    .mainNavBar #top_menu_closer svg{
+        width: 18px;
+        height: 18px;
+        color: #232323;
+    }
+
+    .mainNavBar .nav-link span {
+        display: none;
+    }
+
+    .d_none_below_lg{display: none;}
+
+    header .mainNavBar .cosmeticSubMenu {
+        position: relative;
+        width: 100%;
+        opacity: 1 !important;
+        visibility: visible;
+        display: none;
+        padding: 5px 0px 5px 15px;
+    }
+    .submenulist li .titleAnchorTag .innerTitle {
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    .mainNavBar .categoryDropDown {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+        padding: 5px 0px 5px 15px;
+    }
+
+    #category:hover .categoryDropDown {
+        display: none;
+        opacity: 1 !important;
+        visibility: visible
+    }
+
+    .mainNavBar .includePages {
+        width: 100%;
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+    }
+    #includePages:hover .includePages {
+        display: none;
+        opacity: 1;
+        visibility: visible
+    }
+
+    #cosmeticOnHover:hover .cosmeticSubMenu {
+        display: none;
+        opacity: 0;
+    }
+    .cosmeticArrowButton,
+    .makeUpArrowButton,
+    .FrangrancesArrowButton,
+    .categoryArrowButton,
+    .categoryFragrancesArrowButton,
+    .categoryMakeUpArrowButton,
+    .includePagesArrowButton
+    {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: block;
+    }
+    .makeUpContent,
+    .FrangrancesContent,
+    .categoryFragrancesContent,
+    .categoryMakeUpContent,
+    .includePagesContent
+    {
+        display: none;
+    }
+    .frangrancesLi{
+        position: relative;
+    }
+    .categoryMakeUpLi{
+        position: relative;
+    }
+
+    .submenulist .titleAnchorTag::after {
+        content: normal;
+    }
+
+
+
+
+
+
+
+
+}

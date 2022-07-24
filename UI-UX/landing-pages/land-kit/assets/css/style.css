@@ -1,0 +1,921 @@
+/* @font-face {
+    font-family: migra_italic_extralight;
+    src: url(../fonts/Migra_Free_for_Personal_Use/MigraItalic-ExtralightItalic.ttf);
+} */
+
+    :root{
+        --c1: #4A3933;
+        --c2: #F0A500;
+        --c3: #E45826;
+        --c4: #E6D5B8;
+
+        --rc: 'Roboto Condensed', sans-serif;
+    }
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+
+
+
+.myContainer{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mainHeading{
+    font-family: var(--rc);
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.1px;
+    word-spacing: 2px;
+}
+
+.superHeading{
+    font-family: var(--ff_m);
+    font-size: 138px;
+    color: var(--c2);
+    line-height: 0;
+    letter-spacing: 2px;
+}
+.subHeading{
+    display: block;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.headingPragraph{
+    text-align: center;
+    font-size: 13px;
+    padding-top: 20px;
+    color: var(--c1);
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+}
+
+.padding_y{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+
+header{
+    background-image: url(../images/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* navbar css */
+header .navbarParent{
+    padding: 8px 0px;
+    position: fixed;
+    background: transparent;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+header nav .navbarLinks a{
+    color: var(--c4) !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    font-weight: bold;
+}
+header nav .navbarLinks .active{
+    color: var(--c3) !important;
+}
+header nav .navbarLinks a:hover{
+    color: var(--c3) !important; 
+}
+header nav .socialLinks{
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .socialLinks .socialDiv a{
+    margin: 0px 6px;
+    color: var(--c4);
+    transition: 0.3s;
+    font-size: 16px;
+}
+header nav .socialLinks .socialDiv a:hover{
+    color: var(--c3);
+}
+
+.navBarOnScroll{
+    background-color: var(--c4) !important;
+    border-bottom: solid 1px var(--c3);
+    box-shadow: #e45b2966 0px 0px 40px;
+
+}
+.navBarOnScroll .navbarLinks a{
+    color: white !important;
+    
+}
+.navBarOnScroll .socialLinks .socialDiv a i{
+    color: var(--c3) !important;
+}
+
+
+/* heroSection */
+.heroSection .heroTextHolder h1{
+    font-family: var(--rc);
+    font-size: 66px;
+    font-weight: 500;
+    color: var(--c4);
+    word-spacing: 3px;
+}
+.heroSection .heroTextHolder p{
+    color: var(--c4);
+    font-size: 16px;
+    font-weight: 500;
+    word-spacing: 3px;
+    left: 1.1px;
+    padding-right: 200px;
+
+}
+.heroSection .heroTextHolder .watchBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--c3);
+    border: 0;
+    height: 50px;
+    width: 220px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--c4);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition: 1s;
+}
+.heroSection .heroTextHolder .watchBtn:hover{
+    background-color: var(--c1);
+}
+
+
+/* formContainer */
+.formContainer{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+}
+.formContainer .formBox{
+    padding: 30px;
+    width: 410px;
+    background-color: var(--c4);
+    border-radius: 3px;
+}
+
+.formContainer .formBox .formHeading{
+    font-size: 16px;
+}
+.formContainer .formBox .formBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    border: 0;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    transition: 1s;
+    margin-top: 20px;
+}
+.formContainer .formBox .formBtn:hover{
+    background-color: var(--c1);
+    color: var(--c4);
+}
+.FormbottomText p{
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--c4);
+}
+
+
+
+/* tabsSection */
+.tabsSection .headingHolder{
+    padding-bottom: 70px;
+}
+
+.tabsSection .contentHolder{
+    display: flex;
+    flex-direction: column;
+}
+
+.business{
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.business .imageHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 70px;
+    /* background: yellowgreen; */
+}
+.business .imageHolder i{
+    font-size: 48px;
+    color: var(--c2);
+}
+
+.business .textHolder{
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70px;
+}
+.business .textHolder h6{
+    font-family: var(--rc);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+    transition: 1s;
+}
+.business .textHolder p{
+    margin: unset;
+    font-size: 13px;
+    color: var(--c1);
+}
+
+.accordianHolder .accordianHeader .accordianButton{
+    background: none;
+    border: solid 1px var(--c2);
+    display: flex;
+    justify-content: start;
+    padding-left: 15px;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+    transition: 1.5s;
+    color: var(--c2);
+}
+.accordianHolder .accordianHeader .accordianButton:hover{
+    background-color: var(--c4);
+    color: var(--c3);
+}
+.accordianHolder .accordianHeader .accordianButton:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordianCard{
+    border: none;
+}
+
+.accordianBody{
+    font-size: 14px;
+}
+
+
+
+
+
+/* services */
+.services{
+    background-color: var(--c4);
+}
+
+.services .serviceCards{
+    transition: 0.3s;
+    padding: 20px 0px;
+    box-shadow: rgb(76 75 75 / 20%) 0px 5px 30px;
+}
+.services .serviceCards:hover{
+   box-shadow: rgb(76 75 75 / 40%) 0px 5px 35px
+}
+.services .cardHeading{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+    transition: 1s;
+}
+.services .cardText{
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    transition: 1s;
+}
+
+.services .cardLink{
+    text-decoration: none;
+    color: var(--c2);
+    transition: 1s;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    font-weight: 500;
+}
+.services .cardLink:hover{
+    color: var(--c3);
+}
+
+/* whyUs */
+.whyUs .textContainer{
+    position: relative;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.whyUs .textContentHolder{
+    padding: 200px 120px;
+}
+.whyUs .textContentHolder .whyUsHeading{
+    text-align: left;
+}
+.whyUs .textContentHolder ul{
+    font-size: 14px;
+    color: var(--c1);
+    padding-top: 30px;
+}
+.whyUs .textContentHolder ul li{
+    padding-bottom: 8px;
+}
+
+.whyUs .rightSideImage{
+    object-fit: cover;
+    height: 100%;
+}
+    
+
+/* servicesBoxes */
+.servicesBoxes{
+    background-color: var(--c4);
+}
+.servicesBoxes .headingHolder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicesBoxes .serviceHeadingPragraph{
+    max-width: 400px;
+    /* background: red; */
+}
+
+.servicesBoxes .serviceBoxCard{
+    text-align: center;
+    background-color: transparent;
+    border: none;
+}
+.servicesBoxes .serviceBoxCardImage i{
+    font-size: 50px;
+    color: var(--c2);
+}
+
+.serviceBoxCard .serviceBoxCardHeading{
+    font-size: 16px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 500;
+    transition: 1s;
+}
+.serviceBoxCard .serviceBoxCardPragraph{
+    font-size: 14px;
+    color: var(--c1);
+    font-weight: 400;
+}
+
+
+/* testomonial */
+.testomonial .testomonialContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.testomonial .testomonialContainer .testomonialLogoHolder{
+    display: flex;
+    justify-content: center;
+}
+.testomonial .testomonialContainer .testomonialLogoHolder .logoes{
+    width: 200px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.testomonial .testomonialContainer .testomonialLogoHolder .logoes:hover{
+    opacity: 1;
+}
+
+.testomonial .textAndButtonHolder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.testomonial .textAndButtonHolder p{
+    padding: 50px 0px;
+    font-size: 22px;
+    max-width: 580px;
+    text-align: center;
+    /* background: red; */
+    color: var(--c1);
+}
+.testomonial .textAndButtonHolder .signUp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--c3);
+    border: 0;
+    height: 50px;
+    width: 170px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--c4);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    transition: 1s;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.testomonial .textAndButtonHolder .signUp:hover{
+    background-color: var(--c1);
+}
+
+
+/* footer */
+footer{
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+footer .footerList ul{
+    list-style: none;
+    padding: unset;
+}
+footer .footerList ul .listHeading{
+    color: var(--c4);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    padding-bottom: 25px;
+    font-weight: 600;
+}
+footer .footerList ul li{
+    padding-bottom: 8px;
+}
+footer .footerList ul .lst{
+    padding-bottom: unset;
+}
+footer .footerList ul li a{
+    text-decoration: none;
+    color: var(--c4);
+    font-size: 14px;
+    /* letter-spacing: 0.3px; */
+    word-spacing: 2px;
+    transition: 0.8s;
+}
+footer .footerList ul li a:hover{
+    color: var(--c3);
+}
+
+footer .footerLogoContainer{
+    display: flex;
+    flex-direction: column;
+}
+footer .footerLogoContainer .copyRightText p{
+    color: var(--c4);
+    font-size: 15px;
+    letter-spacing: px;
+    word-spacing: 2px;
+    padding-bottom: 25px;
+    font-weight: 600;
+}
+
+
+.buyFixedButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--c3);
+    border: 0;
+    height: 45px;
+    width: 260px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--c4);
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s ease-in-out;
+    /* border-radius: 3px; */
+    text-decoration: none;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    z-index: 9;
+    box-shadow: rgb(0 0 0 / 40%) 0px 0px 20px;
+}
+.buyFixedButton i{
+    font-size: 20px;
+}
+.buyFixedButton:hover{
+    bottom: 45px;
+    text-decoration: none;
+    color: var(--c4);
+}
+
+.menuBarIconButton:focus{
+    outline: 0;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 993px) and (max-width: 1024px) {
+    .myContainer{
+        padding-left: 40px;
+        padding-right: 40px;
+        /* width: 100%; */
+    }
+
+    .heroSection .heroTextHolder h1 {
+        font-size: 60px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+
+    header .navbarParent {
+        padding: 10px 0px;
+    }
+    .menuBarIconButton{
+        background: none;
+        border: none;
+        padding: unset;
+        padding-right: 6px;
+    }
+   .menuBarIconButton i{
+    color: white;
+    font-size: 24px;
+    }
+    #navbarSupportedContent{
+        background-color: var(--c4);
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    header nav .navbarLinks a {
+        color: var(--c1) !important;
+    }
+    header nav .socialLinks .socialDiv a {
+        color: var(--c1);
+    }
+
+    .myContainer{
+        padding-left: 20px;
+        padding-right: 20px;
+        /* width: 100%; */
+    }
+
+    .padding_y {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    .heroSection .heroTextHolder h1 {
+        font-size: 60px;
+    }
+    .heroSection .heroTextHolder p {
+        padding-right: 0px;
+    }
+
+    .formContainer .formBox {
+        padding: 30px;
+        width: 300px;
+        background-color: var(--c4);
+        border-radius: 3px;
+    }
+    footer .footerTablet{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .footerList{
+        padding-bottom: 30px;
+    }
+
+   
+}
+
+
+
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    header .navbarParent {
+        padding: 10px 0px;
+    }
+    .menuBarIconButton{
+        background: none;
+        border: none;
+        padding: unset;
+        padding-right: 6px;
+    }
+   .menuBarIconButton i{
+    color: white;
+    font-size: 24px;
+    }
+    #navbarSupportedContent{
+        background-color: var(--c4);
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    header nav .navbarLinks a {
+        color: var(--c1) !important;
+    }
+    header nav .socialLinks .socialDiv a {
+        color: var(--c1);
+    }
+
+    .padding_y {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .heroSection .heroTextHolder p {
+        padding-right: 0px;
+    }
+    .heroSection .heroTextHolder h1 {
+        font-size: 60px;
+    }
+    .mainHeading {
+        font-size: 40px;
+    }
+
+    .formContainer {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .formContainer .formBox {
+        width: 100%;
+    }
+
+    .testomonial .testomonialContainer .testomonialLogoHolder .logoes {
+        width: auto;
+    }
+    .heroTextHolder{
+        padding-bottom: 30px;
+    }
+
+    .testomonial .testomonialContainer .testomonialLogoHolder {
+        flex-wrap: wrap;
+    }
+
+    .whyUs .textContentHolder {
+        padding: 30px 30px;
+    }
+
+    .servicesBoxes .serviceBoxCard {
+        padding-bottom: 25px;
+    }
+    footer .footerTablet{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .footerList{
+        padding-bottom: 30px;
+    }
+
+    .buyFixedButton{
+        display: none;
+    }
+ 
+
+}
+@media (min-width: 481px) and (max-width: 575px) {
+
+    header .navbarParent {
+        padding: 10px 0px;
+    }
+    .menuBarIconButton{
+        background: none;
+        border: none;
+        padding: unset;
+        padding-right: 6px;
+    }
+   .menuBarIconButton i{
+    color: white;
+    font-size: 24px;
+    }
+    #navbarSupportedContent{
+        background-color: var(--c4);
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    header nav .navbarLinks a {
+        color: var(--c1) !important;
+    }
+    header nav .socialLinks .socialDiv a {
+        color: var(--c1);
+    }
+
+    .padding_y {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    
+    .heroSection .heroTextHolder p {
+        padding-right: 0px;
+    }
+    .heroSection .heroTextHolder h1 {
+        font-size: 40px;
+    }
+    .mainHeading {
+        font-size: 30px;
+    }
+
+    .formContainer {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .formContainer .formBox {
+        width: 100%;
+    }
+
+    .testomonial .testomonialContainer .testomonialLogoHolder .logoes {
+        width: auto;
+    }
+    .heroTextHolder{
+        padding-bottom: 30px;
+    }
+
+    .testomonial .testomonialContainer .testomonialLogoHolder {
+        flex-wrap: wrap;
+    }
+
+    .whyUs .textContentHolder {
+        padding: 30px 30px;
+    }
+
+    .servicesBoxes .serviceBoxCard {
+        padding-bottom: 25px;
+    }
+    footer .footerTablet{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .footerList{
+        padding-bottom: 30px;
+    }
+
+    .buyFixedButton{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    header .navbarParent {
+        padding: 10px 0px;
+    }
+    .menuBarIconButton{
+        background: none;
+        border: none;
+        padding: unset;
+        padding-right: 6px;
+    }
+   .menuBarIconButton i{
+    color: white;
+    font-size: 24px;
+    }
+    #navbarSupportedContent{
+        background-color: var(--c4);
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    header nav .navbarLinks a {
+        color: var(--c1) !important;
+    }
+    header nav .socialLinks .socialDiv a {
+        color: var(--c1);
+    }
+
+    .padding_y {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .myContainer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .tabsSection .headingHolder {
+        padding-bottom: 40px;
+    }
+    
+    .heroSection .heroTextHolder p {
+        padding-right: 0px;
+    }
+    .heroSection .heroTextHolder h1 {
+        font-size: 40px;
+    }
+    .mainHeading {
+        font-size: 30px;
+    }
+
+    .formContainer {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .formContainer .formBox {
+        width: 100%;
+    }
+
+    .testomonial .testomonialContainer .testomonialLogoHolder .logoes {
+        width: auto;
+    }
+    .heroTextHolder{
+        padding-bottom: 30px;
+    }
+
+    .testomonial .testomonialContainer .testomonialLogoHolder {
+        flex-wrap: wrap;
+    }
+    .testomonial .textAndButtonHolder p {
+        padding: 30px 0px;
+        font-size: 18px;
+    }
+
+    .whyUs .textContentHolder {
+        padding: 30px 15px;
+    }
+    .whyUs .textContentHolder ul {
+        font-size: 13px;
+        padding-top: 20px;
+    }
+
+    .servicesBoxes .serviceBoxCard {
+        padding-bottom: 25px;
+    }
+    footer .footerTablet{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    footer .footerList{
+        padding-bottom: 30px;
+    }
+    footer .footerLogoContainer .copyRightText p {
+        font-size: 14px;
+    }
+
+    .buyFixedButton{
+        display: none;
+    }
+
+
+}

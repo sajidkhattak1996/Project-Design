@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allure</title>
+
+    <!--fonts families used+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!--fonts families ended====================================================================================-->
+
+    <!-- styles sheet ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- Bootstrap style sheet -------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Owl sliders style sheets -->
+    <link rel="stylesheet" href="plugins/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel/dist/assets/owl.theme.default.css">
+    <!-- Owl slides style sheets ended ------>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- style sheet ended =====================================================================================-->
+
+</head>
+<body>
+<header id="topHeader">
+    <div class="topBar  pt-lg-4 pt-2 pb-2 border-bottom">
+    <div class="myContainer">
+            <div class="row ">
+                <div class="topLinks col-lg-4 col-12">
+                    <ul class="d-flex justify-content-lg-start justify-content-center">
+                        <li class="pl-2 pr-3 wishlist"><a href="#">Wishlist</a></li>
+                        <li class=" contact"><a href="#">Contact</a></li>
+                        <li class="language pl-3 dn">
+                            <select name="language" >
+                                <option value="CAD$">USD $</option>
+                                <option value="CAD$">CAD $</option>
+                                <option value="CAD$">GBP $</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="topLogo col-md-4 text-center dn">
+                    <div class="logoImageHolder">
+                        <a href="">
+                            <img src="images/logo_allure.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="topIcons col-md-4  text-right dn">
+                    <button class="btn link_c2"><i class="fas fa-search"></i></button>
+                    <button class="btn link_c2"><i class="far fa-user"></i></button>
+                    <button class="btn link_c2"><i class="fal fa-shopping-cart"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainNavBar">
+        <div class="myContainer">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand mobileLogo" href="#">
+                    <img src="images/Logo_07018bb2-eaf1-4479-a80d-98c3a1c9187b_large.png" alt="">
+                </a>
+
+                <!-- <div class="topIcons  text-right dn">
+                    <button class="btn link_c2"><i class="fas fa-search"></i></button>
+                    <button class="btn link_c2"><i class="far fa-user"></i></button>
+                    <button class="btn link_c2"><i class="fal fa-shopping-cart"></i></button>
+                </div> -->
+
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <div id="top_menu_closer" >
+        
+                <svg xmlns="http://www.w3.org/2000/svg" class="d-none">          
+                <symbol id="close" viewBox="0 0 16 17">
+                    <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor"></path>
+                </symbol> 
+                </svg>
+                <svg class="icon" viewBox="0 0 50 50" onClick="return menuFunc()"><use xlink:href="#close" x="0%" y="0%"></use></svg>
+
+
+
+
+      </div>
+                  <ul class="navbar-nav mr-auto ml-auto mainMenuList">
+                    <li class="nav-item  mainListItem " id="cosmeticOnHover">
+                      <a href="#" class="nav-link  mainATAG dropDownArrow" id="cosmetic" role="button" >
+                        <h5 class="title">Cosmetic</h5>
+                        <span>SALE</span>
+                    </a>
+                    <button class="btn outLine_0 cosmeticArrowButton" onclick="return dropDownHandler('cosmeticArrowButton','cosmeticSubMenu')">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                      <div class="cosmeticSubMenu" aria-labelledby="cosmetic">
+                        <ul class="d-flex submenulist flex-column flex-lg-row">
+                            <li >
+                                <a href="#" class="titleAnchorTag">
+                                    <h3 class="innerTitle">Make Up</h3>
+                                </a>
+                                <button class="btn outLine_0 makeUpArrowButton" onclick="return dropDownHandler('makeUpArrowButton','makeUpContent')">
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+
+                                <div class="subLinks makeUpContent">
+                                   <ul class="category">
+                                       <li ><a href="#" >Eyeliner</a></li>
+                                       <li ><a href="#" >Concealer</a> </li>
+                                       <li ><a href="#" >Face Powder</a> </li>
+                                       <li ><a href="#">Mascara</a></li>
+                                       <li ><a href="#" >Lipgloss</a> </li>
+                                       <li ><a href="#">facials</a> </li>
+                                   </ul>
+                                </div>
+                            </li>
+                            <li class="frangrancesLi">
+                               <a href="#" class="titleAnchorTag">
+                                   <h3 class="innerTitle">Frangrances</h3>
+                                </a>
+                                <button class="btn outLine_0 FrangrancesArrowButton" onclick="return dropDownHandler('FrangrancesArrowButton','FrangrancesContent')">
+                                 <i class="fas fa-chevron-down"></i>
+                                 </button>
+                               <div class="subLinks FrangrancesContent">
+                                  <ul class="category">
+                                      <li ><a href="#" >Fine fragrances</a></li>
+                                      <li ><a href="#" >Body Mists</a> </li>
+                                      <li ><a href="#" >Oriental</a> </li>
+                                      <li ><a href="#">Deodorants</a></li>
+                                      <li ><a href="#" >Floral Gold</a> </li>
+                                      <li ><a href="#">Oceanic</a> </li>
+                                  </ul>
+                               </div>
+                           </li>
+
+                           <li class="d_none_below_lg">
+                               <a href="#" class="titleAnchorTag">
+                                   <h3 class="innerTitle">Special Product</h3>
+                               </a>
+                               <div class="subLinks">
+                                  <div class="innerCardOuter">
+                                      <div class="cardHolder">
+                                          <div class="cardImage">
+                                              <a href="#">
+                                                  <img src="images/products/Cosmetic2_8aec5b4c-9f74-400d-a77e-9f38e8780d0e_720x.png" alt="" class="img-fluid">
+                                              </a>
+                                          </div>
+                                          <div class="cardInformation">
+                                               <a href="#">Facial Scrub</a>  
+                                               <span class="priceText">
+                                                   <span class="span1">$60.00</span>
+                                                   <span>$48.00</span>
+                                               </span>
+                                          </div>
+                                      </div>
+                                  </div>
+                               </div>
+                           </li>
+
+                        </ul>
+                        <div class="row d_none_below_lg">
+                            <div class="col-12 pt-3">
+                                <a href="#">
+                                    <img src="images/products/Menu-banner-2.png" alt="" class="img-fluid w-100">
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+
+                    </li>
+                    <li class="nav-item mainListItem">
+                      <a href="#" class="nav-link mainATAG">
+                        <h5 class="title">Collection</h5>
+                      </a>
+                    </li>
+
+                    <li class="nav-item dropdown mainListItem" id="category">
+                      <a class="nav-link  mainATAG dropDownArrow" href="#" id="category" role="button" ">
+                        <h5 class="title">Category</h5>
+                      </a>
+                      <button class="btn outLine_0 categoryArrowButton" onclick="return dropDownHandler('categoryArrowButton','categoryDropDown')">
+                        <i class="fas fa-chevron-down"></i>
+                        </button>
+                      <div class="dropdown-menu categoryDropDown" >
+                        <ul class="d-flex submenulist flex-column flex-lg-row">
+                            <li >
+                                <a href="#" class="titleAnchorTag">
+                                    <h3 class="innerTitle">Fragrances</h3>
+                                </a>
+                                <button class="btn outLine_0 categoryFragrancesArrowButton" onclick="return dropDownHandler('categoryFragrancesArrowButton','categoryFragrancesContent')">
+                                <i class="fas fa-chevron-down"></i>
+                                </button>
+                                <div class="subLinks categoryFragrancesContent">
+                                   <ul class="category">
+                                       <li ><a href="#" >Fine fragrances</a></li>
+                                       <li ><a href="#" >Body Mists</a> </li>
+                                       <li ><a href="#" >Oriental</a> </li>
+                                       <li ><a href="#">Deodorants</a></li>
+                                       <li ><a href="#" >Floral Gold</a> </li>
+                                       <li ><a href="#">Oceanic</a> </li>
+                                   </ul>
+                                </div>
+                            </li>
+                            <li class="categoryMakeUpLi">
+                               <a href="#" class="titleAnchorTag">
+                                   <h3 class="innerTitle">Make Up</h3>
+                               </a>
+                               <button class="btn outLine_0 categoryMakeUpArrowButton" onclick="return dropDownHandler('categoryMakeUpArrowButton','categoryMakeUpContent')">
+                                <i class="fas fa-chevron-down"></i>
+                                </button>
+                               <div class="subLinks categoryMakeUpContent">
+                                  <ul class="category">
+                                      <li ><a href="#" >Eyeliner</a></li>
+                                      <li ><a href="#" >Concealer</a> </li>
+                                      <li ><a href="#" >Face Powder</a> </li>
+                                      <li ><a href="#">Mascara</a></li>
+                                      <li ><a href="#" >Lipgloss</a> </li>
+                                      <li ><a href="#">facials</a> </li>
+                                  </ul>
+                               </div>
+                           </li>
+                        </ul>
+                      </div>
+                    </li>
+
+                    <li class="nav-item mainListItem">
+                        <a href="#" class="nav-link mainATAG aboutAtag">
+                            <h5 class="title">About Us</h5>
+                            <span>NEW</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown mainListItem" id="includePages">
+                        <a class="nav-link mainATAG dropDownArrow" href="#" id="include_pages" >
+                            <h5 class="title">Include Pages</h5>
+                        </a>
+                        <button class="btn outLine_0 includePagesArrowButton" onclick="return dropDownHandler('includePagesArrowButton','includePagesContent')">
+                            <i class="fas fa-chevron-down"></i>
+                            </button>
+                        <div class="dropdown-menu includePages includePagesContent" >
+                            <ul class="d-flex submenulist">
+                                <li >
+                                    <a href="#" class="titleAnchorTag">
+                                        <h3 class="innerTitle">Page</h3>
+                                    </a>
+                                    <div class="subLinks">
+                                       <ul class="category">
+                                           <li ><a href="#" >Collection</a></li>
+                                           <li ><a href="#" >Contact</a> </li>
+                                           <li ><a href="#" >Wishlist</a> </li>
+                                           <li ><a href="#">404</a></li>
+                                          
+                                       </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                      </li>
+
+                      <li class="nav-item mainListItem">
+                        <a href="#" class="nav-link mainATAG faqsAtag">
+                            <h5 class="title">FAQs</h5>
+                            <span>HOT</span>
+                        </a>
+                      </li>
+
+                      <li class="nav-item mainListItem">
+                        <a href="#" class="nav-link mainATAG">
+                            <h5 class="title">Blog</h5>
+                        </a>
+                      </li>
+               
+                  </ul>
+                </div>
+              </nav>
+
+
+        </div>
+    </div>
+
+</header>    
+
+<section class="slider pb-5">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators indicatorSlider">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner ">
+          <div class="carousel-item active sliderImageParent tesingbg1">
+             <div class="row">
+                 <div class="col-sm-6 col-12">
+                     <img src="images/sliders_images/s2.png" class="d-block w-100" alt="..." >
+                 </div>
+                 <div class="col-sm-6 col-12">
+                     <div class="slideImage1Content">
+                        
+                                   <div class="subTitle" > Skin care Essentials</div>
+                                  <div class="mainTitle pb-3 pb-md-0" >Natural Ingredients</div>
+                                 
+                                  <div class="description pragraph pt-lg-3 pt-0 pb-lg-5 pb-3" >
+                                    Provide your skin with the nourishment it needs. Make smarter, safer and organic choices for your skincare. Allure offers all products made from natural and organic components. 
+                                 </div>
+                                 <a href="#" class="mybtn1">SHOP NOW</a>
+                                
+                      
+                     </div>
+                 </div>
+             </div>  
+
+
+
+          </div>
+          <div class="carousel-item tesingbg1" >
+              <div class="row">
+                  <div class="col-sm-6 col-12">
+                      <img src="images/sliders_images/s5.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="col-sm-6 col-12">
+                      <div class="slideImage1Content slideMobile">
+                         
+                                  <div class="">
+                                      <div class="subTitle" > Skin-friendly Products</div>
+                                     <div class="mainTitle pb-3 pb-md-0" >Nourishing Vitamins</div>
+                                     <div class="description pragraph pt-lg-3 pt-0 pb-lg-5 pb-3" >
+                                        With Allure, you are certain to get the best ingredients, organic components and necessary vitamins in your skin. We guarantee the best skincare products that are derived from nature’s best! 
+                                     </div>
+                                    <a href="#" class="mybtn1">SHOP NOW</a>
+                                  </div>
+          
+                      </div>
+                  </div>
+              </div>
+
+
+          </div>
+        </div>
+        <a class="carousel-control-prev prevSliderIcons" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <i class="fas fa-chevron-left" aria-hidden="true" id="iconleft"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next nexSliderIcons" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <i class="fas fa-chevron-right" aria-hidden="true" id="iconRight"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+</section>
+
+<section class="about py-lg-5 py-md-3">
+    <div class="myContainer">
+        <div class="row text-center text-lg-left">
+            <div class="col-xl-7 col-lg-6 col-12">
+                <div class="aboutImageHolder">
+                    <img src="images/about.png" alt="" class="img-fluid">
+                    <!-- <img src="images/sliders_images/s4.png" alt="" class="img-fluid"> -->
+                </div>
+            </div>
+
+            <div class="col-xl-5 col-lg-6 col-12">
+                    <div class="textHolder">
+                        <div class="subTitle2">SKINCARE PRODUCTS</div>
+                        <h2 class="mainTitle2 bottomLine2 pb-4">Learn About Allure Products</h2>
+                        
+                        <p class="pragraph px-lg-0 px-0 px-sm-5 ">
+                            We blend in nature’s best for our clients. Get a glowy, soft and well-nourished skin through regular use of Allure products. Our products target different skin care requirements:
+                            </p>
+                        
+                        
+                        <div class="categoryList py-3">
+                            <div class="listHolder d-flex flex-lg-row  flex-column"> 
+                                <ul>
+                                    <li>Eye</li>
+                                    <li>Face</li>
+                                    <li>Hair</li>
+                                    <li>Lip</li>
+
+                                </ul>
+                                <ul>
+                                    <li>Body</li>
+                                    <li>Feet</li>
+                                    <li>Hands</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+                        <a href="#" class="mybtn1">
+                            VIEW MORE
+                        </a>
+                      
+                    </div>
+             
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="outServices py-xl-5 pt-4 pb-0">
+    <div class="myContainer px-sm-5 px-lg-0 ">
+        <div class="serviceHeading text-center pb-3">
+            <h6 class="subTitle2">SKINCARE PRODUCTS</h6>
+            <h2 class="mainTitle2 bottomLine">Our Services</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="card text-center border-0 serviceCards" >
+                    <a href="#" class="cardAtag">
+                        <div class="card-img-top">
+                            <img src="images/serviceicon1.png"  alt="..." class="img-fluid">
+                        </div>
+                        <div class="card-body cardBody">
+                          <h5 class="card-title">Free Delivery</h5>
+                          <p class="card-text">
+                            We offer a free delivery option on every first order.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="card text-center border-0 serviceCards" >
+                    <a href="#" class="cardAtag">
+                        <div class="card-img-top">
+                            <img src="images/serviceicon2.png"  alt="..." class="img-fluid">
+                        </div>
+                        <div class="card-body cardBody">
+                          <h5 class="card-title">Cash on Delivery  </h5>
+                          <p class="card-text">
+                            You can pay after you receive your delivery.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="card text-center border-0 serviceCards" >
+                    <a href="#" class="cardAtag">
+                        <div class="card-img-top">
+                            <img src="images/serviceicon3.png"  alt="..." class="img-fluid">
+                        </div>
+                        <div class="card-body cardBody">
+                          <h5 class="card-title">Chat with Us </h5>
+                          <p class="card-text">
+                            Our team is ready to answer all your queries.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 col-12">
+                <div class="card text-center border-0 serviceCards" >
+                    <a href="#" class="cardAtag">
+                        <div class="card-img-top">
+                            <img src="images/serviceicon4.png"  alt="..." class="img-fluid">
+                        </div>
+                        <div class="card-body cardBody">
+                          <h5 class="card-title">Gift Voucher </h5>
+                          <p class="card-text">
+                            You get discounts and gift vouchers on every purchase. 
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section>
+
+<section class="fabulousProducts py-5 ">
+    <div class="myContainer ">
+        <div class="fabulousProductHeading text-center pb-3">
+            <h6 class="subTitle2">LATEST UPDATES </h6>
+            <h2 class="mainTitle2 bottomLine">Allure Products</h2>
+        </div>
+
+        <div class="px-sm-5 px-lg-0 px-2">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="card productCard border-0" >
+                        <div class="card-img-top pCardImageHolder">
+                            <img src="images/products/Cosmetic2_8aec5b4c-9f74-400d-a77e-9f38e8780d0e_720x.png"  alt="..." class="img-fluid">
+                            
+                            <!-- All below are position absolute items -->
+                            <div class="badge">
+                                <span>Sale</span>
+                            </div>
+    
+                            <div class="wishList d-flex flex-column">
+                                <button class="btn m-1 btn_c3">
+                                    <i class="far fa-eye"></i>
+                                </button>
+    
+                                <button class="btn m-1 btn_c3">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+    
+                            <div class="cartOnProduct">
+                                <button class="btn btn_c1">
+                                    <i class="fal fa-shopping-cart"></i>
+                                </button>
+                            </div>
+    
+                            <div class="reviewStart">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+    
+                        <div class="card-body text-center pCardBody">
+                              <a href="#" class="btn card-title cardTitile">Facial Scrub</a>
+                          <div class="productPrice">
+                              <span class="comparePrice">$60.00</span>
+                              <span class="regularPrice">$48.00</span>
+                          </div>
+                          
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 col-12 pt-sm-0 pt-4">
+                    <div class="card productCard border-0" >
+                        <div class="card-img-top pCardImageHolder">
+                            <img src="images/products/Cosmetic2_8aec5b4c-9f74-400d-a77e-9f38e8780d0e_720x.png"  alt="..." class="img-fluid">
+                            
+                            <!-- All below are position absolute items -->
+                            <!-- <div class="badge">
+                                <span>Sale</span>
+                            </div> -->
+    
+                            <div class="wishList d-flex flex-column">
+                                <button class="btn m-1 btn_c3">
+                                    <i class="far fa-eye"></i>
+                                </button>
+    
+                                <button class="btn m-1 btn_c3">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+    
+                            <div class="cartOnProduct">
+                                <button class="btn btn_c1">
+                                    <i class="fal fa-shopping-cart"></i>
+                                </button>
+                            </div>
+    
+                            <div class="reviewStart">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+    
+                        <div class="card-body text-center pCardBody">
+                              <a href="#" class="btn card-title cardTitile">Eye cream  </a>
+                          <div class="productPrice">
+                              <!-- <span class="comparePrice">$60.00</span> -->
+                              <span class="regularPrice">$66.00</span>
+                          </div>
+                          
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-sm-6 col-12 pt-lg-0 pt-4 mt-sm-1 mt-0 mt-lg-0 ">
+                    <div class="card productCard border-0" >
+                        <div class="card-img-top pCardImageHolder">
+                            <img src="images/products/Cosmetic2_8aec5b4c-9f74-400d-a77e-9f38e8780d0e_720x.png"  alt="..." class="img-fluid">
+                            
+                            <!-- All below are position absolute items -->
+                            <div class="badge2">
+                                <span>Sold out</span>
+                            </div>
+    
+                            <div class="wishList d-flex flex-column">
+                                <button class="btn m-1 btn_c3">
+                                    <i class="far fa-eye"></i>
+                                </button>
+    
+                                <button class="btn m-1 btn_c3">
+                                    <i class="far fa-heart"></i>
+                                </button>
+                            </div>
+    
+                            <div class="cartOnProduct">
+                                <button class="btn btn_c1">
+                                    <i class="fal fa-shopping-cart"></i>
+                                </button>
+                            </div>
+    
+                            <div class="reviewStart">
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                              <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+    
+                        <div class="card-body text-center pCardBody">
+                              <a href="#" class="btn card-title cardTitile">Lip Balm</a>
+                          <div class="productPrice">
+                              <!-- <span class="comparePrice">$60.00</span> -->
+                              <span class="regularPrice">$48.00</span>
+                          </div>
+                          
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div>
+
+            <div class="buttonViewAll pt-5 text-center">
+                <a href="#" class="mybtn1 ">VIEW ALL</a>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<section class="DealOfTheDay py-sm-5 py-3">
+    <div class="myContainer">
+        <div class="px-sm-5 px-lg-0 px-2">
+            <div class="row text-md-left text-center">
+                <div class="col-lg-7 col-md-6 col-12 ">
+                    <div class="timerBox pb-4 pb-md-0">
+                        <h2 class="mainTitle2 forMD">Best Deal Of the Day   </h2>
+                        <p class="pragraph">
+                            Allure offers discounted deals every day. These deals facilitate our customers in getting our products at the best prices. Know about the discounts and deals we have to offer today! 
+                        </p>
+                        <div class="countdowncontainer d-flex pb-4 justify-content-center justify-content-md-start">
+                            <div class="py-3 pr-3">34</div>
+                            <div class="p-3">02</div>
+                            <div class="p-3">22</div>
+                            <div class="p-3">17</div>
+                        </div>  
+                        
+                        <a href="#" class="mybtn1 mydealbtn ">
+                          VIEW MORE
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="col-lg-5 col-md-6 col-12">
+                    <div class="dealImageHolder">
+                        <img src="images/countdownbanner.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="trending py-5">
+    <div class="myContainer">
+        <div class="trendingHeadingHolder text-center">
+            <h6 class="subTitle2">FEATURED</h6>
+            <h2 class="mainTitle2 bottomLine">Trending Now</h2>
+        </div>
+        <div class="py-3"></div>
+
+        <div class="px-sm-5 px-lg-0 px-2">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="productImageHolder pb-4">
+                        <img src="images/products/Cosmetic2_dba47744-7313-4603-af52-7267371ccc8f.png" alt="" class="img-fluid border"> 
+                    </div>
+                    <div class="productSlider">
+                        <div class="owl-carousel product_slider_owl">
+                            <div class="item border">
+                                <img src="images/sliders_images/Cosmetic1_7dec94a8-fd2d-4c18-97a8-f052b1c8aee3_550x.png" alt="" >
+                            </div>
+                            <div class="item border">
+                                <img src="images/sliders_images/Cosmetic1_daa816e3-3007-4316-8465-8461a932b84b_550x.png" alt="" >
+                            </div>
+                            <div class="item border">
+                                <img src="images/sliders_images/Cosmetic2_6c56a646-1f75-45c5-9c30-6159389bc6b9_550x.png" alt="" >
+                            </div>
+                            <div class="item border">
+                                <img src="images/sliders_images/Cosmetic3_046bba73-2dfe-4879-91b3-e7b0e5af9a16_550x.png" alt="" >
+                            </div>
+                            <div class="item border">
+                                <img src="images/sliders_images/Cosmetic1_7dec94a8-fd2d-4c18-97a8-f052b1c8aee3_550x.png" alt="" >
+                            </div>
+                            <div class="item border">
+                                <img src="images/sliders_images/Cosmetic1_daa816e3-3007-4316-8465-8461a932b84b_550x.png" alt="" >
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-12">
+                    <div class="forScroll">
+                        <div class="productTitle pt-4 pt-md-0">
+                            <a href="#">Face Cream</a>
+                        </div>
+        
+                        <div class="productreview d-flex ">
+                            <div class="stars  py-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <button class="writeReviewBtn btn">
+                                Write review &nbsp; <i class="fas fa-pencil-alt"></i>
+                            </button>
+                        </div>
+        
+                        <div class="productPrice">
+                            <span class="price1">$60.00</span> &nbsp;
+                            <span class="regularPrice">$53.00</span>
+                        </div>
+        
+                        <div class="productInformations pt-1">
+                            <p class="vendor">Vendor : Allure</p>
+                            <p class="productType">Product Type : Skincare</p>
+                            <p class="sku">Sku : asdhjk</p>
+                        </div>
+        
+                        <div class="wishList d-flex">
+                            <button class="wishListButton btn p-0">
+                                <i class="fas fa-heart"></i> &nbsp;
+                                Add To Wishlist
+                            </button>
+        
+                            <button class="sizeChart btn">
+                                <i class="fas fa-keyboard"></i> &nbsp;
+                                Sizechart
+                            </button>
+                        </div>
+        
+                        <div class="quantityValue pt-1 pb-2">
+                            Hurry! Only
+                            <span  class="variant_quantity">
+                              4
+                            </span>
+                            units left in stock!
+                        </div>
+        
+                        <div class="progressBar ">
+                            <span style="width: 30%;"></span>
+                        </div>
+        
+                        <fieldset class="productSizes mt-2">
+                            <legend class="form__label">Size</legend>
+                              <input type="radio" id="small_size" >
+                              <label for="small_size" class="square active">S</label>
+        
+                              <input type="radio" id="mediem_size" value="M" >
+                              <label for="mediem_size" class="square">M</label>  
+        
+                              <input type="radio" id="large_size" name="Size" value="L" >
+                              <label for="large_size" class="square">L</label>
+                        </fieldset>
+        
+                        <fieldset class="productColor mt-2">
+                            <legend >Color</legend>
+                              <input type="radio" id="pink" >
+                              <label for="pink" class="square box1"></label>
+        
+                              <input type="radio" id="yellow" >
+                              <label for="yellow" class="square box2"></label>  
+        
+                              <input type="radio" id="green"  >
+                              <label for="green" class="square box3"></label>
+                        </fieldset>
+        
+                        <div class="quantityIncraseBoxHolder">
+                            <label for="quantity">Quantity</label>
+                            <div class="buttonBox">
+                                <button class="buttonMinus">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="text" name="" id="" class="quantityNo" value="1">
+                                <button class="buttonPlus">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+        
+                        </div>
+        
+        
+                        <div class="buttons d-flex pb-2 flex-column flex-sm-row ">
+                            <a href="#" class="mybtn1 m-1 ">ADD TO CARD</a>
+                            <a href="#" class="mybtn1 m-1 b2 ">BUY IT NOW</a>
+                        </div>
+        
+                        <div class="serviceTypeBox border  p-4 mt-2 mt-md-0">
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <div class="serviceOne d-flex flex-sm-row flex-column text-center text-sm-left">
+                                        <div class="icon align-self-center">
+                                            <img src="images/serviceicon1.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="text d-flex flex-column pl-3">
+                                            <span class=""><strong>Free Delivery</strong></span>
+                                            <!-- <span class="">Lorem Ipsum dummy</span> -->
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-sm-6 col-12">
+                                    <div class="serviceOne d-flex flex-sm-row flex-column text-center text-sm-left">
+                                        <div class="icon align-self-center">
+                                            <img src="images/serviceicon2.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="text d-flex flex-column pl-3">
+                                            <span class=""><strong>Big Savings </strong></span>
+                                            <!-- <span class="">Lorem Ipsum dummy</span> -->
+                                        </div>
+                                    </div>
+                                </div>                        
+        
+                            </div>
+                            <div class="py-3"></div>
+        
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <div class="serviceOne d-flex flex-sm-row flex-column text-center text-sm-left">
+                                        <div class="icon align-self-center">
+                                            <img src="images/serviceicon3.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="text d-flex flex-column pl-3">
+                                            <span class=""><strong>Customer Support</strong></span>
+                                            <!-- <span class="">Lorem Ipsum dummy</span> -->
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-sm-6 col-12">
+                                    <div class="serviceOne d-flex flex-sm-row flex-column text-center text-sm-left">
+                                        <div class="icon align-self-center">
+                                            <img src="images/serviceicon4.png" alt="" class="img-fluid">
+                                        </div>
+                                        <div class="text d-flex flex-column pl-3">
+                                            <span class=""><strong>Gift Voucher</strong></span>
+                                            <!-- <span class="">Lorem Ipsum dummy</span> -->
+                                        </div>
+                                    </div>
+                                </div>                        
+        
+                            </div>
+        
+        
+                        </div>
+        
+        
+                        <div class="bottomBannerTypeImage pt-3 pt-lg-2">
+                            <img src="images/Trustedimage.png" alt="" class="img-fluid">
+                        </div>
+
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="tabsSection">
+    <div class="myContainer">
+        <div class="tabBox border">
+            <!-- Nav pills -->
+            <div class="tabHandleForMobile pt-2 pt-sm-0">
+                <ul class="nav nav-pills justify-content-center mobileTabsUl" role="tablist">
+                  <li class="nav-item mx-2 tabList">
+                    <a class="btn btn-outline-dark rounded-0 active  anchorTag" data-toggle="pill" href="#home">DESCRIPTION</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="btn btn-outline-dark rounded-0  anchorTag" data-toggle="pill" href="#tab2">REVIEWS</a>
+                  </li>
+                  <li class="nav-item mx-2">
+                    <a class="btn btn-outline-dark rounded-0 anchorTag" data-toggle="pill" href="#tab3">ANY QUESTIONS</a>
+                  </li>
+                </ul>
+            </div>
+          
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="home" class=" tab-pane active  tab1Information p-4">
+                    <p>Get rid of all the scars on your face with our skincare products. You can say goodbye to acne now because we offer natural and organic products to our customers.</p>
+                    <h4>Benefits of Allure Products</h4>
+                    <ul>
+                        <li class="active">Natural Ingredients</li>
+                        <li>Cruelty Free</li>
+                        <li>Environment Friendly</li>
+                        <li>Vegan Composition </li>
+                    </ul>
+                    <h4>Results of Allure Products</h4>
+                    <ol>
+                        <li>Even Skin tone</li>
+                        <li>Moisturized Skin</li>
+                        <li>Glowing Look</li>
+                        <li>Clear Looking Skin</li>
+                    </ol>
+                    <h4>Allure Skincare heals your Skin</h4>
+                    <blockquote>
+                        <p>
+                            Through regular use of our products, customers have observed a visible difference in their skin. They have found it to be glowy and nourished. We have received an overwhelming response for all of our products. 
+                        </p>
+                    </blockquote>
+
+              </div>
+
+              <div id="tab2" class="container   tab-pane fade tab2Reviews p-4">
+                
+                <div class="tabsTop d-flex justify-content-lg-between flex-column flex-sm-row">
+                    <div class="leftSideOfReview d-flex">
+                        <div class="reviwStar pr-3">
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                        </div>
+                        <span >Based on 3 reviews</span>
+                    </div>
+                    <div class="rightSideOfReviw py-3 py-sm-0">
+                        <a href="" class="mybtn1">WRITE A REVIEW</a>
+                    </div>
+                </div>
+                <div class="pb1 border-bottom mt-4"></div>
+
+                <div class="section2 py-3  border-bottom" >
+                    <div class="sheader">
+                        <div class="reviwStar">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                       </div>
+                      <h3 class="pt-2">Wonderful Packaging</h3>
+                      <span class="namedate"><strong>Sara</strong> on <strong> on Feb 25, 2020</strong></span>
+                    </div>
+              
+                    <div class="pt-2">
+                      <p >
+                        I have started using your Face cream and it is totally amazing! It keeps my skin hydrated and makeup is so easier to put on now! Plus, the packaging is so nice and easy to use. 
+                      </p>
+                    </div>
+                    <div class="reportLink pb-3">
+                      <a href="#" >Report as Inappropriate</a>
+                    </div>
+                  </div>
+
+                  <div class="section2 py-3  " >
+                    <div class="sheader">
+                        <div class="reviwStar">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                       </div>
+                      <h3 class="pt-2">Amazing Results  </h3>
+                      <span class="namedate"><strong>Liza </strong> on <strong>on Jan 28, 2020</strong></span>
+                    </div>
+              
+                    <div class="pt-2">
+                      <p >
+                        I have found Allure products to be amazing. I used their eye cream for a month and my dark circles started to disappear. I love the brand!
+                      </p>
+                    </div>
+                    <div class="reportLink pb-3">
+                      <a href="#" >Report as Inappropriate</a>
+                    </div>
+                  </div>
+
+
+              </div>
+
+              <div id="tab3" class="container tab-pane fade"><br>
+                 <div class="formHolder">
+                     <form>
+                        <div class="row">
+                            <div class="col-md-4 col-12">
+                                <div class="inputBox1">
+                                    <input class=" box1Input" autocomplete="name" type="text" placeholder="Name">
+                                  </div>
+                            </div>
+                            <div class="col-md-4 col-12 py-3 py-md-0">
+                                <div class="inputBox1">
+                                    <input class=" box1Input" autocomplete="name" type="email" placeholder="Email *">
+                                  </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <div class="inputBox1">
+                                    <input class=" box1Input" type="text" placeholder="Phone no">
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="textAreaHolder pt-3">
+                                    <textarea name="comment" rows="6" class="textArea" placeholder="comment"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sendButtonHolder text-center py-3">
+                            <button type="submit" class="mybtn1">Send</button>
+                        </div>
+
+
+                     </form>
+                 </div>
+              </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section class="instagramFeed py-5">
+    <div class="myContainer">
+        <div class="headingHolder text-center pb-3">
+            <h6 class="subTitle2">Instagram Feed</h6>
+            <h2 class="mainTitle2 bottomLine">@Fabulous</h2>
+        </div>
+
+        <div class="owl-carousel instagramfeedOWL">
+            <div class="item ">
+                <img src="images/instagramFeed/106450891_282621516139882_1524144269859214625_n.jpg" alt="">
+            </div>
+            <div class="item ">
+                <img src="images/instagramFeed/106503951_604411720193462_8348800753083857043_n.jpg" alt="">
+            </div>
+            <div class="item ">
+                <img src="images/instagramFeed/106595569_1581721228676456_1388634993187902509_n.jpg" alt="">
+            </div>
+            <div class="item ">
+                <img src="images/instagramFeed/107043570_3095690340511096_6830253307289005329_n.jpg" alt="">
+            </div>
+            <div class="item ">
+                <img src="images/instagramFeed/107057062_299468297846370_6208657018205160660_n.jpg" alt="">
+            </div>
+            <div class="item ">
+                <img src="images/instagramFeed/107234500_144317430642568_5932429488628657215_n.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="awesomeFeatures py-5">
+    <div class="myContainer">
+        <div class="headingHolder text-center pb-4">
+            <h6 class="subTitle2">THE PRODUCTS</h6>
+            <h2 class="mainTitle2 bottomLine">Awesome Features</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="featureImageHolder text-center">
+                   <img src="images/featuresbannerimage.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="d-flex justify-content-center flex-column flex-sm-row align-items-center">
+                    <div class="card text-center featureCard mr-sm-3 mr-0" style="width: 18rem;">
+                        <div class="cardTopImage card-img-top">
+                            <img src="images/features1_8166e743-7265-4324-9f4f-e251160c35e8.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body featureCardBody">
+                          <h5 class="card-title">Face Care</h5>
+                          <p class="card-text">
+                            Keep your face free from acne, dirt and patchiness.
+                            </p>
+                        </div>
+                      </div>
+    
+                      <div class="card text-center featureCard ml-sm-3 ml-0 mt-3 mt-sm-0" style="width: 18rem;">
+                        <div class="cardTopImage card-img-top">
+                            <img src="images/features2_ddb9472a-158e-4d97-83ae-d01a7ffc946b.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body featureCardBody">
+                          <h5 class="card-title">Feet Care</h5>
+                          <p class="card-text">
+                            Get rid of cracked heels and dirty feet.
+                            </p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="d-flex pt-sm-4 pt-0 mt-sm-1 mt-0  justify-content-center flex-column flex-sm-row align-items-center">
+                    <div class="card text-center featureCard mr-sm-3 mr-0 mt-3 mt-sm-0" style="width: 18rem;">
+                        <div class="cardTopImage card-img-top">
+                            <img src="images/features1_8166e743-7265-4324-9f4f-e251160c35e8.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body featureCardBody">
+                          <h5 class="card-title">Body Care   </h5>
+                          <p class="card-text">
+                            Nourish and hydrate your body to avoid itchiness.
+                            </p>
+                        </div>
+                      </div>
+    
+                      <div class="card text-center featureCard ml-sm-3 mt-3 mt-sm-0 ml-0" style="width: 18rem;">
+                        <div class="cardTopImage card-img-top">
+                            <img src="images/features2_ddb9472a-158e-4d97-83ae-d01a7ffc946b.png" alt="Card image cap">
+                        </div>
+                        <div class="card-body featureCardBody">
+                          <h5 class="card-title">Eye Care</h5>
+                          <p class="card-text">
+                            Make your eyes feel fresh and glowy
+                            </p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="testomonialSection py-5">
+    <div class="myContainer">
+        <div class="headingHolder text-center">
+            <h6 class="subTitle2">THE PRODUCTS</h6>
+            <h2 class="mainTitle2 bottomLine">Customer Review</h2>
+        </div>
+
+
+        <div class="owl-carousel testomonial pt-5">
+            <div class="item owlSlides">
+                <div class="testomonialTextHolder text-center">
+                    <div class="testomonialReview">
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="pt-3 pb-1">                     
+                        There are many variations of lorem ipsum available, but the have suffered alteration in some form by humour. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <div class="testomonialUserImage d-flex flex-column align-items-center">
+                        <img src="images/testimonialimage_80x80.png" alt="" class="img-fluid">
+
+                        <h4>John Doe</h4>
+                        <h6>Web Designer</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="item owlSlides">
+                <div class="testomonialTextHolder text-center">
+                    <div class="testomonialReview">
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="pt-3 pb-1">                     
+                        There are many variations of lorem ipsum available, but the have suffered alteration in some form by humour. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <div class="testomonialUserImage d-flex flex-column align-items-center">
+                        <img src="images/testimonialimage_80x80.png" alt="" class="img-fluid">
+
+                        <h4>John Doe</h4>
+                        <h6>Web Designer</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item owlSlides">
+                <div class="testomonialTextHolder text-center">
+                    <div class="testomonialReview">
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star starColor"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="pt-3 pb-1">                     
+                        There are many variations of lorem ipsum available, but the have suffered alteration in some form by humour. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                    <div class="testomonialUserImage d-flex flex-column align-items-center">
+                        <img src="images/testimonialimage_80x80.png" alt="" class="img-fluid">
+
+                        <h4>John Doe</h4>
+                        <h6>Web Designer</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="whyUsSection pt-lg-5 pt-0">
+   <div class="myContainer py-5 text-center text-lg-left">
+        <div class="row">
+            <div class="col-lg-5 col-12">
+                <div class="whyUsTextHolder pb-4 pb-lg-0">
+                    <div class="subTitle2">SKINCARE PRODUCTS</div>
+                    <h2 class="mainTitle2 bottomLine2 pb-md-4 pb-2">What is Allure ?</h2>
+                    
+                    <p class="pragraph pb-4 px-sm-5 px-2 px-lg-0 ">
+                        Allure is a seasoned skincare brand, which specializes in all types of skin products. The most unique thing about Allure is its natural and organic ingredients. 
+                        </p>
+                    <a href="#" class="mybtn1">VIEW MORE</a>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-12">
+                <div class="whyUsRightImageHolder">
+                    <img src="images/aboutus-2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+
+        </div>
+   </div>
+</section>
+
+<section class="testomonialLogoSection pb-5">
+    <div class="myContainer ">
+        <div class="sliderMainBox">
+            <div class="owl-carousel testomonialLogo ">
+                <div class="item owlImageBox d-flex justify-content-center">
+                    <a href="#">
+                        <img src="images/b1_64383203-d901-4400-bfda-65c1ad446eee.png" alt="" class="owlRotatingImage">
+                    </a>
+                </div>
+
+                <div class="item owlImageBox d-flex justify-content-center">
+                    <a href="#">
+                        <img src="images/b2_cb9eb92d-bfa5-436f-976f-4c27ae9af07a.png" alt="" class="owlRotatingImage">
+                    </a>
+                </div>
+
+                <div class="item owlImageBox d-flex justify-content-center">
+                    <a href="#">
+                        <img src="images/b3_4ef09b3e-c2dc-4ae5-8c8e-d2c96d376c06.png" alt="" class="owlRotatingImage">
+                    </a>
+                </div>
+
+                <div class="item owlImageBox d-flex justify-content-center">
+                    <a href="#">
+                        <img src="images/b4_003d5e70-e50b-4b30-aa39-fb21764b5a85.png" alt="" class="owlRotatingImage">
+                    </a>
+                </div>
+
+                <div class="item owlImageBox d-flex justify-content-center">
+                    <a href="#">
+                        <img src="images/b5_c2c2caa6-4e8f-4cef-a742-4bbb2cc21185.png" alt="" class="owlRotatingImage">
+                    </a>
+                </div>
+
+                <div class="item owlImageBox d-flex justify-content-center">
+                    <a href="#">
+                        <img src="images/b6_75d8395f-ab42-497a-9dbd-f0093c89418c.png" alt="" class="owlRotatingImage">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+                        
+
+<footer class="pt-5 border-top">
+    <div class="myContainer">
+        <div class="row">
+            <div class="col-lg-3 col-12 order-2 order-lg-1 pb-3 pb-lg-0">
+                <div class="fBox1 d-flex ">
+                    <div class="iconHolder align-self-center">
+                        <a href="#" class="iconButtons d-flex">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                    </div>
+                    <div class="footerText d-flex flex-column pl-3">
+                        <h6 >Location</h6>
+                        <p class="pragraph">
+                            TF 5-A, Meridian Plaza, STP Murree Road, RWP
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fBox1 d-flex py-3">
+                    <div class="iconHolder align-self-center">
+                        <a href="#" class="iconButtons d-flex">
+                            <i class="fas fa-phone-alt"></i>
+                        </a>
+                    </div>
+                    <div class="footerText d-flex flex-column pl-3 ">
+                        <h6 >Contact Us</h6>
+                        <p class="pragraph">
+                            +92313 5504659
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fBox1 d-flex">
+                    <div class="iconHolder align-self-center">
+                        <a href="#" class="iconButtons d-flex">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="footerText d-flex flex-column pl-3">
+                        <h6 >Email</h6>
+                        <p class="pragraph">
+                            info@mavenlogix.org
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-12 order-3 order-lg-2 pt-2 pt-lg-0">
+                <h6 class="pb-2">Your Account</h6>
+                <ul>
+                    <li><a href="#" class="fLinks">Personal info</a></li>
+                    <li><a href="#" class="fLinks">Orders</a></li>
+                    <li><a href="#" class="fLinks">Credit slips</a></li>
+                    <li><a href="#" class="fLinks">Addresses</a></li>
+                    <li><a href="#" class="fLinks">My Wishlists</a></li>
+
+                </ul>
+            </div>
+            
+
+            <div class="col-lg-2 col-12 order-4 order-lg-3 ">
+                <h6 class="pb-2">Our Company</h6>
+                <ul>
+                    <li><a href="#" class="fLinks">Legal Notice</a></li>
+                    <li><a href="#" class="fLinks">Secure payment</a></li>
+                    <li><a href="#" class="fLinks">Contact us</a></li>
+                    <li><a href="#" class="fLinks">Sitemap</a></li>
+                    <li><a href="#" class="fLinks">My account</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-12 order-5 order-lg-4 ">
+                <h6 class="pb-2">Product</h6>
+                <ul>
+                    <li><a href="#" class="fLinks">Delivery</a></li>
+                    <li><a href="#" class="fLinks">Price Drop</a></li>
+                    <li><a href="#" class="fLinks">New Product</a></li>
+                    <li><a href="#" class="fLinks">Best Product</a></li>
+                    <li><a href="#" class="fLinks">Stores</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-12 order-1 order-lg-5 pb-3 pb-lg-0">
+                <div class="footerNewsLetter d-flex flex-column text-center">
+                    <div class="newsIcons"><i class="far fa-newspaper"></i></div>
+                    <h3>Newsletter</h3>
+                    <div class="socialIcons d-flex justify-content-center">
+                        <a href="#" class="m-1 fb"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="m-1 insta"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="m-1 insta">
+                            <!-- <i class="fab fa-tiktok"></i> -->
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="m-1 vv"><i class="fab fa-vuejs"></i></a>
+                        
+                    </div>
+
+                    <div class="inputfooter mt-2">
+                        <input type="email" placeholder="Your email">
+                        <button>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="py-lg-3 py-0"></div>
+
+
+        
+    </div>
+    
+<div class="footerBelowLine">
+    <div class="myContainer">
+        <div class="d-flex justify-content-between flex-column flex-lg-row pt-3 pt-lg-0">
+            <div class=" text-light footerPragraph">
+                <div class="footer__copyright">
+                        © 2022 Copyright Allure all right reserved. Develop by <a href="https://www.mavenlogix.org/" target="_blank" rel="noopener noreferrer">Maven Logix</a>
+                  </div>
+            </div>
+            <div class="footer-right ">
+              <div class="payment-icons">
+                <ul class="list list-payment d-flex justify-content-end mt-3" role="list">
+                    <li class="list-payment__item">
+                    <svg class="icon icon--full-color" version="1.1" xmlns="http://www.w3.org/2000/svg" role="img" x="0" y="0" width="38" height="24" viewBox="0 0 165.521 105.965" xml:space="preserve" aria-labelledby="pi-apple_pay"><title id="pi-apple_pay">Apple Pay</title><path fill="#000" d="M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z"></path><path fill="#FFF" d="M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875"></path><g><g><path fill="#000" d="M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858"></path><path fill="#000" d="M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048"></path></g><g><path fill="#000" d="M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z"></path><path fill="#000" d="M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z"></path><path fill="#000" d="M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z"></path></g></g></svg>
+        
+                  </li><li class="list-payment__item">
+                    <svg class="icon icon--full-color" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-google_pay"><title id="pi-google_pay">Google Pay</title><path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"></path><path d="M18.093 11.976v3.2h-1.018v-7.9h2.691a2.447 2.447 0 0 1 1.747.692 2.28 2.28 0 0 1 .11 3.224l-.11.116c-.47.447-1.098.69-1.747.674l-1.673-.006zm0-3.732v2.788h1.698c.377.012.741-.135 1.005-.404a1.391 1.391 0 0 0-1.005-2.354l-1.698-.03zm6.484 1.348c.65-.03 1.286.188 1.778.613.445.43.682 1.03.65 1.649v3.334h-.969v-.766h-.049a1.93 1.93 0 0 1-1.673.931 2.17 2.17 0 0 1-1.496-.533 1.667 1.667 0 0 1-.613-1.324 1.606 1.606 0 0 1 .613-1.336 2.746 2.746 0 0 1 1.698-.515c.517-.02 1.03.093 1.49.331v-.208a1.134 1.134 0 0 0-.417-.901 1.416 1.416 0 0 0-.98-.368 1.545 1.545 0 0 0-1.319.717l-.895-.564a2.488 2.488 0 0 1 2.182-1.06zM23.29 13.52a.79.79 0 0 0 .337.662c.223.176.5.269.785.263.429-.001.84-.17 1.146-.472.305-.286.478-.685.478-1.103a2.047 2.047 0 0 0-1.324-.374 1.716 1.716 0 0 0-1.03.294.883.883 0 0 0-.392.73zm9.286-3.75l-3.39 7.79h-1.048l1.281-2.728-2.224-5.062h1.103l1.612 3.885 1.569-3.885h1.097z" fill="#5F6368"></path><path d="M13.986 11.284c0-.308-.024-.616-.073-.92h-4.29v1.747h2.451a2.096 2.096 0 0 1-.9 1.373v1.134h1.464a4.433 4.433 0 0 0 1.348-3.334z" fill="#4285F4"></path><path d="M9.629 15.721a4.352 4.352 0 0 0 3.01-1.097l-1.466-1.14a2.752 2.752 0 0 1-4.094-1.44H5.577v1.17a4.53 4.53 0 0 0 4.052 2.507z" fill="#34A853"></path><path d="M7.079 12.05a2.709 2.709 0 0 1 0-1.735v-1.17H5.577a4.505 4.505 0 0 0 0 4.075l1.502-1.17z" fill="#FBBC04"></path><path d="M9.629 8.44a2.452 2.452 0 0 1 1.74.68l1.3-1.293a4.37 4.37 0 0 0-3.065-1.183 4.53 4.53 0 0 0-4.027 2.5l1.502 1.171a2.715 2.715 0 0 1 2.55-1.875z" fill="#EA4335"></path></svg>
+        
+                  </li><li class="list-payment__item">
+                    <svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg>
+                  </li><li class="list-payment__item">
+                    <svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master"><title id="pi-master">Mastercard</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><circle fill="#EB001B" cx="15" cy="12" r="7"></circle><circle fill="#F79E1B" cx="23" cy="12" r="7"></circle><path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path></svg>
+                  </li><li class="list-payment__item">
+                    <svg class="icon icon--full-color" viewBox="0 0 38 24" width="38" height="24" role="img" aria-labelledby="pi-discover" fill="none" xmlns="http://www.w3.org/2000/svg"><title id="pi-discover">Discover</title><path fill="#000" opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32z" fill="#fff"></path><path d="M3.57 7.16H2v5.5h1.57c.83 0 1.43-.2 1.96-.63.63-.52 1-1.3 1-2.11-.01-1.63-1.22-2.76-2.96-2.76zm1.26 4.14c-.34.3-.77.44-1.47.44h-.29V8.1h.29c.69 0 1.11.12 1.47.44.37.33.59.84.59 1.37 0 .53-.22 1.06-.59 1.39zm2.19-4.14h1.07v5.5H7.02v-5.5zm3.69 2.11c-.64-.24-.83-.4-.83-.69 0-.35.34-.61.8-.61.32 0 .59.13.86.45l.56-.73c-.46-.4-1.01-.61-1.62-.61-.97 0-1.72.68-1.72 1.58 0 .76.35 1.15 1.35 1.51.42.15.63.25.74.31.21.14.32.34.32.57 0 .45-.35.78-.83.78-.51 0-.92-.26-1.17-.73l-.69.67c.49.73 1.09 1.05 1.9 1.05 1.11 0 1.9-.74 1.9-1.81.02-.89-.35-1.29-1.57-1.74zm1.92.65c0 1.62 1.27 2.87 2.9 2.87.46 0 .86-.09 1.34-.32v-1.26c-.43.43-.81.6-1.29.6-1.08 0-1.85-.78-1.85-1.9 0-1.06.79-1.89 1.8-1.89.51 0 .9.18 1.34.62V7.38c-.47-.24-.86-.34-1.32-.34-1.61 0-2.92 1.28-2.92 2.88zm12.76.94l-1.47-3.7h-1.17l2.33 5.64h.58l2.37-5.64h-1.16l-1.48 3.7zm3.13 1.8h3.04v-.93h-1.97v-1.48h1.9v-.93h-1.9V8.1h1.97v-.94h-3.04v5.5zm7.29-3.87c0-1.03-.71-1.62-1.95-1.62h-1.59v5.5h1.07v-2.21h.14l1.48 2.21h1.32l-1.73-2.32c.81-.17 1.26-.72 1.26-1.56zm-2.16.91h-.31V8.03h.33c.67 0 1.03.28 1.03.82 0 .55-.36.85-1.05.85z" fill="#231F20"></path><path d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint0_linear)"></path><path opacity=".65" d="M20.16 12.86a2.931 2.931 0 100-5.862 2.931 2.931 0 000 5.862z" fill="url(#pi-paint1_linear)"></path><path d="M36.57 7.506c0-.1-.07-.15-.18-.15h-.16v.48h.12v-.19l.14.19h.14l-.16-.2c.06-.01.1-.06.1-.13zm-.2.07h-.02v-.13h.02c.06 0 .09.02.09.06 0 .05-.03.07-.09.07z" fill="#231F20"></path><path d="M36.41 7.176c-.23 0-.42.19-.42.42 0 .23.19.42.42.42.23 0 .42-.19.42-.42 0-.23-.19-.42-.42-.42zm0 .77c-.18 0-.34-.15-.34-.35 0-.19.15-.35.34-.35.18 0 .33.16.33.35 0 .19-.15.35-.33.35z" fill="#231F20"></path><path d="M37 12.984S27.09 19.873 8.976 23h26.023a2 2 0 002-1.984l.024-3.02L37 12.985z" fill="#F48120"></path><defs><linearGradient id="pi-paint0_linear" x1="21.657" y1="12.275" x2="19.632" y2="9.104" gradientUnits="userSpaceOnUse"><stop stop-color="#F89F20"></stop><stop offset=".25" stop-color="#F79A20"></stop><stop offset=".533" stop-color="#F68D20"></stop><stop offset=".62" stop-color="#F58720"></stop><stop offset=".723" stop-color="#F48120"></stop><stop offset="1" stop-color="#F37521"></stop></linearGradient><linearGradient id="pi-paint1_linear" x1="21.338" y1="12.232" x2="18.378" y2="6.446" gradientUnits="userSpaceOnUse"><stop stop-color="#F58720"></stop><stop offset=".359" stop-color="#E16F27"></stop><stop offset=".703" stop-color="#D4602C"></stop><stop offset=".982" stop-color="#D05B2E"></stop></linearGradient></defs></svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+
+<section class="rightArrow">
+    <a href="#topHeader" class="arrowFotTop"><i class="fas fa-chevron-up"></i></a>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="plugins/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="js/myscript.js"></script>
+</body>
+</html>
