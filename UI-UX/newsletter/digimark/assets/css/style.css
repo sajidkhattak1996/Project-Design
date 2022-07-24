@@ -1,0 +1,487 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-image: url(../images/bg_image_fianl.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: auto;
+    /* background-color: var(--c1); */
+    position: relative;
+}
+/* body::before{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/smartObjectImages/image4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 85px;
+    height: 240px;
+    position: absolute;
+    bottom: 130px;
+    left: 0px;
+    background-size: contain;
+}
+body::after{
+    content: "";
+    display: inline-block;
+    background-image: url(../images/smartObjectImages/image10.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 130px;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-size: contain;
+}
+.bottomBgImage1 {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    bottom: 0px;
+    left: 100px;
+}
+.bottomBgImage1 img{
+    object-fit: contain;
+}
+.bottomBgImage2{
+    position: absolute;
+    bottom: 0px;
+    width: 150px;
+    left: 400px;
+
+}
+.bottomBgImage2 .imageInner{
+    position: relative;
+    display: block;
+}
+.bottomBgImage2 .imageInner .imgOne{
+    position: absolute;
+    left: 50px;
+    bottom: 35px;
+}
+.bottomBgImage2 .imageInner .imgTwo{
+    position: absolute;
+    left: 120px;
+    bottom: 0px;
+
+} */
+
+
+
+:root{
+    --ff_n: 'Nunito', sans-serif;
+    --c1: #064635;
+    --c2: #519259;
+    --c3: #F0BB62;
+    --c4: #F4EEA9;
+    
+}
+
+
+.myContainer{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+header{
+    /* background-color: var(--c4); */
+    position: relative;
+}
+header .logoHolder{
+    width: 160px;
+}
+
+header .navbarList li a{
+    color: var(--c4) !important;
+    transition: 0.4s ease-in-out;
+}
+header .navbarList li a:hover{
+    color: var(--c3) !important;
+}
+header nav .nabarSearchBox{
+    position: relative;
+    width: 300px;
+    height: 35px;
+    border: solid 1px var(--c4);
+    border-radius: 30px;
+}
+header nav .nabarSearchBox .searchInput{
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 75%;
+    background: none;
+    border: none;
+    color: var(--c4);
+    font-weight: 600;
+}
+header nav .nabarSearchBox .searchInput:focus{
+    outline: none;
+    box-shadow: none;
+}
+header nav .nabarSearchBox .searchButton{
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    font-weight: 600;
+    color: var(--c4) !important;
+    transition: 0.4s ease-in-out;
+}
+header nav .nabarSearchBox .searchButton:hover{ color: var(--c3) !important; }
+
+.socialButtons:hover{
+    color: var(--c4);
+    background: var(--c1);
+}
+
+
+.threeDots{
+    color: var(--c4);
+    transition: 0.3s ease-in-out;
+}
+.threeDots:hover{ color: var(--c3); }
+
+
+.parent .textHolderparent{
+    /* border:solid 1px red; */
+    position: relative;
+}
+.parent .textHolderparent::before{
+    content: "";
+    display: block;
+    background-image: url(../images/smartObjectImages/image6.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 16px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+.parent .textHolderparent::after{
+    content: "";
+    display: block;
+    background-image: url(../images/smartObjectImages/image5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 160px;
+    width: 15px;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+}
+.textHolderparent .rightCornerImage{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.textHolderparent .rightCornerImage img{
+    width: 100%;
+    height: 60px;
+}
+.parent .textHolderparent .textHolder{
+    padding: 30px 0px 30px 20px;
+}
+
+
+.rightContent{
+    position: relative;
+}
+
+
+
+.centerImageHolder{
+    background-image: url(../images/smartObjectImages/image1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    background-position: center;
+    text-align: center;
+}
+.centerImageHolder img{
+    max-height: 500px;
+}
+
+
+
+
+
+
+
+.textHolder .getInTouchButton{
+    background-color: var(--c3);
+    color: var(--c1);
+    padding: 8px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.textHolder .getInTouchButton:hover{
+    background-color: var(--c2);
+    color: var(--c4);
+}
+.textHolder .pragraph{
+    font-family: var(--ff_n);
+    font-weight: 400;
+    font-size: 24px;
+    padding-right: 60px;
+    color: var(--c4);
+
+}
+.textHolder .heading{
+    font-size: 44px;
+    font-weight: bold;
+    padding-right: 200px;
+    color: var(--c4);
+}
+.textHolder .socialIconsHolder .socialButtons {
+    background: var(--c3);
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    color: var(--c1);
+    transition: 0.3s;
+}
+.textHolder .socialIconsHolder .socialButtons:hover{
+    color: var(--c4);
+    background: var(--c2);
+}
+.rightSideText{
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   width: 230px;
+}
+.rightSideText img{  
+    width: 160px;  
+    float: right;
+}
+.rightSideText .rightHeading{
+    font-family: var(--ff_n);
+    font-weight: 800;
+    font-size: 24px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: right;
+    color: var(--c4);
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .textHolder .heading {
+        font-size: 42px;
+        padding-right: 14px;
+    }
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .threeDots{
+        display: none;
+    }
+
+    .hamburgerIcon{
+        background-color: var(--c4);
+    }
+
+  
+.textHolder .heading {
+    font-size: 36px;
+    padding-right: 0px;
+}
+.textHolder .pragraph {
+    font-size: 22px;
+    padding-right: 30px;
+}
+
+.parent .textHolderparent {
+    text-align: left;
+}
+
+
+
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .textHolder .heading {
+        font-size: 36px;
+        padding-right: 0px;
+    }
+    .threeDots{
+        display: none;
+    }
+
+    .hamburgerIcon{
+        background-color: var(--c4);
+    }
+    .textHolder .pragraph {
+        font-size: 22px;
+        padding-right: 30px;
+    }
+    
+    .parent .textHolderparent {
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .rightSideText {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+  
+}
+@media (min-width: 481px) and (max-width: 575px) {
+
+    /* body{
+        height: auto;
+    } */
+    .textHolder .heading {
+        font-size: 24px;
+        padding-right: 0px;
+    }
+    .textHolder .pragraph {
+        font-size: 18px;
+        padding-right: 30px;
+    }
+    .threeDots{
+        display: none;
+    }
+
+    .hamburgerIcon{
+        background-color: var(--c4);
+    }
+    
+    .parent .textHolderparent {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .rightSideText {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+
+    .centerImageHolder {
+        height: 250px;
+    }
+    .centerImageHolder img {
+        max-height: 250px;
+    }
+    .rightSideText img {
+        width: 120px;
+    }
+    .rightSideText .rightHeading {
+        font-size: 16px;
+        top: 30px;
+        right: 20px;
+    }
+    .parent .textHolderparent::after {
+        height: 115px;
+        width: 12px;
+        top: 80px;
+    }
+    .parent .textHolderparent::before {
+        height: 12px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+    .parent .textHolderparent .textHolder {
+        padding: 20px 0px 20px 0px;
+    }
+
+
+}
+@media (max-width: 480px) {
+
+
+    .threeDots{
+        display: none;
+    }
+
+    .hamburgerIcon{
+        background-color: var(--c4);
+    }
+    .textHolder .heading {
+        font-size: 24px;
+        padding-right: 0px;
+    }
+    .textHolder .pragraph {
+        font-size: 16px;
+        padding-right: 0px;
+    }
+    
+    .parent .textHolderparent {
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .rightSideText {
+        position: absolute;
+        top: 255px;
+        left: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .centerImageHolder {
+        height: 250px;
+    }
+    .centerImageHolder img {
+        max-height: 250px;
+    }
+    .rightSideText img {
+        width: 120px;
+    }
+    .rightSideText .rightHeading {
+        font-size: 16px;
+        top: 33px;
+        right: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    .rightContent {
+        padding-bottom: 130px;
+    }
+
+    .parent .textHolderparent::after {
+        height: 115px;
+        width: 12px;
+        top: 80px;
+    }
+    .parent .textHolderparent::before {
+        height: 12px;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+    .parent .textHolderparent .textHolder {
+        padding: 20px 0px 20px 0px;
+    }
+
+    .textHolder .getInTouchButton {
+        font-size: 15px;
+    }
+    header nav .nabarSearchBox {
+        width: 100%;
+    }
+
+
+}

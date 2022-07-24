@@ -1,0 +1,217 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --c1: #161853;
+    --c2: #292C6D;
+    --c3: #FAEDF0;
+    --c4: #EC255A;
+}
+
+.formParent{
+    height: 100vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+background: rgb(22,24,83);
+background: linear-gradient(90deg, rgba(22,24,83,1) 35%, rgba(236,37,90,1) 100%);
+}
+
+.formParent .formBoxParent{
+    max-width: 800px;
+    width: 100%;
+    /* height: 300px; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.formParent .formBoxParent .boxInner{
+    background-color: var(--c3);
+    max-width: 700px;
+    /* height: 200px; */
+    border-radius: 6px;
+    width: 100%;
+}
+.boxInner .formLogo{
+    display: flex;
+    justify-content: center;
+}
+.boxInner .formLogo .formLogoHolder{
+    width: 200px;
+    background: var(--c3);
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: rgb(22 24 83 / 20%) 0px 2px 40px;
+}
+.boxInner .formLogo .formLogoHolder a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxInner .formLogo .formLogoHolder a .logo{
+    background: var(--c4);
+    color: var(--c3);
+    display: flex;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    align-items: center;
+    border-radius: 6px;
+}
+.boxInner .formLogo .formLogoHolder a .textMain{
+    margin-left: 8px;
+}
+
+.boxInner .formLogo .formLogoHolder .logoText1{
+    color: var(--c2);
+    font-size: 18px;
+    font-weight: 600;
+}
+.boxInner .formLogo .formLogoHolder .logoText2{
+    color: var(--c1);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* box Inner elelments */
+.boxInner .boxInnerParent{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.boxInner .boxInnerParent .wizardSteps{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    /* justify-content: center; */
+    /* background-color: burlywood; */
+}
+.boxInner .boxInnerParent .wizardSteps .stepBox{
+    width: 25%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* steps */
+.wizardSteps .stepLine1{
+    height: 3px;
+    width: 100%;
+    background-color: #161853;
+}
+
+.wizardSteps .stepButton .noButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: rgb(22,24,83);
+}
+.wizardSteps .stepButton .noButton:focus{
+    outline: none;
+    box-shadow: none;
+}
+.stepButtonActive{
+    background: rgb(22,24,83);
+    background: linear-gradient(12deg, rgba(22,24,83,1) 0%, rgba(41,44,109,0.3897934173669467) 90%) !important;
+    border-radius: 50%;
+}
+
+.wizardSteps .stepLine2{
+    height: 3px;
+    width: 100%;
+    background-color: #161853;
+}
+.stepLineActive{
+    background-color: var(--c4) !important;
+}
+.wizardStatus{
+    width: 100%;
+    background-color: var(--c4);
+    color: var(--c1);
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+.wizardFormElements{
+    width: 90%;
+}
+
+
+
+.wizardFormElements .wizardButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wizardFormElements .wizardButton .formClickButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    border: none;
+    color: white;
+  
+border-radius: 30px;
+background: #EC255A;
+
+}
+
+
+.inputElements, #inputElementsLast{
+    display: none;
+}
+#controlButtonPreview{
+    display: none;
+    transition: 0.9s;
+}
+
+
+
+@media (max-width: 575px) {
+    .boxInner .formLogo .formLogoHolder {
+        width: 160px;
+        height: 40px;
+       
+    }
+
+    .boxInner .formLogo .formLogoHolder a .logo {
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+    }
+
+    .boxInner .formLogo .formLogoHolder .logoText1 {
+        font-size: 16px;
+    }
+    .boxInner .formLogo .formLogoHolder .logoText2 {
+        font-size: 18px;
+    }
+    .formParent .formBoxParent {
+        padding: 15px;
+    }
+    .wizardFormElements .wizardButton {
+        flex-direction: column;
+    }
+ 
+    
+}

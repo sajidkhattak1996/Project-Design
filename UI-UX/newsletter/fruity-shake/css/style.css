@@ -1,0 +1,248 @@
+/* imported the montserrat google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('../fonts/arial/style.css');
+
+:root{
+    --a: font-family: 'Arial Regular';
+    --m: font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+header{
+    position: absolute;
+    /* background: rebeccapurple; */
+    z-index: 1;
+    width: 100%;
+    top: 20;
+    top: 10%;
+;
+}
+.slider_ .sliderInner{
+    height: 100vh;
+}
+
+.slider_ .sliderInner img{
+    height: 100%;
+    object-fit: cover;
+}
+.slider_ .iconLeft ,.slider_ .iconRight{
+    width: 2%;
+}
+
+.navBar .navbarList{
+    font-family: var(--a);
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.025em;
+}
+.navBar .navbarList li a{
+    color: black !important;
+}
+
+.navTop button{
+    font-family: var(--a);
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: black;
+    color: white;
+}
+.navTop button:hover{
+    background: rgb(78, 72, 72);
+
+}
+.sliderImageOne{
+    position: absolute;
+    top: 35%;
+    z-index: 9;
+}
+.sliderImageOne h1{
+    font-family: var(--a);
+    font-weight: 500;
+    font-size: 46px;
+}
+.sliderImageOne p{
+    padding-right: 130px;
+}
+
+.playButton{
+    border-radius: 12px;
+}
+.playButton .f21 .f21s1{
+    font-size: 11px;
+    
+}
+.playButton .f21 .f21s2{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    word-spacing: 2px;
+}
+.socialIcons i{
+    font-size: 22px;
+    color: black;
+}
+
+.nextPrevewButtons{
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    
+}
+.nextPrevewButtons a{
+    border-radius: 50px;
+    background: black;
+    border: solid 1px black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+}
+.nextPrevewButtons a i{
+    color: white;
+}
+.nextPrevewButtons a:hover{
+    border: solid 1px black;
+    background: white;
+    color: black;
+}
+.nextPrevewButtons a:hover  i{
+    color: black;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    header{ top: 0% }
+    .mobileBackground{        
+        background: rgba(255,248,218,0.9);
+        padding-left: 10px;    
+    }
+    .slider_ .sliderInner{ height: auto;}
+
+    .sliderImageOne{top: 18%; left: 0;}
+    .sliderImageOne h1{font-size: 28px;}
+    .sliderImageOne p{padding-right: 30px;}
+
+
+
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    header{ top: 0% }
+    .mobileBackground{        
+        background: rgba(255,248,218,0.9);
+        padding-left: 10px; 
+    }
+    .slider_ .sliderInner{ height: auto;}
+
+    .sliderImageOne{top: 16%; left: 0;}
+    .sliderImageOne h1{font-size: 22px;}
+    .sliderImageOne p{padding-right: 0px;}
+}
+@media (min-width: 481px) and (max-width: 576px) {
+    .mobileBackground{
+        background: rgba(255,248,218,0.9);
+        text-align: center;
+    }
+
+    .sliderImageOne{top: 30%; left: 0;}
+    .sliderImageOne h1{font-size: 22px;}
+    .sliderImageOne p{padding-right: 0px;}
+
+    .slider_ .sliderInner img {
+        object-fit: cover;
+        opacity: 0.6;
+        filter: blur(2px);
+    }
+
+    .nextPrevewButtons{
+        bottom: 10px;
+        right: 20px;
+        
+    }
+    .nextPrevewButtons a{
+        width: 30px;
+        height: 30px;
+        opacity: 0.3;
+        line-height: 25px;
+    }
+    .nextPrevewButtons a:hover{
+        opacity: 1;
+    }
+
+
+
+
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .mobileBackground{
+        /* background: rgb(255, 228, 110); */
+        background: rgba(255,248,218,0.9);
+        text-align: center;
+    }
+
+    .sliderImageOne{top: 30%; left: 0;}
+    .sliderImageOne h1{font-size: 22px;}
+    .sliderImageOne p{padding-right: 0px;}
+
+    .slider_ .sliderInner img {
+        object-fit: cover;
+        opacity: 0.6;
+        filter: blur(2px);
+    }
+
+    .nextPrevewButtons{
+        bottom: 10px;
+        right: 20px;
+        
+    }
+    .nextPrevewButtons a{
+        width: 30px;
+        height: 30px;
+        opacity: 0.3;
+        line-height: 25px;
+    }
+    .nextPrevewButtons a:hover{
+        opacity: 1;
+    }
+
+
+}
+
+@media (max-width: 319px){
+    .mobileBackground{
+        background: rgba(255,248,218,0.9);
+        text-align: center;
+    }
+
+    .sliderImageOne{top: 30%; left: 0;}
+    .sliderImageOne h1{font-size: 22px;}
+    .sliderImageOne p{padding-right: 0px;}
+
+    .slider_ .sliderInner img {
+        object-fit: cover;
+        opacity: 0.6;
+        filter: blur(2px);
+    }
+
+    .nextPrevewButtons{
+        bottom: 10px;
+        right: 20px;
+        
+    }
+    .nextPrevewButtons a{
+        width: 30px;
+        height: 30px;
+        opacity: 0.3;
+        line-height: 25px;
+    }
+    .nextPrevewButtons a:hover{
+        opacity: 1;
+    }
+}

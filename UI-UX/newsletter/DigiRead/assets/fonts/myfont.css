@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Migra_ex_light;
+    font-display: swap;
+    src: url(./Migra_Free_for_Personal_Use/Migra-Extralight.woff) format('woff');
+}
+
+@font-face {
+    font-family: Migra_ex_bold;
+    font-display: swap;
+    src: url(./Migra_Free_for_Personal_Use/Migra-Extrabold.woff) format('woff');
+}

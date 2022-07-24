@@ -1,0 +1,298 @@
+
+:root{
+    --c1: #B91646;
+    --c2: #DFD8CA;
+    --c3: #FBF3E4;
+    --c4: #105652;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.parent{
+    height: 100vh;
+    background-image: url(../images/bg_pic1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+.myContainer{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+
+
+    
+
+.parent .topBar{
+    padding-bottom: 15px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parent .topBar .logoHolder a{
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--c3);
+    text-decoration: none;
+    transition: 0.6s;
+}
+.parent .topBar .logoHolder a:hover{
+    color: var(--c1);
+}
+
+
+.parent .topBar .socialLinkHolder{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
+}
+.parent .topBar .socialLinkHolder a{
+    width: 30px;
+    /* background: red; */
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.8s;
+    color: white;
+}
+
+.parent .topBar .socialLinkHolder a:hover{
+    color: var(--c1);
+
+}
+.parent .topBar .socialLinkHolder a:hover i{
+    font-size: 38px;
+}
+
+.parent .topBar .socialLinkHolder a i{
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+
+.parent .newsBoxHolder{
+    padding-bottom: 30px;
+}
+.parent .newsBoxHolder .newBoxMain{
+    max-width: 460px;
+    background-color: var(--c3);
+    padding: 30px;
+    /* color: var(--c4); */
+    border-radius: 2px;
+    border: solid 1px var(--c3);
+    /* box-shadow: var(--c1) 0px 3px 15px; */
+}
+
+.parent .newsBoxHolder .newBoxMain .supperHeading{
+    font-size: 20px;
+    /* background: red; */
+    font-weight: 600;
+    display: inline-block;
+    /* color: var(--c4); */
+}
+.parent .newsBoxHolder .newBoxMain .supperHeading::after{
+    content: '';
+    display: block;
+    background: var(--c4);
+    height: 3px;
+    margin-top: 5px;
+}
+.parent .newsBoxHolder .newBoxMain .mainHeading{
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--c4);
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+.parent .newsBoxHolder .newBoxMain .paragraph{
+    font-size: 16px;
+    font-weight: 400px;
+    padding-top: 10px;
+}
+.parent .newsBoxHolder .newBoxMain .listHolder{
+    list-style-type: none;
+    padding: unset;
+}
+
+.parent .newsBoxHolder .newBoxMain .listHolder li{
+    font-weight: 500;
+    font-size: 14px;
+    word-spacing: 1px;
+    letter-spacing: 0.2px;
+}
+
+.parent .newsBoxHolder .newBoxMain .listHolder li i{
+    padding-right: 7px;
+    color: var(--c4);
+}
+
+
+.parent .newsBoxHolder .newBoxMain .inputHeading{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--c4);
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.parent .newsBoxHolder .newBoxMain .inputBoxHolder{
+    padding: 3px 0px;
+}
+
+.parent .newsBoxHolder .newBoxMain .inputBoxHolder .inputDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.parent .newsBoxHolder .newBoxMain .inputBoxHolder .inputDiv input{
+    border: solid 2px var(--c2);
+    height: 40px;
+    padding-left: 10px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 3px 18px;
+    transition: 1s;
+    border-radius: 5px;
+    color: var(--c1);
+    word-spacing: 1px;
+    letter-spacing: 0.3px;
+}
+.parent .newsBoxHolder .newBoxMain .inputBoxHolder .inputDiv input:focus{
+    box-shadow: rgb(0 0 0 / 25%) 0px 3px 15px;
+    outline: 0;
+    
+}
+
+.parent .newsBoxHolder .newBoxMain .inputBoxHolder .inputDiv button{
+    text-decoration: none;
+    display: flex;
+    width: 100%;
+    background: var(--c1);
+    color: var(--c2);
+    border: none;
+    height: 38px;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: solid 2px transparent;
+    transition: 0.6s;
+}
+.parent .newsBoxHolder .newBoxMain .inputBoxHolder .inputDiv button:hover{
+    color: var(--c3);
+    background: var(--c4);
+    font-size: 17px;
+    font-weight: 500;
+    word-spacing: 1px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 6px 20px;
+}
+
+.parent .newsBoxHolder .newBoxMain .inputBoxHolder .inputDiv button:focus{
+    outline: none;
+}
+
+.parent .newsBoxHolder .newBoxMain .inputBoxHolder .inputDiv p{
+    font-size: 13px;
+    text-align: center;
+    padding: unset;
+    padding-top: 20px;
+    margin: unset;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1367px){
+    .alignVertical{
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: translate(0%, -50%);
+    }
+
+
+
+}
+
+
+
+
+
+ @media (min-width: 481px) and (max-width: 1365px) {
+    .parent {
+        height: 100%;
+    }
+
+
+ }
+
+
+ @media (max-width: 480px) {
+    .parent {
+        height: 100%;
+    }
+    .parent .topBar .logoHolder a {
+        font-size: 28px;
+    }
+
+    .parent .newsBoxHolder .newBoxMain .supperHeading {
+        font-size: 18px;
+    }
+
+    .parent .newsBoxHolder .newBoxMain .mainHeading {
+        font-size: 24px;
+        padding-right: 0px;
+    }
+
+    .parent .newsBoxHolder .newBoxMain .inputHeading {
+        font-size: 20px;
+    }
+
+    .parent .newsBoxHolder .newBoxMain {
+        padding: 20px;
+    }
+    .parent .newsBoxHolder .newBoxMain .inputBoxHolder .inputDiv p {
+        font-size: 12px;
+    }
+    .parent .topBar {
+        flex-direction: column;
+    }
+
+    .parent .topBar .logoHolder {
+        order: 2;
+    }
+    .parent .topBar .socialLinkHolder {
+        order: 1;
+        align-self: flex-end;
+    }
+
+    .parent .topBar .socialLinkHolder a:hover i{
+        font-size: 28px;
+    }
+    .parent .topBar .socialLinkHolder {
+        width: 190px;
+    }
+
+
+ }
