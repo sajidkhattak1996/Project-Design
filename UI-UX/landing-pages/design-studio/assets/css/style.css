@@ -1,0 +1,1355 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 800px;
+}
+:root{
+    --ff_r: 'Roboto', sans-serif;
+
+    --c1: #323232;
+    --c2: #FF1E56;
+    --c3: #FFAC41;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+
+::-webkit-scrollbar {width: 8px;}
+::-webkit-scrollbar-track {background: #ffffff;}
+::-webkit-scrollbar-thumb { background: var(--c3); }
+::-webkit-scrollbar-thumb:hover { background: var(--c2); }
+
+
+
+/* common classes */
+.myContainer{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.myContainer2{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.mainHeading{
+    color:var(--c3);
+    font-family: var(--ff_r);
+    font-weight: 700;
+    font-size: 36px;
+}
+.subHeading{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+.pragraph{
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+
+
+
+/* navbar style */
+.barLineDiv{
+    padding-left: 97px;
+}
+.barLine{
+    background: none;
+    border: none;
+    padding: unset;
+}
+.barLine:hover i{
+    color: var(--c2);
+}
+.barLine i{
+    font-size: 28px;
+    color: var(--c3);
+}
+.barLine:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+header{
+   background-repeat: no-repeat; 
+   background-size: cover;
+   background-blend-mode: darken;
+    background-image: url(../images/attachment-11.jpg);
+    position: relative;
+
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0 0 0 / 60%);
+
+} 
+
+header .navbarParent{
+    position: fixed;
+    width: 100%;
+    padding: 22px 0px;
+    z-index: 5;
+}
+header .navbarParent .navBarLogo{
+    color: var(--c3);
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+header .navbarParent .navBarLogo:hover{
+    color: var(--c2);
+}
+
+header .navBarHolder .navbarList{
+    list-style: none;
+    padding: unset;
+    margin: unset;
+}
+header .navBarHolder .navbarList li a{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--c3) !important;
+}
+header .navBarHolder .navbarList li a:hover{
+    color: var(--c2) !important;
+}
+header .navBarHolder .navbarList li{
+    padding: 0px 20px;
+    transition: 0.5s;
+    position: relative;
+}
+
+header .navBarHolder .navbarList .navBarLi:hover .navBarDropdown{
+    display: block;
+}
+header .navBarDropdown{
+    background-color: var(--c1);
+    padding: 30px 10px 30px 8px;
+    transition: 0.5s;
+    animation-name: myanimation;
+    animation-duration: 0.3s;
+    width: 200px;
+}
+header .navBarDropdown.navBarDropdownWork{
+    width: 250px;
+}
+@keyframes myanimation{
+    from{ top: 80px;}
+    top{ top: unset; }
+}
+
+header .navBarDropdown .dropdownList{
+    list-style: none;
+    padding: unset;
+}
+header .navBarDropdown .dropdownList li{
+    padding-bottom: 6px;
+}
+header .navBarDropdown .dropdownList li a{
+    color: white !important;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header .navBarDropdown .dropdownList li a:hover{
+    color: var(--c2) !important;
+}
+
+
+.arrowRotate[aria-expanded="true"] .fa-chevron-down {
+    transform: rotate(180deg);
+  }
+
+
+
+
+/* Side Navbar Style */
+ header .mobile_And_Side_Navbar{
+    position: fixed;
+    top: 0;
+    right: -452px;
+    z-index: 9;
+    background: #000000;
+    color: white;
+    transition: 0.9s;
+    max-width: 550px;
+    height: 100vh;
+    width: 35%;
+    padding: 30px 50px 0px 50px;
+    /* display: none; */
+    transition: 0.5s;
+    opacity: 0;
+    animation-name: myShow;
+    animation-duration: 0.5s;
+
+}
+
+
+.right_show{
+    right: 0px !important; 
+    opacity: 1 !important;
+    /* display: block !important; */
+}
+.right_hide{
+    right: -452px;
+    display: none;
+}
+.d_block{
+    display: block;
+}
+.d_none{ display: none; }
+
+@keyframes myShow{
+    from{
+        right: -452px;
+    }
+    to{
+        right: 0px;
+    }
+}
+
+
+
+/* cross and close button */
+header .mobile_And_Side_Navbar .sideBoxContentHolder .crossAreaHolder{
+    display: flex;
+    justify-content: end;
+}
+header .mobile_And_Side_Navbar .sideBoxContentHolder .crossAreaHolder button{
+    color: var(--c2);
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+header .mobile_And_Side_Navbar .sideBoxContentHolder .crossAreaHolder button:focus{
+    outline: none;
+    box-shadow: none;
+}
+header .mobile_And_Side_Navbar .sideBoxContentHolder .crossAreaHolder button:hover{
+    color: var(--c3);
+}
+
+/* side nav bar main body style */
+header .mobile_And_Side_Navbar .bodyAreaHolder{
+    margin-top: 40px;
+}
+header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList{
+    list-style: none;
+    padding: unset;
+    margin: unset;
+    height: 250px;
+    /* background-color: red; */
+}
+header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi{
+    padding-bottom: 20px;
+}
+header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi .mainAncharTag{
+    text-decoration: none;
+    color: var(--c2);
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 28px;
+    transition: 0.3s;
+}
+header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi .mainAncharTag:hover{
+    color: var(--c3);
+}
+
+header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi .sideNavbarDropdown{
+    display: none;
+    transition: 0.5s;
+}
+
+
+header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi .sideNavbarDropdown .sideNavbarDropdownList{
+    list-style: none;
+    padding: unset;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi .sideNavbarDropdown .sideNavbarDropdownList li{
+    padding-bottom: 5px;
+}
+
+header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi .sideNavbarDropdown .sideNavbarDropdownList li a{
+    color: white !important;
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi .sideNavbarDropdown .sideNavbarDropdownList li a:hover{
+    color: var(--c2) !important;
+}
+/* right side social  */
+header .mobile_And_Side_Navbar .socialLinkAreaHolder{
+    margin-top: 150px;
+}
+header .mobile_And_Side_Navbar .socialLinkAreaHolder a{
+    text-decoration: none;
+    color: var(--c2);
+    transition: 0.3s;
+    display: flex;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: solid 1px var(--c2);
+}
+
+header .mobile_And_Side_Navbar .socialLinkAreaHolder a:hover{
+    background-color: var(--c3);
+    color: white;
+    border-color: var(--c3);
+}
+header .mobile_And_Side_Navbar .footerTextHolder p a{
+    color: var(--c2);
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+header .mobile_And_Side_Navbar .footerTextHolder p a:hover{
+    color: var(--c3);
+}
+
+
+/* side navbar footer text */
+header .mobile_And_Side_Navbar .footerTextHolder{
+    margin-top: 40px;
+}
+
+
+
+/* pic text style */
+
+
+.textHolder{
+    width: 800px;
+    /* background-color: coral; */
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    padding: 90px 0px 50px 0px;
+}
+.textHolder h6{
+    font-family: var(--ff_r);
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+}
+.textHolder h1{
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: var(--c3);
+}
+.textHolder p{
+    font-family: var(--ff_r);
+    font-size: 20px;
+    font-weight: 400;
+    word-spacing: 2px;
+    padding: 50px 0px;
+    color: white;
+}
+.textHolder a{
+    font-family: var(--ff_r);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.textHolder a:hover:after{
+    border-bottom: solid 2px transparent; 
+}
+.textHolder a:hover{
+    color: var(--c2);
+}
+.textHolder a::after{
+    content: "";
+    display: block;
+    border-bottom: solid 2px white;
+    height: 3px;
+    width: 100px;
+    margin: 0 auto;
+    transition: 0.3s;
+
+}
+
+
+/* clients Logoes section */
+.clientsLogoes{
+    background-color: var(--c1);
+    padding: 60px 0px;
+}
+/* .clientsLogoes .logoImageHolder{
+    display: flex;
+} */
+.clientsLogoes .logoImageHolder a{
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+/* .clientsLogoes .logoImageHolder a img{} */
+.clientsLogoes .logoImageHolder a:hover{
+    opacity: 1;
+}
+
+
+/* aboutUs section */
+.aboutUs{
+    background-color: black;
+    padding: 100px 0px;
+
+}
+.aboutUs .textHolderAbout{
+    padding: 0px 70px 0px 0px;
+}
+
+
+/* serviceSection style */
+.serviceSection{
+    background-color: black;
+}
+.serviceSection .serviceCards a{
+    text-decoration: none;
+}
+.serviceSection .serviceCards{
+    background-image: url(../images/card/card-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 15px;
+    background-blend-mode: darken;
+    background-color: #0000006b;
+    transition: 0.2s;
+    cursor: pointer;
+    height: 460px;
+    position: relative;
+}
+.serviceSection .serviceCards:hover{
+    background-color: var(--c2);
+    background-blend-mode: none;
+    background-image: none;
+}
+.serviceSection .serviceCards:hover .cardArrowButton button{
+    background-color: white;
+}
+.serviceSection .serviceCards:hover .cardArrowButton button i{
+    color: var(--c2);
+}
+
+.serviceSection .interior{
+    background-image: url(../images/card/card-image-2.jpg);
+}
+.serviceSection .landscape{
+    background-image: url(../images/card/card-image-3.jpg);
+}
+.serviceSection .consulting{
+    background-image: url(../images/card/card-image-4.jpg);
+}
+
+
+
+
+
+/* .serviceSection .serviceCards::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 32%);
+    z-index: 2;
+} */
+.serviceSection .serviceCards .cardsTopNo{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    font-family: var(--ff_r);
+}
+.serviceSection .serviceCards .cardTitle{
+    color: white;
+    font-family: var(--ff_r);
+    font-weight: 800;
+    font-size: 32px;
+    padding: 5px 0px 15px 0px;
+}
+.serviceSection .serviceCards .cardPragraph{
+    color: white;
+    font-size: 16px;
+}
+.serviceSection .serviceCards .cardArrowButton{
+    padding-top: 30px;
+    position: absolute;
+    bottom: 30px;
+    padding-left: 20px;
+}
+.serviceSection .serviceCards .cardArrowButton button{
+    border: solid 2px white;
+    background: none;
+    display: fe;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    transition: 0.2s;
+}
+.serviceSection .serviceCards .cardArrowButton button i{
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+
+
+/* whyUsSection sections */
+.whyUsSection{
+    background-color: black;
+}
+.whyUsSection .headingTextHolder{
+    padding: 0px 250px;
+}
+.whyUsSection .whyUsSubHeading{
+    color: var(--c3);
+}
+.whyUsSection .mainHeading{
+    color: white;
+}
+
+.whyUsSection .whyUsCards{
+    border: none;
+    background: none;
+    text-align: center;
+}
+.whyUsSection .whyUsCards .cardImageHolder i{
+    font-size: 60px;
+    color: var(--c3);
+}
+
+.whyUsSection .whyUsCards .whyUsCardBody h5 a{
+    color: white;
+    font-family: var(--ff_r);
+    font-size: 24px;
+    text-decoration: none;
+}
+.whyUsSection .whyUsCards .whyUsCardBody h5 a:hover{
+    color: var(--c2);
+}
+.whyUsSection .whyUsCards .whyUsCardBody p{
+    color: #fafafadb;
+}
+
+
+/* progressSection */
+.progressSection{
+    background-color: #292323;
+}
+.progressSection .accordianHolder{
+    padding: 30px 70px 30px 0px;
+}
+.progressSection .accordianHolder .mainAccordian{
+    padding-bottom: 6px;
+    border-bottom: solid 2px #a49c9c;
+    padding-top: 20px;
+}
+
+
+
+.progressSection .accordianTitle a{
+    color: var(--c3);
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-family: var(--ff_r);
+    font-size: 18px;
+    font-weight: 600;
+}
+.progressSection .accordianTitle a:hover{
+    color: var(--c2);
+}
+.progressSection .accordianTitle a i{
+    position: absolute;
+    right: 0px;
+}
+.progressSection .accordianBody{
+    color: white;
+}
+
+
+.progressSection .mainRightSideContainer{
+    padding: 40px 0px 0px 0px;
+    position: relative;
+}
+
+.progressSection .mainRightSideContainer .rightImageHolder::before{
+    content: '';
+    background: url(../images/dot-dark.jpg);
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 120px;
+    width: 410px;
+    height: 400px;
+}
+.progressSection .mainRightSideContainer .rightImageHolder{
+    position: relative;
+    max-width: 420px;
+    max-height: 380px;
+}
+.progressSection .mainRightSideContainer .rightImageHolder img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+.progressSection .mainRightSideContainer .rightImageHolder .playButton{
+    position: absolute;
+    top: 66%;
+    color: white;
+    background: none;
+    border: solid 2px white;
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.progressSection .mainRightSideContainer .rightImageHolder .playButton i{
+    font-size: 26px;
+}
+.progressSection .mainRightSideContainer .rightImageHolder .playButton:hover{
+    width: 80px;
+    height: 80px;
+    border-color: var(--c2);
+    color: var(--c2);
+}
+
+/* clientReview */
+.clientReview{
+    background-color: var(--c1);
+    padding: 100px 0px;
+}
+.clientReview .ClientReviewHeading a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 0.5s;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    width: 110px;
+    height: 35px;
+    align-self: center;
+    border-bottom: solid 1px transparent;
+}
+.clientReview .ClientReviewHeading a:hover{
+    color: var(--c2);
+    border-bottom: solid 1px var(--c2);
+}
+.clientReview .reviewMinDiv{
+    background-color: black;
+    padding: 35px;
+}
+.clientReview .reviewMinDiv .reviewStarsHolder .vg{
+    color: white;
+    font-weight: 600;
+    padding-right: 5px;
+}
+.clientReview .reviewMinDiv .reviewStarsHolder .star i{
+    color: var(--c2);
+}
+.clientReview .reviewMinDiv .reviewStarsHolder .star .last{
+    opacity: 0.5;
+}
+.clientReview .reviewUser .person .personImage img{
+    border-radius: 50%;
+}
+.clientReview .reviewUser .person .personText h6{
+    color: white;
+    font-family: var(--ff_r);
+    font-weight: 900;
+    font-size: 18px;
+}
+.clientReview .reviewUser .person .personText p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+.clientReview .reviewUser .person .personText p a{
+    color: var(--c2);
+    transition: 0.5s;
+    text-decoration: none;
+    position: relative;
+}
+.clientReview .reviewUser .person .personText p a:hover{
+    color: var(--c3);
+}
+.clientReview .reviewUser .person .personText p a::after{
+    content: "";
+    opacity: 0;
+    transition: 0.5s;
+
+}
+.clientReview .reviewUser .person .personText p a:hover:after{
+    content: "";
+    display: block;
+    background: var(--c3);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    transition: 0.5s;
+    opacity: 1;
+
+}
+
+
+
+
+
+
+
+
+/* .clientReview{
+    background-color: var(--c1);
+    padding: 100px 0px;
+} */
+.reviewMinDiv .ClientReviewHeading a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 0.5s;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    width: 110px;
+    height: 35px;
+    align-self: center;
+    border-bottom: solid 1px transparent;
+}
+.reviewMinDiv .ClientReviewHeading a:hover{
+    color: var(--c2);
+    border-bottom: solid 1px var(--c2);
+}
+
+.reviewMinDiv{
+    background-color: var(--c1);
+    /* padding: 35px; */
+}
+.reviewMinDiv .reviewStarsHolder .vg{
+    color: white;
+    font-weight: 600;
+    padding-right: 5px;
+}
+.reviewMinDiv .reviewStarsHolder .star i{
+    color: var(--c2);
+}
+.reviewMinDiv .reviewStarsHolder .star .last{
+    opacity: 0.5;
+}
+.person .personImage img{
+    border-radius: 50%;
+}
+.person .personText h6{
+    color: white;
+    font-family: var(--ff_r);
+    font-weight: 900;
+    font-size: 18px;
+}
+.person .personText p{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+.person .personText p a{
+    color: var(--c2);
+    transition: 0.5s;
+    text-decoration: none;
+    position: relative;
+}
+.person .personText p a:hover{
+    color: var(--c3);
+}
+.person .personText p a::after{
+    content: "";
+    opacity: 0;
+    transition: 0.5s;
+}
+.person .personText p a:hover:after{
+    content: "";
+    display: block;
+    background: var(--c3);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+footer{
+    background-color: black;
+}
+
+footer .footerListHolder ul{
+    list-style: none;
+    padding: unset;
+    margin: unset;
+}
+footer .footerListHolder ul span{
+    color: white;
+    font-family: var(--ff_r);
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 3.3;
+}
+footer .footerListHolder ul li{
+    padding-bottom: 10px;
+}
+footer .footerListHolder ul li a{
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+    transition: 0.5s;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5s;
+}
+footer .footerListHolder ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+footer .footerListHolder ul li a:hover{
+    color: var(--c2);
+}
+footer .footerListHolder ul li a:hover:after{
+    background-color: var(--c2);
+}
+
+footer .newsLetterMainDiv .newLetter h6{
+    color: white;
+    font-family: var(--ff_r);
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 3.3;
+}
+footer .newsLetterMainDiv .newLetter p{
+    padding-right: 30px;
+}
+footer .newsLetterMainDiv .subscribeHolder .inputHolder{
+    position: relative;
+}
+footer .newsLetterMainDiv .subscribeHolder .inputHolder input{
+    background: var(--c1);
+    border: none;
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    letter-spacing: 0.5px;
+    transition: 0.5s;
+    font-family: var(--ff_r);
+    color: white;
+}
+
+
+footer .newsLetterMainDiv .subscribeHolder .inputHolder button{
+    display: inline;
+    padding: unset;
+    border: none;
+    position: absolute;
+    right: 10px;
+    height: 50px;
+    background: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+}
+footer .newsLetterMainDiv .subscribeHolder .inputHolder button:hover{
+    color: var(--c2);
+}
+footer .bottom_pragraph{
+    color: white;
+}
+footer .bottom_pragraph a{
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--c2);
+    transition: 0.3s;
+}
+footer .bottom_pragraph a:hover{
+    color: var(--c3);
+}
+footer .socialIcons a{
+    color: var(--c2);
+    margin: 0px 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer .socialIcons a:hover{
+    color: var(--c3);
+}
+
+.swiper-button-disabled{
+    display:none;   
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 10px;
+    left: auto;
+    display: none;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 10px;
+    right: auto;
+    display: none;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .myContainer,.myContainer2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .progressSection .mainRightSideContainer .rightImageHolder {
+        max-width: 380px;
+        max-height: 360px;
+    }
+    .progressSection .mainRightSideContainer .rightImageHolder::before {
+        left: 120px;
+        width: 360px;
+        height: 360px;
+    }
+
+    .serviceSection .serviceCards{
+     margin: 0 auto;   
+    }
+    .whyUsSection .headingTextHolder {
+        padding: 0px 150px;
+    }
+    
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mainHeading {
+        font-size: 30px;
+    }
+    .myContainer,.myContainer2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    header .mobile_And_Side_Navbar {
+        width: 40%;
+        padding: 30px 20px 0px 20px;
+    }
+
+    header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi {
+        padding-bottom: 10px;
+    }
+    header .mobile_And_Side_Navbar .socialLinkAreaHolder {
+        margin-top: 60px;
+    }
+    header .mobile_And_Side_Navbar .bodyAreaHolder {
+        margin-top: 20px;
+    }
+    header .mobile_And_Side_Navbar .footerTextHolder {
+        margin-top: 30px;
+    }
+
+    .progressSection .mainRightSideContainer .rightImageHolder img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .progressSection .mainRightSideContainer .rightImageHolder::before {
+        left: 70px;
+        width: 560px;
+        height: 320px;
+        top: -40px;
+    }
+    .progressSection .accordianHolder {
+        padding: 30px 0px 30px 0px;
+    }
+    .textHolder {
+        width: 100%;
+    }
+    .barLineDiv {
+        padding-left: 50px;
+    }
+
+    .clientsLogoes .logoImageHolder{
+        width: 100px;
+    }
+
+    .whyUsSection .headingTextHolder {
+        padding: 0px 30px;
+    }
+    .mySwiperStyle {
+        padding: 30px;
+        background-color: black;
+    }
+
+
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+    header {
+        background-position: center;
+    }
+
+    .myContainer, .myContainer2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .mainHeading {
+        font-size: 30px;
+    }
+
+    header .mobile_And_Side_Navbar {
+        width: 40%;
+        padding: 30px 20px 0px 20px;
+    }
+
+    header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi {
+        padding-bottom: 10px;
+    }
+    header .mobile_And_Side_Navbar .socialLinkAreaHolder {
+        margin-top: 60px;
+    }
+    header .mobile_And_Side_Navbar .bodyAreaHolder {
+        margin-top: 20px;
+    }
+    header .mobile_And_Side_Navbar .footerTextHolder {
+        margin-top: 30px;
+    }
+
+    .textHolder {
+        width: 100%;
+        padding: 30px 0px 50px 0px;
+    }
+    .barLineDiv {
+        padding-left: 0px;
+    }
+    header .navBarHolder .navbarList {
+        display: none !important;
+    }
+    .whyUsSection .headingTextHolder {
+        padding: 0px 0px;
+    }
+    .textHolder h1 {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+    .textHolder p {
+        padding: 30px 0px;
+    }
+    .textHolder h6 {
+        font-size: 24px;
+    }
+
+    .clientsLogoes .logoImageHolder{
+        width: 90px;
+    }
+   
+
+    .progressSection .mainRightSideContainer .rightImageHolder .playButton
+    {
+        top: 46%;
+    }
+
+
+
+    .mySwiperStyle {
+        padding: 25px;
+    }
+    .mySwiper {
+        padding: 30px 0px 0px 0px;
+    }
+    .progressSection .mainRightSideContainer .rightImageHolder::before {
+        height: 350px;
+    }
+
+    .progressSection .mainRightSideContainer .rightImageHolder img {
+        top: 0px;
+    }
+    .mySwiper2 {
+        height: auto;
+    }
+    .whyUsSection .headingTextHolder {
+        padding: 0px 20px;
+    }
+   
+
+}
+
+
+@media (min-width: 481px) and (max-width: 575px) {
+
+    header {
+        background-position: center;
+    }
+    .myContainer, .myContainer2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .mainHeading {
+        font-size: 30px;
+    }
+
+    header .mobile_And_Side_Navbar {
+        width: 55%;
+        padding: 30px 20px 0px 20px;
+    }
+
+    header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi {
+        padding-bottom: 10px;
+    }
+    header .mobile_And_Side_Navbar .socialLinkAreaHolder {
+        margin-top: 60px;
+    }
+    header .mobile_And_Side_Navbar .bodyAreaHolder {
+        margin-top: 20px;
+    }
+    header .mobile_And_Side_Navbar .footerTextHolder {
+        margin-top: 30px;
+    }
+
+
+    .textHolder {
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+
+    .barLineDiv {
+        padding-left: 0px;
+    }
+    header .navBarHolder .navbarList {
+        display: none !important;
+    }
+
+    .progressSection .mainRightSideContainer .rightImageHolder::before {
+        left: 10px;
+        width: 400px;
+        height: 370px;
+    }
+    .progressSection .mainRightSideContainer .rightImageHolder img {
+        top: 30px;
+        left: 30px;
+    }
+    .whyUsSection .headingTextHolder {
+        padding: 0px 0px;
+    }
+    .textHolder h1 {
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+    .textHolder p {
+        padding:20px 0px;
+    }
+    .textHolder h6 {
+        font-size: 22px;
+    }
+    .textHolder p {
+        font-size: 18px;
+    }
+
+    .clientsLogoes .logoImageHolder{
+        /* width: 90px; */
+        margin-bottom: 20px;
+    }
+
+    .aboutUs {
+        background-color: black;
+        padding: 40px 0px;
+    }
+    .whyUsSection .whyUsCards .cardImageHolder i {
+        font-size: 40px;
+    }
+
+    footer .footerListHolder ul li {
+        padding-bottom: 5px;
+    }
+    .progressSection .mainRightSideContainer .rightImageHolder .playButton {
+        top: 57%;
+        left: 57%;
+    }
+
+
+
+    .mySwiperStyle {
+        padding: 25px;
+    }
+    .mySwiper2 {
+        height: auto;
+    }
+    .mySwiper {
+        padding: 10px 0px 0px 0px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+ 
+    header {
+        background-position: center;
+    }
+    .myContainer, .myContainer2 {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .mainHeading {
+        font-size: 24px;
+    }
+
+    header .mobile_And_Side_Navbar {
+        width: 70%;
+        padding: 30px 20px 0px 20px;
+    }
+
+    header .mobile_And_Side_Navbar .bodyAreaHolder .sideMainList .sideMainListLi {
+        padding-bottom: 10px;
+    }
+    header .mobile_And_Side_Navbar .socialLinkAreaHolder {
+        margin-top: 60px;
+    }
+    header .mobile_And_Side_Navbar .bodyAreaHolder {
+        margin-top: 20px;
+    }
+    header .mobile_And_Side_Navbar .footerTextHolder {
+        margin-top: 30px;
+    }
+
+    .textHolder {
+        width: 100%;
+        padding: 30px 0px 0px 0px;
+    }
+    .barLineDiv {
+        padding-left: 0px;
+    }
+    header .navBarHolder .navbarList {
+        display: none !important;
+    }
+    .textHolder h1 {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .textHolder p {
+        padding: 15px 0px;
+    }
+    .textHolder h6 {
+        font-size: 19px;
+    }
+    .textHolder a {
+        font-weight: 400;
+    }
+
+    .textHolder p {
+        font-size: 16px;
+    }
+
+    .whyUsSection .headingTextHolder {
+        padding: 0px 0px;
+    }
+    .progressSection .mainRightSideContainer .rightImageHolder {
+        max-width: 100%;
+        max-height: 300px;
+    }
+    .progressSection .mainRightSideContainer .rightImageHolder::before {
+        left: revert;
+        right: 0px;
+        width: 100%;
+        height: 250px;
+    }
+    .progressSection .mainRightSideContainer .rightImageHolder img {
+        top: 30px;
+        left: 0px;
+    }
+    .progressSection .mainRightSideContainer {
+        padding: 25px 0px 0px 0px;
+    }
+
+    .aboutUs {
+        background-color: black;
+        padding: 40px 0px;
+    }
+
+    .whyUsSection .whyUsCards .cardImageHolder i {
+        font-size: 40px;
+    }
+    .progressSection .accordianHolder {
+        padding: 0px 0px 0px 0px;
+    }
+    .clientsLogoes .logoImageHolder{
+        /* width: 90px; */
+        margin-bottom: 20px;
+    }
+
+    footer .footerListHolder ul li {
+        padding-bottom: 5px;
+    }
+    .serviceSection .serviceCards .cardTitle {
+        font-weight: 700;
+        font-size: 28px;
+    }
+    .progressSection .mainRightSideContainer .rightImageHolder .playButton {
+        top: 57%;
+        left: 50%;
+    }
+
+
+
+    .mySwiperStyle {
+        padding: 25px;
+    }
+    .mySwiper2 {
+        height: auto;
+    }
+    .mySwiper {
+        padding: 10px 0px 0px 0px;
+    }
+
+}

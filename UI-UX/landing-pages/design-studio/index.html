@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Studio</title>
+
+
+    <!-- fonts familty used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+      <!-- styles sheet ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->
+      <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+      <link rel="stylesheet" href="assets/Project Plugins Download/fontawesome/fontawesome-free-6.1.1-web/css/all.css"  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+      <!-- Bootstrap style sheet -------->
+      <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+      <link rel="stylesheet" href="assets/Project Plugins Download/bootstrap/4.5.2/css/bootstrap.min.css">
+      
+      <!-- Owl sliders style sheets -->
+      <link rel="stylesheet" href="plugins/OwlCarousel/dist/assets/owl.carousel.min.css">
+      <link rel="stylesheet" href="plugins/OwlCarousel/dist/assets/owl.theme.default.css"> 
+     
+
+      <!-- swipper styles -->
+      <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"  /> -->
+      <link rel="stylesheet" href="assets/Project Plugins Download/swiper/8.3.1/css/swiper-bundle.min.css"  />
+      <!-- <link rel="stylesheet" href="assets/css/swipper.css">  -->
+      <link rel="stylesheet" href="assets/Project Plugins Download/swiper/8.3.1/css/swipper.css"> 
+
+      
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!-- style sheet ended =====================================================================================-->
+
+</head>
+<body>
+
+<header class="pb-md-5 pb-0" id="homeTop">
+        <div class="navbarParent " id="mainNavbar">
+            <div class="myContainer">
+                <nav class="navBarHolder d-flex justify-content-between">
+                    <a href="#" class="navBarLogo">
+                        Design Studio
+                    </a>
+
+                    <div class="barLineDiv">
+                        <button class="btn barLine" role="button" onclick="sideNavbarDisplay()">
+                            <i class="fal fa-bars"></i>
+                        </button> 
+                    </div>
+
+
+                </nav>
+        
+            </div>
+        </div>
+
+        <div class="mobile_And_Side_Navbar " id="rightSideNavbar">
+            <div class="sideBoxContentHolder">
+                <div class="crossAreaHolder">
+                    <button onclick="closeRightSideNavBar()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="bodyAreaHolder">
+                    <ul class="sideMainList">
+                        <li class="sideMainListLi">
+                            <a class=" mainAncharTag" href="#homeTop" id="rightSidenavbarDropdownWork" role="button" onclick="myDropdown('HomeDropdown')">
+                                Home
+                            </a>
+                          
+                          </li>
+
+                        <li class="sideMainListLi">
+                            <a class=" mainAncharTag" href="#workHolder" id="rightSidenavbarDropdownWork" role="button" onclick="myDropdown('workDropdown')">
+                                Work
+                            </a>
+                        
+                          </li>
+
+                          <li class="sideMainListLi">
+                            <a class=" mainAncharTag" href="#conceptHolder" id="rightSidenavbarDropdownWork" role="button" onclick="myDropdown('newsDropdown')">
+                                Concept
+                            </a>
+                         
+                          </li>
+
+                          <li class="sideMainListLi">
+                            <a class=" mainAncharTag" href="#reviewHolder" id="rightSidenavbarDropdownWork" role="button" onclick="myDropdown('newsDropdown')">
+                                Review
+                            </a>
+                          
+                          </li>
+
+                    </ul>
+                </div>
+
+                <div class="socialLinkAreaHolder">
+                    <div class="d-flex ">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fas fa-rss"></i></a>
+                    </div>
+                </div>
+
+                <div class="footerTextHolder">
+                    <p class="bottom_pragraph">
+                        © 2022 <a href="javascript:void(0)">Design Studio</a>. All Rights Reserved.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+        
+
+
+        <div class="myContainer py-5 ">
+            <div class="textHolder ">
+                <h6>Architecture</h6>
+                <h1>Visualize your Design<br>with Us!</h1>
+
+                <p>
+                    We are a collaborative and seasoned team which brings life to your brand with creative designs and visuals.
+                </p>
+
+                <a href="javascrip:void(0)">
+                    See Product
+                </a>
+
+            </div>
+        </div>
+
+
+</header>
+
+<section class="clientsLogoes ">
+    <div class="myContainer2">
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-around">
+           
+                <div class="logoImageHolder">
+                    <a href="javascript:void(0)">
+                        <img src="assets/images/client-1.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="logoImageHolder">
+                    <a href="javascript:void(0)">
+                        <img src="assets/images/client-2.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="logoImageHolder">
+                    <a href="javascript:void(0)">
+                        <img src="assets/images/client-3.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="logoImageHolder">
+                    <a href="javascript:void(0)">
+                        <img src="assets/images/client-4.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+
+                <div class="logoImageHolder">
+                    <a href="javascript:void(0)">
+                        <img src="assets/images/client-5.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section class="aboutUs">
+    <div class="myContainer2">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <div class="textHolderAbout">
+                    <h2 class="mainHeading">
+                        See our Designs studio responsibilities
+                    </h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-12">
+                <div class="pragraphHolder">
+                    <h2 class="mainHeading text-light" >
+                        We provide best designs for your brand
+                    </h2>
+                    <p class="pragraph">
+                        Brands should be meaningful and relatable for the people. Our designs are created with a defined purpose in mind, because we believe brands can leave a long-lasting impact on their users. We can make your idea come to life and leave a big impression.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="serviceSection  py-md-5 py-0">
+   <div class="myContainer">
+       <div class="row">
+            <div class="col-xl-3 col-lg-4  col-sm-6 col-12 pt-3 pt-sm-0">
+                <div class="card serviceCards border-0 rounded-0 architecture" >
+                    <a href="#">
+                        <div class="card-body cardBodyStart">
+                            <div class="cardTextHolder">
+                                <h6 class="cardsTopNo">01</h6>
+                                <h5 class="card-title cardTitle">High-Quality Designs</h5>
+                                <p class="card-text cardPragraph">
+                                    The designs we create are original, out-of-the-box and unique. We focus on usability, aesthetics, and accessibility of the design in particular.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cardArrowButton">
+                            <button>
+                            <i class="far fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+           <div class="col-xl-3 col-lg-4  col-sm-6 col-12 pt-3 pt-sm-0">
+               <div class="card serviceCards border-0 rounded-0 interior" >
+                    <a href="#">
+                       <div class="card-body">
+                           <h6 class="cardsTopNo">02</h6>
+                           <h5 class="card-title cardTitle">Brand Marketing</h5>
+                           <p class="card-text cardPragraph">
+                            Visuals should be able to grow a strong relation between the consumer and the brand. Our services provide brand promotion through visuals and design on varied social platforms.
+                            </p>
+                        </div>
+                        <div class="cardArrowButton">
+                           <button>
+                              <i class="far fa-chevron-right"></i>
+                           </button>
+                        </div>
+                    </a>
+                </div>
+           </div>
+
+           <div class="col-xl-3 col-lg-4  col-sm-6 col-12  pt-3 pt-lg-0 ">
+            <div class="card serviceCards border-0 rounded-0 landscape" >
+                 <a href="#">
+                    <div class="card-body">
+                        <h6 class="cardsTopNo">03</h6>
+                        <h5 class="card-title cardTitle">Business Strategies</h5>
+                        <p class="card-text cardPragraph">
+                            We create designs in accordance with the client’s business strategy. The sketches are produced for review of the client. It is ensured that these products are accurately in accordance with the strategy.  
+                         </p>
+                        </div>
+                        <div class="cardArrowButton">
+                           <button>
+                              <i class="far fa-chevron-right"></i>
+                           </button>
+                        </div>
+                 </a>
+             </div>
+           </div>
+
+           <div class="col-xl-3 col-lg-4  col-sm-6 col-12 pt-3 pt-lg-5 pt-xl-0  ">
+                <div class="card serviceCards border-0 rounded-0 consulting" >
+                    <a href="#">
+                        <div class="card-body">
+                            <h6 class="cardsTopNo">04</h6>
+                            <h5 class="card-title cardTitle">Consultations</h5>
+                            <p class="card-text cardPragraph">
+                                Being experienced in the field, we also provide business and marketing consultations to brands to support their presence in the market.
+                            </p>
+                            </div>
+                            <div class="cardArrowButton">
+                            <button>
+                                <i class="far fa-chevron-right"></i>
+                            </button>
+                            </div>
+                    </a>
+                </div>
+           </div>
+       </div>
+   </div>
+</section>
+
+<section class="whyUsSection py-5" id="workHolder">
+    <div class="myContainer">
+        <div class="headingTextHolder text-center">
+            <h6 class="subHeading whyUsSubHeading">
+                WHY CHOOSE US?
+            </h6>
+            <h2 class="mainHeading ">
+                Why we are different?
+            </h2>
+            <p class="pragraph">
+                Our belief is in satisfaction of our clients, which is why we provide user-focused solutions. We deliver high-quality content with an out-of-the-box look.
+            </p>
+        </div>
+    </div>
+    <div class="myContainer2 pt-md-5 pt-4">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card whyUsCards" >
+                    <div class="card-img-top cardImageHolder">
+                        <i class="fal fa-user-friends"></i>
+                    </div>
+                    <div class="card-body whyUsCardBody">
+                      <h5 class="card-title cardHeading pt-3">
+                        <a href="javascript:void(0)">
+                            Dedicated Team
+                        </a>
+                        </h5>
+                      <p class="card-text">
+                        Our in-house team is readily available to create designs based on the demand of the clients.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="card whyUsCards" >
+                    <div class="card-img-top cardImageHolder">
+                        <i class="fal fa-clock"></i>
+                    </div>
+                    <div class="card-body whyUsCardBody">
+                      <h5 class="card-title cardHeading pt-3">
+                        <a href="javascript:void(0)">
+                            Fast Delivery
+                        </a>
+                        </h5>
+                      <p class="card-text">
+                        We ensure fast delivery of the visuals to our client without any compromise on the quality.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 pt-4 pt-lg-0">
+                <div class="card whyUsCards" >
+                    <div class="card-img-top cardImageHolder">
+                        <i class="fal fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="card-body whyUsCardBody">
+                      <h5 class="card-title cardHeading pt-3">
+                        <a href="javascript:void(0)">
+                            Multiple Options
+                        </a>
+                        </h5>
+                      <p class="card-text">
+                        Provision of multiple designs, options and configurations makes it easier for the client to choose.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-12 pt-4 pt-lg-0">
+                <div class="card whyUsCards" >
+                    <div class="card-img-top cardImageHolder">
+                        <i class="fal fa-comments"></i>
+                    </div>
+                    <div class="card-body whyUsCardBody">
+                      <h5 class="card-title cardHeading pt-3">
+                        <a href="javascript:void(0)">
+                            24/7 Support
+                        </a>
+                        </h5>
+                      <p class="card-text">
+                        Our service for consultations and discussions is available round the clock for our clients.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="progressSection py-5 " id="conceptHolder">
+    <div class="myContainer2">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="accordianHolder">
+                    <div class="progressTextHolder">
+                        <h2 class="mainHeading">
+                            How do we work?
+                        </h2>
+                        <p class="pragraph pt-lg-4 pb-lg-5">
+                            Our design building process goes through the following four steps to become a finessed product at the end:
+                        </p>
+                    </div>
+
+                    <div class="panel-group" id="accordion">
+
+                        <div class="panel panel-default mainAccordian">
+                          <div class="panel-heading">
+                            <h4 class="panel-title accordianTitle">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="arrowRotate">
+                                1. Concept
+                                <i class="fal fa-chevron-down "></i>
+                            </a>
+                            </h4>
+                          </div>
+                          <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body accordianBody py-3">
+                                A design is a visual representation of a concept. Its planning involves plenty of reasoning, logic and thinking before it can be executed.
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="panel panel-default mainAccordian">
+                            <div class="panel-heading">
+                              <h4 class="panel-title accordianTitle">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="arrowRotate">
+                                  2. Design & Development
+                                  <i class="fal fa-chevron-down "></i>
+                              </a>
+                              </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse in">
+                              <div class="panel-body accordianBody py-3">
+                                Once a conceptualization is agreed upon, the selection of its characteristics, texture, form, color palette and layering is defined in this step.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default mainAccordian">
+                            <div class="panel-heading">
+                              <h4 class="panel-title accordianTitle">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="arrowRotate">
+                                  3. Execution
+                                  <i class="fal fa-chevron-down "></i>
+                              </a>
+                              </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse in">
+                              <div class="panel-body accordianBody py-3">
+                                Once the processing is done, the time comes for the final product to be critically viewed by the team. Various options are considered and discussed with a keen eye.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default mainAccordian">
+                            <div class="panel-heading">
+                              <h4 class="panel-title accordianTitle">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="arrowRotate">
+                                  4. Handover
+                                  <i class="fal fa-chevron-down "></i>
+                              </a>
+                              </h4>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse in">
+                              <div class="panel-body accordianBody py-3">
+                                The finalized, approved and defined design is delivered as a final product to the client. In this phase, their satisfaction is considered of pivotal importance.
+                              </div>
+                            </div>
+                          </div>
+        
+                      </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6 col-12">
+                <div class="mainRightSideContainer">
+
+                    <div class="rightImageHolder">
+                        <img src="assets/images/attachment-02-800x600.jpg" alt="" class="img-fluids">
+                        <button class="playButton">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="py-5 reviewMinDiv" id="reviewHolder">
+    <div class="myContainer2">
+
+        <div class="ClientReviewHeading d-flex flex-sm-row justify-content-between pb-5 flex-column align-items-center">
+            <h2 class="mainHeading">
+                5,000 Happy clients love Arquito
+            </h2>
+            <a href="javascript:void(0)">
+                More Reviews
+            </a>
+        </div>
+
+
+           <!-- Swiper -->
+        <div class="mainSliderHolder">
+            <div class="swiper mySwiper2">
+            <div class="swiper-wrapper reviewMinDiv">
+                <div class="swiper-slide mySwiperStyle">
+
+                    <div class="reviewStarsHolder d-flex justify-content-start">
+                        <span class="vg">
+                            Review 1 - 
+                        </span>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star last"></i>
+                        </span>
+                    </div>
+        
+                    <div class="reviewText pt-lg-4 pt-2">
+                        <p class="pragraph">
+                            Our experience with the team has been beyond our expectations. They coordinated with us throughout the designing process. Our suggestions and vision was always kept as a priority, which is the best thing we liked about this team. Highly recommended!
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide mySwiperStyle">
+
+                    <div class="reviewStarsHolder d-flex justify-content-start">
+                        <span class="vg">
+                            Review 2 - 
+                        </span>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star last"></i>
+                        </span>
+                    </div>
+        
+                    <div class="reviewText pt-4">
+                        <p class="pragraph">
+                            We had a number of different ideas for our product design and needed help of experts. Going with this design team was the best decision we made. They understood exactly what we needed. The color scheme and finesse of the designs was brilliant. Overall, it was a terrific experience!
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide mySwiperStyle">
+
+                    <div class="reviewStarsHolder d-flex justify-content-start">
+                        <span class="vg">
+                            Review 3 - 
+                        </span>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star last"></i>
+                        </span>
+                    </div>
+        
+                    <div class="reviewText pt-4">
+                        <p class="pragraph">
+                            The experience of working with the design team was effortless. They took charge and took our vision to the next level. We are satisfied with the outcome we received. The team took our suggestions very seriously and kept a steady coordination throughout the process.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="person d-flex flex-row">
+                        <div class="personImage">
+                            <img src="assets/images/review_preson1.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="personText pt-1 pl-3">
+                            <h6>Robert Downer</h6>
+                            <p>
+                                Creative Director at <a href="#">Envato LLC</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="person d-flex flex-row">
+                        <div class="personImage">
+                            <img src="assets/images/review_person4.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="personText pt-1 pl-3">
+                            <h6>NATALIE NOYES</h6>
+                            <p>
+                                Managerment Product at <a href="#">Spotify</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+
+                    <div class="person d-flex flex-row">
+                        <div class="personImage">
+                            <img src="assets/images/review_person3.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="personText pt-1 pl-3">
+                            <h6>CHRISTIAN EVAN</h6>
+                            <p>
+                                Senior Visual Product Designer at <a href="#">FocusLabs</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="pt-md-5 pt-3">
+    <div class="myContainer">
+        <div class="row">
+            <div class="col-md-3  col-12">
+                <div class="footerListHolder">
+                    <ul>
+                        <span>Company</span>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Career</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-12">
+                <div class="footerListHolder">
+                    <ul>
+                        <span>Help Center</span>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Return</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-5 col-md-6 col-12 ml-auto">
+                <div class="newsLetterMainDiv">
+                    <div class="newLetter">
+                        <h6>Newsletter</h6>
+                        <p class="pragraph">
+                            Subscribe Us to Stay in Touch
+                        </p>
+                        <div class="subscribeHolder pt-3">
+                            <form action="">
+                                <div class="inputHolder">
+                                    <input type="email" name="" id="" placeholder="Enter your email..." autocomplete="off">
+                                    <button type="submit">
+                                        SUBSCRIBE
+                                        <i class="fas fa-chevron-right pl-2"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="py-4"></div>
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <p class="bottom_pragraph">
+                    <!-- © 2022 <a href="#">Design Studio</a>. All Rights Reserved. -->
+                    © 2022 Copyright Design Studio all right reserved. Develop by <a href="https://www.mavenlogix.org/" target="_blank" rel="noopener noreferrer">Maven Logix</a>
+                </p>
+            </div>
+
+            <div class="col-md-3 col-12 ml-auto">
+                <div class="d-flex flex-row socialIcons">
+                    <a href="#">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="py-2"></div>
+
+    </div>
+</footer>
+
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="assets/Project Plugins Download/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
+    <script src="assets/Project Plugins Download/popper/popper.min.js"></script>
+
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <script src="assets/Project Plugins Download/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="plugins/owlcarousel/dist/owl.carousel.min.js"></script>
+
+  <!-- Swiper JS -->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="assets/Project Plugins Download/swiper/8.3.1/js/swiper-bundle-min.js"></script>
+
+    <script src="assets/js/myscript.js"></script>
+</body>
+</html>

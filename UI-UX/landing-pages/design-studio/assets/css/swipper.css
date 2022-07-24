@@ -1,0 +1,43 @@
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .swiper {
+    background: #323232;
+  }
+
+
+  .mySwiperStyle{
+      padding: 40px;
+      background-color: black;
+      
+  }
+
+  .mySwiper2 {
+    height: 200px;
+    width: 100%;
+  }
+
+  .mySwiper {
+    padding: 60px 0px 0px 30px;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    cursor: pointer;
+
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+  
+.mySwiper .swiper-slide:hover{
+    opacity: 1;
+}
+

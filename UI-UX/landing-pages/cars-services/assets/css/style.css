@@ -1,0 +1,2275 @@
+body,
+html {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    font-size: 10px;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+a {
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.lightParagraph {
+    color: #434343 !important
+}
+
+.btnSecTwo:hover,
+.headerText .btn.btnHeader:hover,
+.contactUsBtn:hover {
+    background: #003de8;
+    color: #fff;
+}
+
+
+.navbar-brand {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.main-content {
+    position: relative;
+}
+
+.HeroSection {
+    background: url(../images/hero-image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+}
+
+.HeroSectionSol {
+    background: url(../images/solutions-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+}
+
+.HR_system {
+    background: url(../images/hr-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+}
+
+.HeroSectionAbout {
+    background: url(../images/about.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+.ContactUsBg {
+    background: url(../images/contactusbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1380px;
+    margin: auto;
+    padding: 20px 15px;
+}
+
+.active {
+    border-bottom: 2px solid #0067e8
+}
+
+.HR_system nav.navbar .nav-link {
+    color: #fff;
+}
+
+.headerText h1 {
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 6rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 2.1rem;
+}
+
+p.defaultPara {
+    font-size: 2.4rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000000;
+    max-width: 46%;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.headerText .btn.btnHeader {
+    height: 70px;
+    width: 33rem;
+    border-radius: 8px;
+    background-color: #0067e8;
+    font-size: 1.8rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin: auto;
+    display: table;
+    margin-top: 3rem;
+}
+
+nav.navbar li a {
+    font-size: 1.8rem;
+    line-height: 32px;
+    color: #434343;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+}
+
+.navbar-expand-md .navbar-nav .nav-item+.nav-item {
+    padding-left: 2rem;
+}
+
+.SecOne {
+    padding: 9rem 0;
+    background: #f1f5f7
+}
+
+.SecOne h1 {
+    font-size: 4.8rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: center;
+    color: #434343;
+    margin-bottom: 3.8rem;
+}
+
+.defaultHeadings {
+    font-size: 4.8rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: center;
+    color: #434343;
+    margin-bottom: 3.8rem;
+}
+
+.SecOneChild {
+    padding-top: 7.2rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2.6rem;
+    grid-row-gap: 2.2rem;
+    justify-content: center;
+}
+
+.SecOneChild .secOneBox {
+    border-radius: 1.6rem;
+    box-shadow: 1.9px 8.8px 7px 0 rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 33.9rem;
+    width: 30.4rem;
+
+}
+
+.SecOneChild .secOneBox .secOneBoxImg {
+    height: 9.6rem;
+    margin-bottom: 6.7rem;
+}
+
+
+.SecOneChild .secOneBox p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666666;
+}
+
+.SecOneChild .secOneBox h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #434343;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.SecOneChild .secOneBox:nth-child(5) {
+    grid-column: 1 / span 2;
+    margin: auto;
+    grid-row: 2;
+}
+
+.SecOneChild .secOneBox:nth-child(6) {
+    grid-column: 2 / span 2;
+    margin: auto;
+    grid-row: 2;
+}
+
+.SecOneChild .secOneBox:nth-child(7) {
+    grid-column: 3 / span 2;
+    margin: auto;
+    grid-row: 2;
+}
+
+.SecTwo {
+    padding: 9rem 0 0;
+}
+
+.SecTwo h1 {
+    font-size: 4.8rem;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: center;
+    color: #434343;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 2.2rem
+}
+
+.SecTwo .SecTwoChild p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #434343;
+    font-family: 'Helvetica', sans-serif;
+
+}
+
+.SecTwo .SecTwoChild p:nth-child(3) {
+    margin-bottom: 3.4rem;
+}
+
+.SecTwo h4 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #434343;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.SecTwoChild {
+    padding-top: 7.2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 0;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.SecTwoChild .secTwoChildText {
+    padding-left: 20rem;
+    padding-right: 6rem;
+}
+
+.SecTwoChild .secTwoChildText:nth-child(even) {
+    padding-left: 6rem;
+    padding-right: 20rem;
+}
+
+.btnSecTwo {
+    border-radius: 8px;
+    background-color: #0067e8;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    width: 24.6rem;
+    height: 7rem;
+    margin-top: 2rem;
+}
+
+.secTwoChildImg img {
+    max-width: 861px;
+}
+
+.SecThree {
+    padding: 9rem 0;
+    background: #f1f5f7
+}
+
+.SecThreeChild {
+    padding-top: 13rem;
+    padding-left: 17rem;
+    padding-right: 2.5rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10.9rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.SecThreeChild .SecThreeContent li:before {
+    content: '';
+    background: #0067e8;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    border-radius: 50%;
+}
+
+.SecThreeChild .SecThreeContent li span {
+    color: #000;
+    font-size: 2.4rem;
+    display: block;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.SecThreeChild .SecThreeContent li {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #434343;
+    padding-left: 3.4rem;
+    position: relative;
+}
+
+.SecThreeChild .SecThreeContent li+li {
+    margin-top: 2.8rem;
+}
+
+.SecFour {
+    background: url(../images/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60rem;
+    background-size: cover;
+    padding: 6.8rem 0;
+    position: relative;
+}
+
+.mapMarker {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+
+}
+
+/*
+.mapMarker {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}*/
+
+.mapMarkerText {
+    width: 29rem;
+    height: 10rem;
+    background-color: white;
+    color: #000;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 0 24px 0 rgba(24, 23, 24, 0.17);
+    padding: 3rem 2rem;
+    z-index: 1;
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: center;
+    color: #434343;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapMarkerText::after {
+    content: "";
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 13px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+
+.mapMarker img {
+    margin: auto;
+    display: table;
+    margin-top: 2rem;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1380px;
+}
+
+.SecFive {
+    padding: 9rem 0;
+}
+
+.SecFiveChild {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding-top: 5rem;
+    grid-column-gap: 14.6rem;
+    align-items: center;
+}
+
+.SecFiveChild p {
+    font-size: 3.6rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: center;
+    color: #434343;
+    display: inline;
+    margin-left: 2.3rem;
+}
+
+.footerSec {
+    padding: 3rem 14rem;
+    background: #f1f5f7;
+}
+
+.footerSecChild {
+    /* display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerSec .FTsocial a+a {
+    margin-left: 1.5rem;
+}
+
+.footerSec .copyrights {
+    color: #434343;
+    font-size: 1.4rem;
+}
+
+.footerSec .FTsocial i {
+    background: #9ba2ad;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.SecOneSol {
+    padding: 9rem 0;
+    background: #f1f5f7
+}
+
+.SecOneSolChild {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 2.6rem;
+    grid-row-gap: 2.2rem;
+    justify-content: center;
+}
+
+.SecOneSolChildBoxOne {
+    background: url(../images/secSolone.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+}
+
+.SecOneSolChildBoxOne:nth-child(2) {
+    background: url(../images/secSolTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.SecTwoSol h4 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #434343;
+    margin-bottom: 3.5rem;
+    text-transform: uppercase;
+}
+
+.SecTwoSol h5 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+}
+
+.SecTwoSol p {
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4f4f4f;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.boxInnerOne {
+    display: table;
+    margin-left: auto;
+    width: 724px;
+    padding: 0 15rem 0 0;
+}
+
+
+
+.btnReadMore {
+    width: 22rem;
+    height: 5.2rem;
+    border-radius: 8px;
+    border: solid 2px #0067e8;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    color: #0067e8;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SecOneSolChildBoxOne:nth-child(2) .boxInnerOne,
+.SecOneSolChildBoxOne:nth-child(4) .boxInnerOne,
+.SecOneSolChildBoxOne:nth-child(6) .boxInnerOne {
+    display: table;
+    margin-right: auto;
+    margin-left: initial;
+    width: 724px;
+    padding: 0 0 0 15rem;
+}
+
+.SecOneSolChildBoxOne:nth-child(2) h4,
+.SecOneSolChildBoxOne:nth-child(2) h5,
+.SecOneSolChildBoxOne:nth-child(3) h4,
+.SecOneSolChildBoxOne:nth-child(3) h5,
+.SecOneSolChildBoxOne:nth-child(5) h4,
+.SecOneSolChildBoxOne:nth-child(5) h5,
+.SecOneSolChildBoxOne:nth-child(7) h4,
+.SecOneSolChildBoxOne:nth-child(7) h5 {
+    color: #ffffff
+}
+
+.SecOneSolChildBoxOne:nth-child(2) p,
+.SecOneSolChildBoxOne:nth-child(3) p,
+.SecOneSolChildBoxOne:nth-child(5) p,
+.SecOneSolChildBoxOne:nth-child(7) p {
+    color: #fff;
+    opacity: 0.8
+}
+
+.SecOneSolChildBoxOne:nth-child(2) .btnReadMore,
+.SecOneSolChildBoxOne:nth-child(3) .btnReadMore,
+.SecOneSolChildBoxOne:nth-child(5) .btnReadMore,
+.SecOneSolChildBoxOne:nth-child(7) .btnReadMore {
+    color: #fff;
+    border: solid 2px #fff;
+}
+
+.SecOneSolChildBoxOne:nth-child(3) {
+    background: url(../images/secSolThree.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.SecOneSolChildBoxOne:nth-child(4) {
+    background: url(../images/secSolFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+
+
+.SecOneSolChildBoxOne:nth-child(5) {
+    background: url(../images/secSolFive.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.SecOneSolChildBoxOne:nth-child(6) {
+    background: url(../images/secSolSix.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.SecOneSolChildBoxOne:nth-child(7) {
+    background: url(../images/secSolSeven.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48rem;
+    display: flex;
+    align-items: center;
+    padding: 7rem 0;
+}
+
+.SecOneHRChild {
+    display: grid;
+    grid-template-columns: 45.4rem auto 45.4rem;
+    justify-content: space-between;
+    grid-column-gap: 6rem;
+    align-items: center;
+    padding-top: 8.7rem;
+    justify-content: center;
+}
+
+.SecOneHRChild h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #0067e8;
+    text-align: right;
+}
+
+.SecOneHRChild .thirdColHR h2,
+.SecOneHRChild .thirdColHR p {
+    text-align: left;
+}
+
+.SecOneHRChild p,
+.SecTwoHRText p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: right;
+    color: #434343;
+}
+
+.SecTwoHRText p {
+    text-align: center;
+}
+
+.firstColHRContent+.firstColHRContent {
+    margin-top: 7rem;
+}
+
+
+.SecTwoHR {
+    padding: 9rem 0;
+}
+
+.SecTwoHR h1 {
+    margin-bottom: 1.5rem
+}
+
+.SecTwoHRImg {
+    display: table;
+    margin: auto;
+    margin-top: 6.3rem;
+    margin-bottom: 1.7rem;
+}
+
+.SecTwoHRText {
+    display: table;
+    margin: auto;
+    max-width: 70%;
+    text-align: center;
+}
+
+.SecTwoHRText h4 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #0067e8;
+}
+
+.SecTwoHRKeyFeatures {
+    width: 1370px;
+    padding: 6rem 9rem;
+    border-radius: 24px;
+    background-color: #5f7db9;
+    margin: 13.1rem auto 0;
+    display: table;
+}
+
+
+.SecTwoHRKeyFeatures ul {
+    margin-top: 3.5rem
+}
+
+.SecTwoHRKeyFeatures li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: #fff;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+
+.SecTwoHRKeyFeatures li {
+    font-size: 2.4rem;
+    color: #fff;
+    position: relative;
+    padding-left: 3.4rem;
+
+
+}
+
+.SecTwoHRKeyFeatures li+li {
+    margin-top: 2rem
+}
+
+.SecThreeHR {
+    background: #f9fbff;
+}
+
+.SecThreeHR p {
+    font-size: 2.4rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #434343;
+}
+
+.SecThreeHR h1 {
+    text-align: left;
+    margin-bottom: 3.4rem;
+    line-height: 6rem;
+}
+
+.SecThreeHRChildLeft {
+    padding: 11rem 0;
+}
+
+.SecThreeHRChild {
+    display: grid;
+    grid-template-columns: 62rem 57rem;
+    grid-column-gap: 16rem;
+    justify-content: center;
+}
+
+.SecOneAbout {
+    padding: 9rem 0;
+    background: #f1f5f7
+}
+
+.SecOneAbout p.defaultPara {
+    max-width: 85%;
+    margin-bottom: 3rem;
+    line-height: 36px;
+}
+
+.SecThree.AboutSecTwo {
+    background: url(../images/aboutSecTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 13rem 0;
+}
+
+.SecThree.AboutSecTwo h1,
+.SecThree.AboutSecTwo p.defaultPara,
+.SecThree.AboutSecTwo .SecThreeChild .SecThreeContent li span,
+.SecThree.AboutSecTwo .SecThreeChild .SecThreeContent li {
+    color: #fff;
+}
+
+.SecThree.AboutSecTwo .SecThreeChild .SecThreeContent li:before {
+    background: #fff;
+}
+
+.SecTwo.AboutSecThree .SecTwoChild .secTwoChildText {
+    padding-left: 18rem;
+    padding-right: 9rem;
+}
+
+
+.AboutSecFour {
+    padding: 9rem 0;
+}
+
+.AboutSecFourChild {
+    display: grid;
+    grid-template-columns: 40rem 40rem 40rem;
+    grid-column-gap: 6rem;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+.AboutSecFourChildInner {
+    text-align: center;
+}
+
+.AboutSecFourChildInner img {
+    margin-bottom: 5.6rem;
+}
+
+.AboutSecFourChildInner h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 2.17;
+    color: #434343;
+}
+
+.AboutSecFourChildInner p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #666666;
+    max-width: 88%;
+    margin: auto;
+}
+
+.AboutSecFive {
+    background: #f1f5f7;
+    padding: 9rem 0;
+}
+
+.AboutSecFive h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: #000000;
+    max-width: 40%;
+}
+
+.AboutSecFive p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #434343;
+}
+
+.AboutSecFive p+p {
+    margin-top: 3rem;
+}
+
+.ContactForm {
+    padding: 9rem 0;
+}
+
+.ContactFormChild {
+    width: 90.7rem;
+    margin: auto;
+    padding-top: 4rem;
+}
+
+.ContactFormChild input {
+    border-radius: 4px;
+    border: solid 1px #d6dbde;
+    background-color: #ffffff;
+    height: 6rem;
+    font-size: 1.8rem;
+    padding-left: 2rem;
+}
+
+.ContactFormChild textarea {
+    resize: none;
+    min-height: 23.7rem;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+
+}
+
+.ContactFormChild input::placeholder,
+.ContactFormChild textarea::placeholder {
+    opacity: 0.6;
+}
+
+.ContactFormChild input+input {
+    margin-top: 2.5rem;
+}
+
+.ContactFormChild input.form-control:focus,
+.ContactFormChild textarea.form-control:focus {
+
+    border: 0;
+    border-color: 0;
+    outline: 0;
+    box-shadow: none;
+    background-color: #d3e7ff;
+    color: #243444;
+}
+
+.contactUsBtn {
+    border-radius: 6px;
+    box-shadow: inset -0.4px 3px 0 0 rgba(47, 101, 209, 0.43);
+    background-color: #0067e8;
+    color: #fff;
+    width: 37.7rem;
+    height: 6.1rem;
+    border: 0;
+    display: table;
+    margin: 6rem auto 0;
+    font-size: 1.8rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .HeroSection,
+    .HR_system,
+    .HeroSectionAbout,
+    .HeroSectionSol,
+    .ContactUsBg {
+        height: auto;
+        padding: 20rem 0 16rem;
+    }
+
+    .secFour .addInfoCard .card {
+        margin-bottom: 2rem;
+    }
+
+    nav.navbar {
+        padding: 15px;
+        background: rgb(255, 255, 255);
+
+    }
+
+    .navbar-collapse {
+        background: rgb(255, 255, 255);
+
+    }
+
+
+
+    .navbar-brand img {
+        max-width: 190px;
+    }
+
+    .navbar .fa-bars {
+        font-size: 2rem;
+    }
+
+    .defaultHeadings,
+    .secOne h1,
+    .SecThreeHR h1 {
+        font-size: 4rem;
+        max-width: 100%;
+        margin: 0 auto 1.8rem;
+        line-height: 4.8rem;
+    }
+
+    .headerText h1,
+    .SecOne h1,
+    .SecTwo h1,
+    .SecTwoHR h1 {
+        font-size: 3.8rem;
+        max-width: 90%;
+        margin: 0 auto 1.5rem;
+        line-height: 4.8rem;
+    }
+
+    .SecOne h1,
+    .SecTwo h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    p.defaultPara,
+    .SecTwo .SecTwoChild p {
+        font-size: 2.2rem;
+        max-width: 90%;
+
+    }
+
+    .headerText .btn.btnHeader,
+    .btnSecTwo,
+    .btnReadMore {
+        width: 18rem;
+        height: 5rem;
+        font-size: 1.6rem;
+    }
+
+    .SecOne,
+    .SecTwo,
+    .SecThree,
+    .SecFour,
+    .SecOneSol,
+    .SecTwoHR,
+    .SecOneAbout,
+    .SecThree.AboutSecTwo,
+    .AboutSecFour,
+    .AboutSecFive,
+    .SecFive,
+    .ContactForm {
+        padding: 4rem 0;
+    }
+
+    .SecFour {
+        height: 40rem;
+    }
+
+    .SecOneChild {
+        padding: 3.2rem 0 0;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 3.2rem;
+    }
+
+    .SecTwoChild {
+        padding: 3.2rem 0 0;
+        grid-template-columns: auto;
+        grid-row-gap: 3.2rem;
+    }
+
+    .SecOneChild .secOneBox {
+        width: 28rem;
+    }
+
+    .SecOneChild .secOneBox:nth-child(7),
+    .SecOneChild .secOneBox:nth-child(6),
+    .SecOneChild .secOneBox:nth-child(5) {
+        grid-column: initial;
+        grid-row: initial;
+        margin: initial;
+    }
+
+    .secTwoChildImg img,
+    .SecTwoHRImg img,
+    .SecTwoHRText,
+    .SecThreeHRChildRight img {
+        max-width: 100%
+    }
+
+    .secTwoChildImg img {
+        display: block;
+        margin: auto;
+    }
+
+    .SecTwoChild .secTwoChildText,
+    .SecTwoChild .secTwoChildText:nth-child(even) {
+        padding-left: 9rem;
+        padding-right: 9rem;
+    }
+
+    .SecTwo h4,
+    .SecThreeChild .SecThreeContent li span,
+    .SecFiveChild p,
+    .SecOneHRChild h2,
+    .SecThreeHR p {
+        font-size: 2.2rem
+    }
+
+    .SecThreeChild .SecThreeContent li,
+    nav.navbar li a,
+    .SecOneHRChild p,
+    .SecTwoHRText p {
+        font-size: 1.8rem;
+    }
+
+    .SecOneChild .secOneBox .secOneBoxImg {
+        margin-bottom: 3.7rem;
+    }
+
+    .secOneBoxImg img {
+        max-width: 100px;
+    }
+
+    .SecThreeChild {
+        padding-top: 3.2rem;
+        padding-left: 0;
+        padding-right: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 3rem;
+
+    }
+
+    .SecThreeContent {
+        order: 1;
+    }
+
+    .SecThreeImg {
+        order: 2;
+    }
+
+    .SecThreeImg img {
+        max-width: 400px;
+        display: block;
+        margin: auto;
+
+    }
+
+    .SecThreeChild .SecThreeContent li:before {
+
+        width: 13px;
+        height: 13px;
+        top: 7px;
+    }
+
+    .SecFiveChild {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        padding-top: 5rem;
+        grid-row-gap: 3rem;
+        grid-column-gap: 0;
+        align-items: center;
+    }
+
+    .SecFiveChild img {
+        max-width: 100px;
+    }
+
+    .footerSec {
+        padding: 2rem 0;
+
+    }
+
+
+
+    .HR_system nav.navbar .nav-link {
+        color: #434343;
+    }
+
+    .SecOneHRChild {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-column-gap: 0;
+        grid-row-gap: 4rem;
+        align-items: center;
+        padding-top: 3.2rem;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .SecOneHRChild h2,
+    .SecOneHRChild p,
+    .SecTwoHRText p,
+    .SecOneHRChild .thirdColHR h2,
+    .SecOneHRChild .thirdColHR p {
+        text-align: center;
+    }
+
+
+    .SecondColHR img {
+        max-width: 220px;
+        margin: auto;
+        display: table;
+    }
+
+    .firstColHRContent+.firstColHRContent {
+        margin-top: 5rem
+    }
+
+    .SecTwoHRKeyFeatures {
+        width: 100%;
+        padding: 4rem 8rem;
+        border-radius: 24px;
+        background-color: #5f7db9;
+        margin: 4.1rem auto 0;
+    }
+
+
+    .SecTwoHRKeyFeatures li {
+        font-size: 1.8rem;
+    }
+
+    .SecTwoHRKeyFeatures li::before {
+        top: 6px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .SecThreeHRChildLeft {
+        padding: 6rem 0;
+    }
+
+    .SecThreeHRChild {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .SecOneAbout p.defaultPara {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        line-height: 28px;
+    }
+
+    .SecTwo.AboutSecThree .SecTwoChild .secTwoChildText {
+        padding-left: 9rem;
+        padding-right: 9rem;
+        order: 2;
+    }
+
+    .SecTwo.AboutSecThree .SecTwoChild .secTwoChildImg {
+
+        order: 1;
+    }
+
+    .AboutSecFourChild {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 0;
+        grid-row-gap: 3rem;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+
+    .AboutSecFourChildInner img {
+        margin-bottom: 2.6rem;
+        max-width: 250px;
+
+    }
+
+    .AboutSecFive h2 {
+        max-width: 100%;
+        font-size: 2.2rem;
+    }
+
+    .AboutSecFive p {
+        font-size: 1.8rem;
+    }
+
+    .SecTwoSol h4 {
+        font-size: 2.8rem;
+    }
+
+    .SecOneSolChildBoxOne {
+        height: auto
+    }
+
+
+    .boxInnerOne {
+        display: table;
+
+        padding: 4rem 1.5rem;
+    }
+
+    .ContactFormChild {
+        width: 100%
+    }
+
+    .contactUsBtn {
+        width: 18rem;
+        height: 5rem;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+
+    .ContactFormChild input,
+    .ContactFormChild textarea {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .HeroSection,
+    .HR_system,
+    .HeroSectionAbout,
+    .HeroSectionSol,
+    .ContactUsBg {
+        height: auto;
+        padding: 18rem 0 14rem;
+    }
+
+    .secFour .addInfoCard .card {
+        margin-bottom: 2rem;
+    }
+
+    nav.navbar {
+        padding: 15px;
+        background: rgb(255, 255, 255);
+
+    }
+
+    .navbar-collapse {
+        background: rgb(255, 255, 255);
+
+    }
+
+    .navbar-expand-md .navbar-nav .nav-item+.nav-item {
+        padding-left: 1.5rem;
+    }
+
+    .navbar-brand img {
+        max-width: 190px;
+    }
+
+    .navbar .fa-bars {
+        font-size: 2rem;
+    }
+
+    .defaultHeadings,
+    .secOne h1,
+    .SecThreeHR h1 {
+        font-size: 3.8rem;
+        max-width: 100%;
+        margin: 0 auto 1.8rem;
+        line-height: 4.2rem;
+    }
+
+    .headerText h1,
+    .SecOne h1,
+    .SecTwo h1,
+    .SecTwoHR h1 {
+        font-size: 3.6rem;
+        max-width: 90%;
+        margin: 0 auto 1.5rem;
+        line-height: 4.2rem;
+    }
+
+    .SecOne h1,
+    .SecTwo h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    p.defaultPara,
+    .SecTwo .SecTwoChild p {
+        font-size: 1.8rem;
+        max-width: 90%;
+
+    }
+
+    .headerText .btn.btnHeader,
+    .btnSecTwo,
+    .btnReadMore {
+        width: 18rem;
+        height: 5rem;
+        font-size: 1.6rem;
+    }
+
+    .SecOne,
+    .SecTwo,
+    .SecThree,
+    .SecFour,
+    .SecOneSol,
+    .SecTwoHR,
+    .SecOneAbout,
+    .SecThree.AboutSecTwo,
+    .AboutSecFour,
+    .AboutSecFive,
+    .SecFive,
+    .ContactForm {
+        padding: 4rem 0;
+    }
+
+    .SecFour {
+        height: 40rem;
+    }
+
+    .SecOneChild {
+        padding: 3.2rem 0 0;
+        grid-template-columns: auto auto;
+        grid-row-gap: 3.2rem;
+    }
+
+    .SecTwoChild {
+        padding: 3.2rem 0 0;
+        grid-template-columns: auto;
+        grid-row-gap: 3.2rem;
+    }
+
+    .SecOneChild .secOneBox {
+        width: 28rem;
+    }
+
+    .SecOneChild .secOneBox:nth-child(7),
+    .SecOneChild .secOneBox:nth-child(6),
+    .SecOneChild .secOneBox:nth-child(5) {
+        grid-column: initial;
+        grid-row: initial;
+        margin: initial;
+    }
+
+    .secTwoChildImg img,
+    .SecTwoHRImg img,
+    .SecTwoHRText,
+    .SecThreeHRChildRight img {
+        max-width: 100%
+    }
+
+    .SecTwoChild .secTwoChildText,
+    .SecTwoChild .secTwoChildText:nth-child(even) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .SecTwo h4,
+    .SecThreeChild .SecThreeContent li span,
+    .SecFiveChild p,
+    .SecOneHRChild h2,
+    .SecThreeHR p {
+        font-size: 1.8rem
+    }
+
+    .SecThreeChild .SecThreeContent li,
+    nav.navbar li a,
+    .SecOneHRChild p,
+    .SecTwoHRText p {
+        font-size: 1.6rem;
+    }
+
+    .SecOneChild .secOneBox .secOneBoxImg {
+        margin-bottom: 3.7rem;
+    }
+
+    .secOneBoxImg img {
+        max-width: 100px;
+    }
+
+    .SecThreeChild {
+        padding-top: 3.2rem;
+        padding-left: 0;
+        padding-right: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 3rem;
+
+    }
+
+    .SecThreeContent {
+        order: 2;
+    }
+
+    .SecThreeImg {
+        order: 1;
+    }
+
+    .SecThreeImg img {
+        max-width: 500px;
+        display: block;
+        margin: auto;
+
+    }
+
+    .SecThreeChild .SecThreeContent li:before {
+
+        width: 13px;
+        height: 13px;
+        top: 7px;
+    }
+
+    .SecFiveChild {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        padding-top: 5rem;
+        grid-row-gap: 3rem;
+        grid-column-gap: 0;
+        align-items: center;
+    }
+
+    .SecFiveChild img {
+        max-width: 50px;
+    }
+
+    .footerSec {
+        padding: 2rem 0;
+
+    }
+
+    .footerSec .FTsocial i {
+        font-size: 1.2rem;
+        height: 25px;
+        width: 25px;
+    }
+
+    .HR_system nav.navbar .nav-link {
+        color: #434343;
+    }
+
+    .SecOneHRChild {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-column-gap: 0;
+        grid-row-gap: 4rem;
+        align-items: center;
+        padding-top: 3.2rem;
+    }
+
+    .SecOneHRChild h2,
+    .SecOneHRChild p,
+    .SecTwoHRText p,
+    .SecOneHRChild .thirdColHR h2,
+    .SecOneHRChild .thirdColHR p {
+        text-align: center;
+    }
+
+
+    .SecondColHR img {
+        max-width: 220px;
+        margin: auto;
+        display: table;
+    }
+
+    .firstColHRContent+.firstColHRContent {
+        margin-top: 5rem
+    }
+
+    .SecTwoHRKeyFeatures {
+        width: 100%;
+        padding: 4rem 3rem;
+        border-radius: 24px;
+        background-color: #5f7db9;
+        margin: 4.1rem auto 0;
+    }
+
+    .SecTwoHRKeyFeatures ul {
+        padding-left: 0;
+    }
+
+    .SecTwoHRKeyFeatures li {
+        font-size: 1.6rem;
+    }
+
+    .SecTwoHRKeyFeatures li::before {
+        top: 6px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .SecThreeHRChildLeft {
+        padding: 6rem 0;
+    }
+
+    .SecThreeHRChild {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        justify-content: center;
+    }
+
+    .SecOneAbout p.defaultPara {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        line-height: 28px;
+    }
+
+    .SecTwo.AboutSecThree .SecTwoChild .secTwoChildText {
+        padding-left: 15px;
+        padding-right: 15px;
+        order: 2;
+    }
+
+    .SecTwo.AboutSecThree .SecTwoChild .secTwoChildImg {
+
+        order: 1;
+    }
+
+    .AboutSecFourChild {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        grid-row-gap: 3rem;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+
+    .AboutSecFourChildInner img {
+        margin-bottom: 2.6rem;
+        max-width: 250px;
+
+    }
+
+    .AboutSecFive h2 {
+        max-width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .AboutSecFive p {
+        font-size: 1.6rem;
+    }
+
+    .SecTwoSol h4 {
+        font-size: 2.8rem;
+    }
+
+    .SecOneSolChildBoxOne {
+        height: auto
+    }
+
+
+    .boxInnerOne,
+    .SecOneSolChildBoxOne:nth-child(2) .boxInnerOne,
+    .SecOneSolChildBoxOne:nth-child(4) .boxInnerOne,
+    .SecOneSolChildBoxOne:nth-child(6) .boxInnerOne {
+        display: table;
+        margin-left: auto;
+        width: 500px;
+        padding: 4rem 1.5rem;
+    }
+
+    .ContactFormChild {
+        width: 100%
+    }
+
+    .contactUsBtn {
+        width: 18rem;
+        height: 5rem;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+
+    .ContactFormChild input,
+    .ContactFormChild textarea {
+        font-size: 1.6rem;
+    }
+
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .HeroSection,
+    .HR_system,
+    .HeroSectionAbout,
+    .HeroSectionSol,
+    .ContactUsBg {
+        height: auto;
+        padding: 16rem 0 12rem;
+    }
+
+    .secFour .addInfoCard .card {
+        margin-bottom: 2rem;
+    }
+
+    nav.navbar {
+        padding: 15px;
+        background: rgb(255, 255, 255);
+
+    }
+
+    .navbar-collapse {
+        background: rgb(255, 255, 255);
+        padding: 2rem 1rem 0;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-item+.nav-item {
+        padding-left: initial;
+    }
+
+    .navbar-brand img {
+        max-width: 190px;
+    }
+
+    .navbar .fa-bars {
+        font-size: 2rem;
+    }
+
+    .defaultHeadings,
+    .secOne h1,
+    .SecThreeHR h1 {
+        font-size: 2.8rem;
+        max-width: 100%;
+        margin: 0 auto 1.8rem;
+        line-height: 3.4rem;
+    }
+
+    .headerText h1,
+    .SecOne h1,
+    .SecTwo h1,
+    .SecTwoHR h1 {
+        font-size: 2.6rem;
+        max-width: 90%;
+        margin: 0 auto 1.5rem;
+        line-height: 3.4rem;
+    }
+
+    .SecOne h1,
+    .SecTwo h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    p.defaultPara,
+    .SecTwo .SecTwoChild p {
+        font-size: 1.6rem;
+        max-width: 90%;
+
+    }
+
+    .headerText .btn.btnHeader,
+    .btnSecTwo,
+    .btnReadMore {
+        width: 16rem;
+        height: 5rem;
+        font-size: 1.6rem;
+    }
+
+    .SecOne,
+    .SecTwo,
+    .SecThree,
+    .SecFour,
+    .SecOneSol,
+    .SecTwoHR,
+    .SecOneAbout,
+    .SecThree.AboutSecTwo,
+    .AboutSecFour,
+    .AboutSecFive,
+    .SecFive,
+    .ContactForm {
+        padding: 4rem 0;
+    }
+
+    .SecFour {
+        height: 40rem;
+    }
+
+    .SecOneChild {
+        padding: 3.2rem 0 0;
+        grid-template-columns: auto;
+        grid-row-gap: 3.2rem;
+    }
+
+    .SecTwoChild {
+        padding: 3.2rem 0 0;
+        grid-template-columns: auto;
+        grid-row-gap: 3.2rem;
+    }
+
+    .SecOneChild .secOneBox {
+        width: 28rem;
+    }
+
+    .SecOneChild .secOneBox:nth-child(7),
+    .SecOneChild .secOneBox:nth-child(6),
+    .SecOneChild .secOneBox:nth-child(5) {
+        grid-column: initial;
+        grid-row: initial;
+        margin: initial;
+    }
+
+    .secTwoChildImg img,
+    .SecTwoHRImg img,
+    .SecTwoHRText,
+    .SecThreeHRChildRight img {
+        max-width: 100%
+    }
+
+    .SecTwoChild .secTwoChildText,
+    .SecTwoChild .secTwoChildText:nth-child(even) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .SecTwo h4,
+    .SecThreeChild .SecThreeContent li span,
+    .SecFiveChild p,
+    .SecOneHRChild h2,
+    .SecThreeHR p {
+        font-size: 1.8rem
+    }
+
+    .SecThreeChild .SecThreeContent li,
+    nav.navbar li a,
+    .SecOneHRChild p,
+    .SecTwoHRText p {
+        font-size: 1.6rem;
+    }
+
+    .SecOneChild .secOneBox .secOneBoxImg {
+        margin-bottom: 3.7rem;
+    }
+
+    .secOneBoxImg img {
+        max-width: 100px;
+    }
+
+    .SecThreeChild {
+        padding-top: 3.2rem;
+        padding-left: 0;
+        padding-right: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 3rem;
+
+    }
+
+    .SecThreeContent {
+        order: 2;
+    }
+
+    .SecThreeImg {
+        order: 1;
+    }
+
+    .SecThreeImg img {
+        max-width: 100%;
+
+    }
+
+    .SecThreeChild .SecThreeContent li:before {
+
+        width: 13px;
+        height: 13px;
+        top: 7px;
+    }
+
+    .SecFiveChild {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        padding-top: 5rem;
+        grid-row-gap: 3rem;
+        grid-column-gap: 0;
+        align-items: center;
+    }
+
+    .SecFiveChild img {
+        max-width: 50px;
+    }
+
+    .footerSec {
+        padding: 2rem 0;
+
+    }
+
+    .footerSec .FTsocial i {
+        font-size: 1.2rem;
+        height: 25px;
+        width: 25px;
+    }
+
+    .HR_system nav.navbar .nav-link {
+        color: #434343;
+    }
+
+    .SecOneHRChild {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-column-gap: 0;
+        grid-row-gap: 4rem;
+        align-items: center;
+        padding-top: 3.2rem;
+    }
+
+    .SecOneHRChild h2,
+    .SecOneHRChild p,
+    .SecTwoHRText p,
+    .SecOneHRChild .thirdColHR h2,
+    .SecOneHRChild .thirdColHR p {
+        text-align: center;
+    }
+
+
+    .SecondColHR img {
+        max-width: 220px;
+        margin: auto;
+        display: table;
+    }
+
+    .firstColHRContent+.firstColHRContent {
+        margin-top: 5rem
+    }
+
+    .SecTwoHRKeyFeatures {
+        width: 100%;
+        padding: 4rem 3rem;
+        border-radius: 24px;
+        background-color: #5f7db9;
+        margin: 4.1rem auto 0;
+    }
+
+    .SecTwoHRKeyFeatures ul {
+        padding-left: 0;
+    }
+
+    .SecTwoHRKeyFeatures li {
+        font-size: 1.6rem;
+    }
+
+    .SecTwoHRKeyFeatures li::before {
+        top: 6px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .SecThreeHRChildLeft {
+        padding: 6rem 0;
+    }
+
+    .SecThreeHRChild {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        justify-content: center;
+    }
+
+    .SecOneAbout p.defaultPara {
+        max-width: 100%;
+        margin-bottom: 3rem;
+        line-height: 28px;
+    }
+
+    .SecTwo.AboutSecThree .SecTwoChild .secTwoChildText {
+        padding-left: 15px;
+        padding-right: 15px;
+        order: 2;
+    }
+
+    .SecTwo.AboutSecThree .SecTwoChild .secTwoChildImg {
+
+        order: 1;
+    }
+
+    .AboutSecFourChild {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 0;
+        grid-row-gap: 3rem;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+
+    .AboutSecFourChildInner img {
+        margin-bottom: 2.6rem;
+        max-width: 250px;
+
+    }
+
+    .AboutSecFive h2 {
+        max-width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .AboutSecFive p {
+        font-size: 1.6rem;
+    }
+
+    .SecTwoSol h4 {
+        font-size: 2.8rem;
+    }
+
+    .SecOneSolChildBoxOne {
+        height: auto
+    }
+
+
+    .boxInnerOne,
+    .SecOneSolChildBoxOne:nth-child(2) .boxInnerOne,
+    .SecOneSolChildBoxOne:nth-child(4) .boxInnerOne,
+    .SecOneSolChildBoxOne:nth-child(6) .boxInnerOne {
+        display: table;
+        margin-left: auto;
+        width: 100%;
+        padding: 4rem 1.5rem;
+    }
+
+    .ContactFormChild {
+        width: 100%
+    }
+
+    .contactUsBtn {
+        width: 18rem;
+        height: 5rem;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+    }
+
+    .ContactFormChild input,
+    .ContactFormChild textarea {
+        font-size: 1.6rem;
+    }
+
+    .footerSecChild {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+    nav.navbar,
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1140px;
+    }
+
+    .SecOneChild .secOneBox {
+        width: 25.4rem;
+
+    }
+
+    .secTwoChildImg img {
+        max-width: 800px;
+    }
+
+    .SecTwoChild .secTwoChildText {
+        padding-left: 20rem;
+        padding-right: 4rem;
+    }
+
+    .SecTwoChild .secTwoChildText:nth-child(even) {
+        padding-left: 4rem;
+        padding-right: 20rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .SecThreeImg img {
+        max-width: 600px;
+    }
+
+    .SecThreeChild {
+        padding-left: 10rem;
+    }
+
+    p.defaultPara {
+        max-width: 55%;
+    }
+
+    .SecOneHRChild {
+        display: grid;
+        grid-template-columns: 40.4rem auto 40.4rem;
+        justify-content: space-between;
+        grid-column-gap: 6rem;
+        align-items: center;
+        padding-top: 8.7rem;
+        justify-content: center;
+    }
+
+    .SecondColHR img {
+        width: 350px;
+    }
+
+    .SecTwoHRKeyFeatures {
+        width: 1100px;
+    }
+
+    .SecThreeHRChild {
+        display: grid;
+        grid-template-columns: 42rem 65rem;
+        grid-column-gap: 12rem;
+        justify-content: center;
+    }
+
+    .SecThreeHRChildRight img {
+        max-width: 650px;
+    }
+
+    .SecThreeHR p {
+        font-size: 1.8rem;
+    }
+
+    .SecThreeHR h1 {
+        font-size: 3.8rem;
+        line-height: 48px;
+    }
+
+    .SecTwo.AboutSecThree .SecTwoChild .secTwoChildText {
+        padding-left: 11rem;
+        padding-right: 4rem;
+    }
+
+    .SecTwo.AboutSecThree .secTwoChildImg img {
+        max-width: 695px;
+    }
+
+    .AboutSecFourChild {
+        grid-template-columns: 32.5rem 32.5rem 32.5rem;
+    }
+
+    .AboutSecFive h2 {
+        max-width: 50%
+    }
+
+}
+
+@media(min-width: 1401px) and (max-width: 1600px) {
+
+    .SecTwo.AboutSecThree .SecTwoChild .secTwoChildText {
+        padding-left: 11rem;
+        padding-right: 4rem;
+    }
+
+    .SecTwo.AboutSecThree .secTwoChildImg img {
+        max-width: 695px;
+    }
+
+}
