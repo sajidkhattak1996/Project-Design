@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Lato-light';
+    src: url('Lato/Lato-Hairline.eot'); /* IE9 Compat Modes */
+    src: url('Lato/Lato-Hairline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Lato/Lato-Hairline.woff') format('woff'), /* Modern Browsers */
+         url('Lato/Lato-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('Lato/Lato-Light.svg') format('svg'); /* Legacy iOS */
+  }
+
+
+  @font-face {
+    font-family: 'Lato-regular';
+    src: url('Lato/Lato-Regular.eot');
+    src: url('Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('Lato/Lato-Regular.woff') format('woff'),
+         url('Lato/Lato-Regular.ttf') format('truetype'),
+         url('Lato/Lato-Regular.svg') format('svg');
+  }
+
+  @font-face {
+    font-family: 'Lato-bold';
+    src: url('Lato/Lato-Bold.eot');
+    src: url('Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+         url('Lato/Lato-Bold.woff') format('woff'),
+         url('Lato/Lato-Bold.ttf') format('truetype'),
+         url('Lato/Lato-Bold.svg') format('svg');
+  }
+
+  @font-face {
+    font-family: 'Lato-black';
+    src: url('Lato/Lato-Black.eot');
+    src: url('Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+         url('Lato/Lato-Black.woff') format('woff'),
+         url('Lato/Lato-Black.ttf')  format('truetype'),
+         url('Lato/Lato-Black.svg') format('svg');
+  }
+
+  /*
+  
+  Different Font Formats
+    TrueType Fonts (TTF)
+
+    TrueType is a font standard developed in the late 1980s, by Apple and Microsoft. TrueType is the most common font format for both the Mac OS and Microsoft Windows operating systems.
+
+    OpenType Fonts (OTF)
+
+    OpenType is a format for scalable computer fonts. It was built on TrueType, and is a registered trademark of Microsoft. OpenType fonts are used commonly today on the major computer platforms.
+
+    The Web Open Font Format (WOFF)
+
+    WOFF is a font format for use in web pages. It was developed in 2009, and is now a W3C Recommendation. WOFF is essentially OpenType or TrueType with compression and additional metadata. The goal is to support font distribution from a server to a client over a network with bandwidth constraints.
+
+    The Web Open Font Format (WOFF 2.0)
+
+    TrueType/OpenType font that provides better compression than WOFF 1.0.
+
+    SVG Fonts/Shapes
+
+    SVG fonts allow SVG to be used as glyphs when displaying text. The SVG 1.1 specification define a font module that allows the creation of fonts within an SVG document. You can also apply CSS to SVG documents, and the @font-face rule can be applied to text in SVG documents.
+
+    Embedded OpenType Fonts (EOT)
+
+    EOT fonts are a compact form of OpenType fonts designed by Microsoft for use as embedded fonts on web pages.
+  */
+
