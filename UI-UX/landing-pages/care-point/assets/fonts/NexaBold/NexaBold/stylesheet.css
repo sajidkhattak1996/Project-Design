@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('Nexa-Bold.eot');
+    src: url('Nexa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Nexa-Bold.woff') format('woff'),
+        url('Nexa-Bold.ttf') format('truetype'),
+        url('Nexa-Bold.svg#Nexa-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
